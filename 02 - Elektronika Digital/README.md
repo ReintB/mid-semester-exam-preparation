@@ -202,3 +202,6 @@ Adalah format sistem pengkodean alfanumerik bahasa inggris yang paling lazim dig
 3. Peninjauan Kolom ketiga: Angka sisa $0$ dikurangi $1$. Kasus Defisit Angka ini terjadi Kembali, maka dia pada bagian kolom penengah ketiga posisinya ini kini harus merengek meminjam lagi sebuah sumbangan angka 1 dari sebelahnya di arah kiri (dari digit mulia sang raja MSB di tepian yang posisinya berposisi paling kiri pucuk ujung penempatan bernilai tinggi $1$). Maka Sisa sumbangan hutang pinjaman tersebut bergejolak menjadi: konversi perolehan nilai taksiran pinjaman $(2) - 1 = 1$.
 4. Peninjauan Kolom tersisa ujung keempat: Statusnya dia dulunya tadinya gagah perkasa $1$ tetapi sayang sekali nyawa nilainya telah ludes tak bersisa lantaran baru saja disedot sumbangannya dipinjam krisis yang kolom ketiga tadi, jadi terpaksa karena statusnya sekarang terjun sisa murni tak bertegangan di nilai matinya sang $0$, sisanya dieksekusi dengan mudah dalam keadaan pertarungan ringan $0 - 0 = 0$.
 5. Hasil akhirnya dirangkai dan dikumpulkan jadi untaian string: Nilai output dari sirkuit terminal keluaran logikanya adalah `0101`
+
+---
+[<< 01 - Praktikum Teknologi Mekanik](../01%20-%20Praktikum%20Teknologi%20Mekanik/README.md) | [HOME](../README.md) | [03 - Praktikum Instrumentasi dan Pengukuran >>](../03%20-%20Praktikum%20Instrumentasi%20dan%20Pengukuran/README.md)

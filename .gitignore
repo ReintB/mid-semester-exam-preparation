@@ -9,4 +9,5 @@ venv/
 ENV/
 
 convert_readmes.py
+add_navigation.py
 materi-pdf/

@@ -162,3 +162,6 @@ $$ (1-2i)(1+2i) = 1^2 - (2i)^2 = 1 - 4i^2 = 1 - 4(-1) = 1 + 4 = 5 $$
 Gabungkan kembali:
 
 $$ \frac{z_1}{z_2} = \frac{-5 + 10i}{5} = -1 + 2i $$
+
+---
+[<< 03 - Praktikum Instrumentasi dan Pengukuran](../03%20-%20Praktikum%20Instrumentasi%20dan%20Pengukuran/README.md) | [HOME](../README.md) | [05 - Bahasa Inggris II >>](../05%20-%20Bahasa%20Inggris%20II/README.md)

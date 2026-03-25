@@ -62,3 +62,6 @@ Meskipun tak memiliki suku cadang gir berputar, trafo selalu disertakan di prodi
 - **Goal Mutlak:** Merubah hierarki voltase Arus AC menjadi meninggi tajam *(Step-Up)* atau melantai merendah *(Step-Down)* tanpa mengobrak-abrik sedikitpun struktur frekuensinya (Hz).
 - **Cara Kerja:** Terdiri dari kumparan Primer-Sekunder dan teras inti besi. Listrik AC Primer mengirim fluks magnet radiasi melompati jembatan teras besi agar diculik dan melahirkan listrik kembali di sekunder (Induksi mutual).
 - **Aturan Rumus Mutlak:** Jika trafonya ideal (efisiensi paripurna 100%), tidak ada yang gratis! Menaikkan Voltase harus dibayar mahal menderita dengan turunnya daya Ampere ($V_p \cdot I_p = V_s \cdot I_s$).
+
+---
+[<< 08 - Instrumentasi dan Pengukuran](../08%20-%20Instrumentasi%20dan%20Pengukuran/README.md) | [HOME](../README.md) | [10 - CAD dan CAM >>](../10%20-%20CAD%20dan%20CAM/README.md)

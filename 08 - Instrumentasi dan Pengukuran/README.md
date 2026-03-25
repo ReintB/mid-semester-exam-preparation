@@ -84,3 +84,6 @@ Terdapat berbagai cara mengklasifikasikan sifat sensor, antara lain:
 - **Sensor Kompleks:** Terdiri dari rantaian satu/lebih transduser dalam mendapatkan hasil listriknya.
 
 ---
+
+---
+[<< 07 - Praktikum Elektronika Digital](../07%20-%20Praktikum%20Elektronika%20Digital/README.md) | [HOME](../README.md) | [09 - Mesin - Mesin Listrik >>](../09%20-%20Mesin%20-%20Mesin%20Listrik/README.md)

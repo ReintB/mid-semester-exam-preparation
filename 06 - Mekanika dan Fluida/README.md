@@ -188,3 +188,6 @@ Memakai hukum pembuktian instan Torricelli:
 $$ v = \sqrt{2 \cdot g \cdot h} $$
 
 $$ v = \sqrt{2 \times 9.8 \times 5} = \sqrt{98} \approx 9.899 \, \text{m/s} $$
+
+---
+[<< 05 - Bahasa Inggris II](../05%20-%20Bahasa%20Inggris%20II/README.md) | [HOME](../README.md) | [07 - Praktikum Elektronika Digital >>](../07%20-%20Praktikum%20Elektronika%20Digital/README.md)

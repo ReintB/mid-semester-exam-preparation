@@ -342,3 +342,6 @@ Siklus perputaran pencacah berulang pada output digitalnya untuk mengendalikan l
 | $\uparrow$ 8 | 1 | 0 | 0 | 0 | **8** |
 | $\uparrow$ 9 | 1 | 0 | 0 | 1 | **9** |
 | $\uparrow$ 10 (Reset) | 0 | 0 | 0 | 0 | **0** |
+
+---
+[<< 06 - Mekanika dan Fluida](../06%20-%20Mekanika%20dan%20Fluida/README.md) | [HOME](../README.md) | [08 - Instrumentasi dan Pengukuran >>](../08%20-%20Instrumentasi%20dan%20Pengukuran/README.md)
