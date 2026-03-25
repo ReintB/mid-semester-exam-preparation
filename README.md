@@ -5,7 +5,7 @@
 [Notion](https://www.notion.so/Persiapan-UTS-Semester-2-32d85e83a64f80b2976be265dd71238c?source=copy_link)
 
 ### 1. [Praktikum Teknologi Mekanik](./Praktikum%20Teknologi%20Mekanik) (13:15:00-14:45:00)
-- *(Belum ada materi)*
+- *(Materi belum dirangkum)*
 
 ### 2. [Elektronika Digital](./Elektronika%20Digital/README.md) (08:00:00-09:40:00)
 - Sistem Bilangan (Number Systems)
@@ -26,7 +26,9 @@
 - Contoh Soal dan Pembahasan
 
 ### 5. [Bahasa Inggris II](./Bahasa%20Inggris%20II) (08:00:00-08:50:00)
-- *(Materi belum dirangkum)*
+- Progress Test: Units 1 - 5
+- Progress Test: Units 6 - 10
+- Progress Test: Units 11 - 15
 
 ### 6. [Mekanika dan Fluida](./Mekanika%20dan%20Fluida/README.md) (08:00:00-09:30:00)
 - Informasi Umum dan Istilah Penting
