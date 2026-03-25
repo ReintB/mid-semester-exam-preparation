@@ -18,6 +18,7 @@ Gerbang logika dasar adalah blok bangunan mutlak dari setiap sistem digital. Mas
 - **Logika:** Mengeluarkan *Output High (1)* HANYA JIKA **Semua** *Input-nya High (1)*. Bisa diibaratkan seperti dua saklar yang dirangkai **Seri** (Lampu baru menyala jika saklar A dan saklar B ditutup bersamaan).
 - **Persamaan Boolean:** $Y = A \cdot B$ (dibaca A *and* B)
 - **Tabel Kebenaran (2 Input):**
+
   | Input A | Input B | Output Y |
   |:---:|:---:|:---:|
   | 0 | 0 | **0** |
@@ -30,6 +31,7 @@ Gerbang logika dasar adalah blok bangunan mutlak dari setiap sistem digital. Mas
 - **Logika:** Mengeluarkan *Output High (1)* JIKA **Minimal ada Satu** saja dari *Input-nya High (1)*. Bisa diibaratkan seperti dua saklar yang dirangkai **Paralel** (Cukup salah satu saklar ditutup untuk menyalakan lampu).
 - **Persamaan Boolean:** $Y = A + B$ (dibaca A *or* B)
 - **Tabel Kebenaran (2 Input):**
+
   | Input A | Input B | Output Y |
   |:---:|:---:|:---:|
   | 0 | 0 | **0** |
@@ -41,6 +43,7 @@ Gerbang logika dasar adalah blok bangunan mutlak dari setiap sistem digital. Mas
 - **Logika:** Membalikkan keadaan inputnya (Jika diberi 0 jadi 1, jika diberi 1 jadi 0). Hanya memiliki tepat 1 kaki input dan 1 kaki output per gerbangnya.
 - **Persamaan Boolean:** $Y = \bar{A}$ (dibaca *A NOT* atau *A Bar*)
 - **Tabel Kebenaran:**
+
   | Input A | Output Y |
   |:---:|:---:|
   | 0 | **1** |
@@ -55,6 +58,7 @@ Gerbang-gerbang gabungan (Universal & Eksklusif) yang paling banyak dipakai pada
 - **Logika:** Gabungan dari NOT-AND. Outputnya **kebalikan dari tabel AND**. Ia menghasilkan output *Low (0)* hanya ketika semua inputnya *High (1)*. Ini sering disebut sebagai *Universal Gate* karena bisa dirangkai/dimanipulasi menjadi AND/OR/NOT murni.
 - **Persamaan Boolean:** $Y = \overline{A \cdot B}$ 
 - **Tabel Kebenaran (2 Input):**
+
   | Input A | Input B | Output Y (AND) | Output Y (NAND) |
   |:---:|:---:|:---:|:---:|
   | 0 | 0 | 0 | **1** |
@@ -67,6 +71,7 @@ Gerbang-gerbang gabungan (Universal & Eksklusif) yang paling banyak dipakai pada
 - **Logika:** Gabungan dari NOT-OR. Outputnya **kebalikan dari tabel OR**. Output akan *High (1)* hanya pada saat **Semua Input-nya Low (0)**. Juga merupakan gerbang universal. 
 - **Persamaan Boolean:** $Y = \overline{A + B}$ 
 - **Tabel Kebenaran (2 Input):**
+
   | Input A | Input B | Output Y (OR) | Output Y (NOR) |
   |:---:|:---:|:---:|:---:|
   | 0 | 0 | 0 | **1** |
@@ -79,6 +84,7 @@ Gerbang-gerbang gabungan (Universal & Eksklusif) yang paling banyak dipakai pada
 - **Logika:** **Ganjil/Beda = 1**. Jika kedua input memiliki nilai logika yang **BERBEDA**, maka output = 1. Jika kembar/sama, output = 0. Sangat penting, dipakai untuk komponen konversi Gray code, Half-adder, Comparator.  *(Berbeda dengan OR biasa yang bernilai 1 jika keduanya 1)*.
 - **Persamaan Boolean:** $Y = A \oplus B$ 
 - **Tabel Kebenaran:**
+
   | Input A | Input B | Output Y (OR) | Output Y (X-OR) |
   |:---:|:---:|:---:|:---:|
   | 0 | 0 | 0 | **0** |
@@ -90,6 +96,7 @@ Gerbang-gerbang gabungan (Universal & Eksklusif) yang paling banyak dipakai pada
 - **Logika:** **Genap/Sama = 1**. Kebalikan mutlak dari X-OR. Keluaran akan bernilai *High (1)* hanya apabila nilai semua inputnya **KEMBAR** (0 dan 0, atau 1 dan 1). Sering dipakai sebagai detektor kesamaan fasa/angka.
 - **Persamaan Boolean:** $Y = \overline{A \oplus B}$ 
 - **Tabel Kebenaran:**
+
   | Input A | Input B | Output Y (X-OR) | Output Y (X-NOR) |
   |:---:|:---:|:---:|:---:|
   | 0 | 0 | 0 | **1** |
@@ -109,6 +116,7 @@ Menjumlahkan **Dua Bit** data biner (A dan B). Memiliki 2 output: *Sum* (Hasil) 
 > *Catatan:* Half Adder lemah karena tidak dapat menerima status *Carry-In* dari perhitungan kolom angka sebelumnya.
 
 **Tabel Kebenaran Half Adder:**
+
 | Input A | Input B | Carry Out (C) | Sum (S) |
 |:---:|:---:|:---:|:---:|
 | 0 | 0 | **0** | **0** |
@@ -126,6 +134,7 @@ Menjumlahkan **Tiga Bit** data biner sekaligus (Input A, Input B, dan *Carry-In*
 - **IC Paralel Adder:** Secara praktikal di lab, diperkenalkan **IC 7483** yang merupakan sebuah chip *4-Bit Binary Full Adder* siap pakai. IC ini bisa langsung menjumlahkan 4 bit A ditambah 4 bit B.
 
 **Tabel Kebenaran Full Adder:**
+
 | Input A | Input B | Carry In (C_in) | Carry Out (C_out) | Sum (S) |
 |:---:|:---:|:---:|:---:|:---:|
 | 0 | 0 | 0 | **0** | **0** |
@@ -195,6 +204,7 @@ Dua rangkaian berlawanan fungsionalitas yang sangat penting untuk keperluan komu
 
 **Tabel Data Percobaan Encoder (IC 74148 Active-Low)**
 > *Catatan: IC 74148 adalah Priority Encoder bertipe Active-Low (Aktif saat diberi logika 0 / Ground).*
+
 | Input EI | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | Output GS | Output EO | Output A2 | Output A1 | Output A0 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | **1** | **0** | **1** | **1** | **1** |
@@ -216,6 +226,7 @@ Dua rangkaian berlawanan fungsionalitas yang sangat penting untuk keperluan komu
 
 **Tabel Data Percobaan Decoder (IC 7447 to 7-Segment)**
 *(Input berformat BCD (D, C, B, A) dikonversi untuk memicu lampu display meraga angka yang dimau)*
+
 | Input D | Input C | Input B | Input A | Tampilan Angka BCD Pada Seven Segment |
 |:---:|:---:|:---:|:---:|:---:|
 | 0 | 0 | 0 | 0 | **0** |
@@ -260,6 +271,7 @@ Flip-Flop adalah komponen paling dasar dari sistem rangkaian digital **sekuensia
 - **Konfigurasi Lab (IC):** Dibangun dari gabungan dua gerbang NAND (IC 7400) atau dua gerbang NOR (IC 7402) yang di-umpan balik (cross-coupled).
 
 **Tabel Kebenaran S-R Flip-Flop**
+
 | Clock (C) | Input S | Input R | Output $Q_{n+1}$ | Output $\overline{Q}_{n+1}$ | Kondisi / Keterangan |
 |:---:|:---:|:---:|:---:|:---:|:---|
 | $\uparrow$ | 0 | 0 | $Q_n$ | $\overline{Q}_n$ | **Tetap / No Change** (Mengingat keadaan sebelumnya) |
@@ -273,6 +285,7 @@ Flip-Flop adalah komponen paling dasar dari sistem rangkaian digital **sekuensia
 - **Konfigurasi Lab (IC):** **IC 7476** (Dual J-K Flip-Flop with Preset and Clear).
 
 **Tabel Kebenaran J-K Flip-Flop**
+
 | Clock (C) | Input J | Input K | Output $Q_{n+1}$ | Output $\overline{Q}_{n+1}$ | Kondisi / Keterangan |
 |:---:|:---:|:---:|:---:|:---:|:---|
 | $\uparrow$ | 0 | 0 | $Q_n$ | $\overline{Q}_n$ | **Tetap / No Change** |
@@ -286,6 +299,7 @@ Flip-Flop adalah komponen paling dasar dari sistem rangkaian digital **sekuensia
 - **Konfigurasi Lab (IC):** **IC 7474** (Dual D-Type Positive-Edge-Triggered Flip-flop).
 
 **Tabel Kebenaran D Flip-Flop**
+
 | Clock (C) | Input D | Output $Q_{n+1}$ | Output $\overline{Q}_{n+1}$ |
 |:---:|:---:|:---:|:---:|
 | $\uparrow$ | 0 | **0** | **1** |
