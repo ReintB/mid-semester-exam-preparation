@@ -40,7 +40,7 @@ Misalkan $z_1 = a + bi$ dan $z_2 = c + di$:
 - **Perkalian:** $z_1 \cdot z_2 = (a+bi)(c+di) = (ac - bd) + (ad + bc)i$
 - **Pembagian:** Untuk membagi, kalikan sekawan (konjugat) dari penyebut:
 
-  $$ \frac{z_1}{z_2} = \frac{a+bi}{c+di} \cdot \frac{c-di}{c-di} = \frac{(ac+bd) + (bc-ad)i}{c^2+d^2} $$
+$$ \frac{z_1}{z_2} = \frac{a+bi}{c+di} \cdot \frac{c-di}{c-di} = \frac{(ac+bd) + (bc-ad)i}{c^2+d^2} $$
 
 ### Bentuk Polar dan Eksponensial (Formula Euler)
 Bilangan kompleks juga dapat dinyatakan dalam bentuk polar:
@@ -73,15 +73,15 @@ $$ \vec{v} = v_x \hat{i} + v_y \hat{j} + v_z \hat{k} $$
 - **Penjumlahan/Pengurangan:** Dilakukan komponen per komponen.
 - **Perkalian Titik (Dot / Scalar Product):** Menghasilkan sebuah *skalar*.
 
-  $$ \vec{A} \cdot \vec{B} = A_xB_x + A_yB_y + A_zB_z = |\vec{A}| |\vec{B}| \cos \theta $$
+$$ \vec{A} \cdot \vec{B} = A_xB_x + A_yB_y + A_zB_z = |\vec{A}| |\vec{B}| \cos \theta $$
 
 - **Mencari Sudut Antara Dua Vektor:** Dapat dicari menggunakan penjabaran dari rumus Dot Product.
 
-  $$ \cos \theta = \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} $$
+$$ \cos \theta = \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} $$
 
 - **Perkalian Silang (Cross / Vector Product):** Menghasilkan *vektor* baru yang tegak lurus terhadap bidang vektor pembentuknya.
 
-  $$ \vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix} $$
+$$ \vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix} $$
 
 ### Turunan Vektor dan Operator Nabla ($\nabla$)
 Pendekatan fungsi vektor sering dipakai untuk mencari pergerakan objek dan aliran vektor ruang:
@@ -130,21 +130,21 @@ Diketahui $\vec{A} = 2\hat{i} + \hat{j} - 2\hat{k}$ dan $\vec{B} = 3\hat{i} - 4\
 **Pembahasan:**
 1. **Cari nilai perkalian titik (Dot Product):**
 
-   $$ \vec{A} \cdot \vec{B} = (2)(3) + (1)(-4) + (-2)(0) = 6 - 4 + 0 = 2 $$
+$$ \vec{A} \cdot \vec{B} = (2)(3) + (1)(-4) + (-2)(0) = 6 - 4 + 0 = 2 $$
 
 2. **Cari panjang (magnitudo) masing-masing vektor:**
 
-   $$ |\vec{A}| = \sqrt{2^2 + 1^2 + (-2)^2} = \sqrt{4+1+4} = \sqrt{9} = 3 $$
+$$ |\vec{A}| = \sqrt{2^2 + 1^2 + (-2)^2} = \sqrt{4+1+4} = \sqrt{9} = 3 $$
 
-   $$ |\vec{B}| = \sqrt{3^2 + (-4)^2 + 0^2} = \sqrt{9+16+0} = \sqrt{25} = 5 $$
+$$ |\vec{B}| = \sqrt{3^2 + (-4)^2 + 0^2} = \sqrt{9+16+0} = \sqrt{25} = 5 $$
 
 3. **Masukkan ke rumus sudut:**
 
-   $$ \cos \theta = \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} = \frac{2}{3 \times 5} = \frac{2}{15} $$
+$$ \cos \theta = \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} = \frac{2}{3 \times 5} = \frac{2}{15} $$
 
 4. **Hitung besarnya sudut:**
 
-   $$ \theta = \arccos\\left(\\frac{2}{15}\\right) \\approx 82.34^\\circ $$
+$$ \theta = \arccos\left(\frac{2}{15}\right) \approx 82.34^\circ $$
 
 ### Soal 2: Operasi Pembagian Bilangan Kompleks
 Jika $z_1 = 3 + 4i$ dan $z_2 = 1 - 2i$, tentukan hasil dari $\frac{z_1}{z_2}$!
