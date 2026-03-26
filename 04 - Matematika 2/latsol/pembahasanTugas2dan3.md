@@ -104,69 +104,69 @@ $$ |\vec{F}| = 4Q\sqrt{13} \text{ Newton} $$
 ## Tugas 3
 
 ### **Soal 1**
-Diketahui Vektor $R = 1a_x + 2a_j - 3a_k$, vektor $S = 3a_x + 5a_j$, serta $T = 2a_x + 1a_j - 1a_k$. Hitunglah besarnya vektor R, S, dan T.
+Diketahui Vektor $\mathbf{R} = 1\mathbf{a}_x + 2\mathbf{a}_j - 3\mathbf{a}_k$, vektor $\mathbf{S} = 3\mathbf{a}_x + 5\mathbf{a}_j$, serta $\mathbf{T} = 2\mathbf{a}_x + 1\mathbf{a}_j - 1\mathbf{a}_k$. Hitunglah besarnya vektor $\mathbf{R}$, $\mathbf{S}$, dan $\mathbf{T}$.
 
 ### **Jawaban 1**
 
-*   **Besar R:**
-    $$ |R| = \sqrt{1^2 + 2^2 + (-3)^2} = \sqrt{1 + 4 + 9} = \sqrt{14} $$
+*   **Besar $\mathbf{R}$:**
+    $$ |\mathbf{R}| = \sqrt{1^2 + 2^2 + (-3)^2} = \sqrt{1 + 4 + 9} = \sqrt{14} $$
 
-*   **Besar S:**
-    $$ |S| = \sqrt{3^2 + 5^2 + 0^2} = \sqrt{9 + 25 + 0} = \sqrt{34} $$
+*   **Besar $\mathbf{S}$:**
+    $$ |\mathbf{S}| = \sqrt{3^2 + 5^2 + 0^2} = \sqrt{9 + 25 + 0} = \sqrt{34} $$
 
-*   **Besar T:**
-    $$ |T| = \sqrt{2^2 + 1^2 + (-1)^2} = \sqrt{4 + 1 + 1} = \sqrt{6} $$
+*   **Besar $\mathbf{T}$:**
+    $$ |\mathbf{T}| = \sqrt{2^2 + 1^2 + (-1)^2} = \sqrt{4 + 1 + 1} = \sqrt{6} $$
 
 ---
 
 ### **Soal 2**
-Dengan vektor R, S, dan T yang sama seperti di atas, hitunglah nilai vektor dari:
-a. $R + S - T$
-b. Perkalian skalar nilai $R \cdot S$
-c. Perkalian rotasi $R \times T$
-d. Perkalian $R \cdot (S \times T)$
+Dengan vektor $\mathbf{R}$, $\mathbf{S}$, dan $\mathbf{T}$ yang sama seperti di atas, hitunglah nilai vektor dari:
+a. $\mathbf{R} + \mathbf{S} - \mathbf{T}$
+b. Perkalian skalar nilai $\mathbf{R} \cdot \mathbf{S}$
+c. Perkalian rotasi $\mathbf{R} \times \mathbf{T}$
+d. Perkalian $\mathbf{R} \cdot (\mathbf{S} \times \mathbf{T})$
 
 ### **Jawaban 2**
 
-**a. $R + S - T$**
+**a. $\mathbf{R} + \mathbf{S} - \mathbf{T}$**
 
-$$ = (1+3-2)a_x + (2+5-1)a_j + (-3+0-(-1))a_k $$
-$$ = 2a_x + 6a_j - 2a_k $$
+$$ = (1+3-2)\mathbf{a}_x + (2+5-1)\mathbf{a}_j + (-3+0-(-1))\mathbf{a}_k $$
+$$ = 2\mathbf{a}_x + 6\mathbf{a}_j - 2\mathbf{a}_k $$
 
-**b. Perkalian skalar $R \cdot S$**
+**b. Perkalian skalar $\mathbf{R} \cdot \mathbf{S}$**
 
 $$ = (1)(3) + (2)(5) + (-3)(0) = 3 + 10 + 0 = 13 $$
 
-**c. Perkalian rotasi $R \times T$**
+**c. Perkalian rotasi $\mathbf{R} \times \mathbf{T}$**
 
 Secara manual didapatkan:
-$$ = (1a_x + 2a_j - 3a_k) \times (2a_x + 1a_j - 1a_k) $$
-$$ = 1a_x - 5a_j - 3a_k $$
+$$ = (1\mathbf{a}_x + 2\mathbf{a}_j - 3\mathbf{a}_k) \times (2\mathbf{a}_x + 1\mathbf{a}_j - 1\mathbf{a}_k) $$
+$$ = 1\mathbf{a}_x - 5\mathbf{a}_j - 3\mathbf{a}_k $$
 
-**d. Perkalian skalar ganda $R \cdot (S \times T)$**
+**d. Perkalian skalar ganda $\mathbf{R} \cdot (\mathbf{S} \times \mathbf{T})$**
 
-$$ S \times T = (3a_x + 5a_j) \times (2a_x + 1a_j - 1a_k) = -5a_x + 3a_j - 7a_k $$
+$$ \mathbf{S} \times \mathbf{T} = (3\mathbf{a}_x + 5\mathbf{a}_j) \times (2\mathbf{a}_x + 1\mathbf{a}_j - 1\mathbf{a}_k) = -5\mathbf{a}_x + 3\mathbf{a}_j - 7\mathbf{a}_k $$
 
-$$ R \cdot (S \times T) = (1)(-5) + (2)(3) + (-3)(-7) = -5 + 6 + 21 = 22 $$
+$$ \mathbf{R} \cdot (\mathbf{S} \times \mathbf{T}) = (1)(-5) + (2)(3) + (-3)(-7) = -5 + 6 + 21 = 22 $$
 
 ---
 
 ### **Soal 3**
 Seperti nilai vektor berikut di atas hitunglah:
-a. Sudut yang dibentuk oleh vektor R dan S
-b. Sudut yang dibentuk oleh vektor S dan T
+a. Sudut yang dibentuk oleh vektor $\mathbf{R}$ dan $\mathbf{S}$
+b. Sudut yang dibentuk oleh vektor $\mathbf{S}$ dan $\mathbf{T}$
 
 ### **Jawaban 3**
 
-**a. Sudut R dan S ($\theta_{RS}$)**
+**a. Sudut $\mathbf{R}$ dan $\mathbf{S}$ ($\theta_{RS}$)**
 
-$$ \cos(\theta_{RS}) = \frac{R \cdot S}{|R| |S|} = \frac{13}{\sqrt{14} \times \sqrt{34}} \approx 0.5958 $$
+$$ \cos(\theta_{RS}) = \frac{\mathbf{R} \cdot \mathbf{S}}{|\mathbf{R}| |\mathbf{S}|} = \frac{13}{\sqrt{14} \times \sqrt{34}} \approx 0.5958 $$
 $$ \theta_{RS} = \arccos(0.5958) \approx 53.42^\circ $$
 
-**b. Sudut S dan T ($\theta_{ST}$)**
+**b. Sudut $\mathbf{S}$ dan $\mathbf{T}$ ($\theta_{ST}$)**
 
-$$ S \cdot T = (3)(2) + (5)(1) + (0)(-1) = 11 $$
-$$ \cos(\theta_{ST}) = \frac{S \cdot T}{|S| |T|} = \frac{11}{\sqrt{34} \times \sqrt{6}} \approx 0.7701 $$
+$$ \mathbf{S} \cdot \mathbf{T} = (3)(2) + (5)(1) + (0)(-1) = 11 $$
+$$ \cos(\theta_{ST}) = \frac{\mathbf{S} \cdot \mathbf{T}}{|\mathbf{S}| |\mathbf{T}|} = \frac{11}{\sqrt{34} \times \sqrt{6}} \approx 0.7701 $$
 $$ \theta_{ST} = \arccos(0.7701) \approx 39.63^\circ $$
 
 ---
