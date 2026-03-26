@@ -17,34 +17,64 @@ d. Sudut arah positif yang dibentuk oleh kedua medan tersebut
 **a. Unit Vektor $\vec{E}_1$ dan $\vec{E}_2$**
 
 *   **Untuk $\vec{E}_1$:**
-    $$ |\vec{E}_1| = \sqrt{3^2 + 4^2} = \sqrt{25} = 5 $$
-    $$ \hat{u}_{E1} = \frac{3\hat{i} + 4\hat{j}}{5} = 0.6\hat{i} + 0.8\hat{j} $$
+
+    $$
+    |\vec{E}_1| = \sqrt{3^2 + 4^2} = \sqrt{25} = 5
+    $$
+
+    $$
+    \hat{u}_{E1} = \frac{3\hat{i} + 4\hat{j}}{5} = 0.6\hat{i} + 0.8\hat{j}
+    $$
 
 *   **Untuk $\vec{E}_2$:**
-    $$ |\vec{E}_2| = \sqrt{(-2)^2 + 5^2} = \sqrt{29} $$
-    $$ \hat{u}_{E2} = -\frac{2}{\sqrt{29}}\hat{i} + \frac{5}{\sqrt{29}}\hat{j} $$
+
+    $$
+    |\vec{E}_2| = \sqrt{(-2)^2 + 5^2} = \sqrt{29}
+    $$
+
+    $$
+    \hat{u}_{E2} = -\frac{2}{\sqrt{29}}\hat{i} + \frac{5}{\sqrt{29}}\hat{j}
+    $$
 
 **b. Persamaan Vektor Resultan $\vec{E}_R$**
 
-$$ \vec{E}_R = \vec{E}_1 + \vec{E}_2 = (3\hat{i} + 4\hat{j}) + (-2\hat{i} + 5\hat{j}) $$
-$$ \vec{E}_R = 1\hat{i} + 9\hat{j} \text{ (V/m)} $$
+$$
+\vec{E}_R = \vec{E}_1 + \vec{E}_2 = (3\hat{i} + 4\hat{j}) + (-2\hat{i} + 5\hat{j})
+$$
+
+$$
+\vec{E}_R = 1\hat{i} + 9\hat{j} \text{ (V/m)}
+$$
 
 **c. Besar Resultan $\vec{E}_R$**
 
-$$ |\vec{E}_R| = \sqrt{1^2 + 9^2} = \sqrt{82} \approx 9.055 \text{ V/m} $$
+$$
+|\vec{E}_R| = \sqrt{1^2 + 9^2} = \sqrt{82} \approx 9.055 \text{ V/m}
+$$
 
 **d. Sudut Arah Positif ($\theta$)**
 
 Menggunakan rumus *dot product*:
-$$ \vec{E}_1 \cdot \vec{E}_2 = |\vec{E}_1| |\vec{E}_2| \cos(\theta) $$
 
-$$ \vec{E}_1 \cdot \vec{E}_2 = (3)(-2) + (4)(5) = -6 + 20 = 14 $$
+$$
+\vec{E}_1 \cdot \vec{E}_2 = |\vec{E}_1| |\vec{E}_2| \cos(\theta)
+$$
 
-$$ 14 = (5)(\sqrt{29}) \cos(\theta) $$
+$$
+\vec{E}_1 \cdot \vec{E}_2 = (3)(-2) + (4)(5) = -6 + 20 = 14
+$$
 
-$$ \cos(\theta) = \frac{14}{5\sqrt{29}} \approx 0.5199 $$
+$$
+14 = (5)(\sqrt{29}) \cos(\theta)
+$$
 
-$$ \theta = \arccos(0.5199) \approx 58.67^\circ $$
+$$
+\cos(\theta) = \frac{14}{5\sqrt{29}} \approx 0.5199
+$$
+
+$$
+\theta = \arccos(0.5199) \approx 58.67^\circ
+$$
 
 ---
 
@@ -60,19 +90,32 @@ Jika arus ketiga $\vec{I}_3$ harus memenuhi Hukum Kirchhoff arus (jumlah arus = 
 **Bentuk Vektor $\vec{I}_3$:**
 
 Berdasarkan KCL:
-$$ \vec{I}_1 + \vec{I}_2 + \vec{I}_3 = 0 $$
 
-$$ (5\hat{i}) + (-3\hat{i} + 4\hat{j}) + \vec{I}_3 = 0 $$
+$$
+\vec{I}_1 + \vec{I}_2 + \vec{I}_3 = 0
+$$
 
-$$ 2\hat{i} + 4\hat{j} + \vec{I}_3 = 0 $$
+$$
+(5\hat{i}) + (-3\hat{i} + 4\hat{j}) + \vec{I}_3 = 0
+$$
 
-$$ \vec{I}_3 = -2\hat{i} - 4\hat{j} \text{ A} $$
+$$
+2\hat{i} + 4\hat{j} + \vec{I}_3 = 0
+$$
+
+$$
+\vec{I}_3 = -2\hat{i} - 4\hat{j} \text{ A}
+$$
 
 **Besar Arus $\vec{I}_3$:**
 
-$$ |\vec{I}_3| = \sqrt{(-2)^2 + (-4)^2} = \sqrt{4 + 16} = \sqrt{20} $$
+$$
+|\vec{I}_3| = \sqrt{(-2)^2 + (-4)^2} = \sqrt{4 + 16} = \sqrt{20}
+$$
 
-$$ |\vec{I}_3| = 2\sqrt{5} \approx 4.47 \text{ Amper} $$
+$$
+|\vec{I}_3| = 2\sqrt{5} \approx 4.47 \text{ Amper}
+$$
 
 ---
 
@@ -86,18 +129,27 @@ Bila gerakan muatan sebesar Q tersebut masuk dalam medan magnet yang besarnya $\
 
 **Mencari Perkalian Silang ($\vec{v} \times \vec{B}$):**
 
-$$ \vec{v} \times \vec{B} = (2\hat{i} + 3\hat{j}) \times (4\hat{k}) $$
+$$
+\vec{v} \times \vec{B} = (2\hat{i} + 3\hat{j}) \times (4\hat{k})
+$$
 
 Berdasarkan aturan *cross product* ($\hat{i} \times \hat{k} = -\hat{j}$ dan $\hat{j} \times \hat{k} = \hat{i}$):
-$$ \vec{v} \times \vec{B} = 8(-\hat{j}) + 12(\hat{i}) = 12\hat{i} - 8\hat{j} $$
+
+$$
+\vec{v} \times \vec{B} = 8(-\hat{j}) + 12(\hat{i}) = 12\hat{i} - 8\hat{j}
+$$
 
 **Besar Gaya F ($|\vec{F}|$):**
 
 Vektor $\vec{F} = Q(12\hat{i} - 8\hat{j})$
 
-$$ |\vec{F}| = \sqrt{(12Q)^2 + (-8Q)^2} = \sqrt{144Q^2 + 64Q^2} = \sqrt{208Q^2} $$
+$$
+|\vec{F}| = \sqrt{(12Q)^2 + (-8Q)^2} = \sqrt{144Q^2 + 64Q^2} = \sqrt{208Q^2}
+$$
 
-$$ |\vec{F}| = 4Q\sqrt{13} \text{ Newton} $$
+$$
+|\vec{F}| = 4Q\sqrt{13} \text{ Newton}
+$$
 
 ---
 
@@ -109,13 +161,22 @@ Diketahui Vektor $\mathbf{R} = 1\mathbf{a}_x + 2\mathbf{a}_j - 3\mathbf{a}_k$, v
 ### **Jawaban 1**
 
 *   **Besar $\mathbf{R}$:**
-    $$ |\mathbf{R}| = \sqrt{1^2 + 2^2 + (-3)^2} = \sqrt{1 + 4 + 9} = \sqrt{14} $$
+
+    $$
+    |\mathbf{R}| = \sqrt{1^2 + 2^2 + (-3)^2} = \sqrt{1 + 4 + 9} = \sqrt{14}
+    $$
 
 *   **Besar $\mathbf{S}$:**
-    $$ |\mathbf{S}| = \sqrt{3^2 + 5^2 + 0^2} = \sqrt{9 + 25 + 0} = \sqrt{34} $$
+
+    $$
+    |\mathbf{S}| = \sqrt{3^2 + 5^2 + 0^2} = \sqrt{9 + 25 + 0} = \sqrt{34}
+    $$
 
 *   **Besar $\mathbf{T}$:**
-    $$ |\mathbf{T}| = \sqrt{2^2 + 1^2 + (-1)^2} = \sqrt{4 + 1 + 1} = \sqrt{6} $$
+
+    $$
+    |\mathbf{T}| = \sqrt{2^2 + 1^2 + (-1)^2} = \sqrt{4 + 1 + 1} = \sqrt{6}
+    $$
 
 ---
 
@@ -130,24 +191,41 @@ d. Perkalian $\mathbf{R} \cdot (\mathbf{S} \times \mathbf{T})$
 
 **a. $\mathbf{R} + \mathbf{S} - \mathbf{T}$**
 
-$$ = (1+3-2)\mathbf{a}_x + (2+5-1)\mathbf{a}_j + (-3+0-(-1))\mathbf{a}_k $$
-$$ = 2\mathbf{a}_x + 6\mathbf{a}_j - 2\mathbf{a}_k $$
+$$
+= (1+3-2)\mathbf{a}_x + (2+5-1)\mathbf{a}_j + (-3+0-(-1))\mathbf{a}_k
+$$
+
+$$
+= 2\mathbf{a}_x + 6\mathbf{a}_j - 2\mathbf{a}_k
+$$
 
 **b. Perkalian skalar $\mathbf{R} \cdot \mathbf{S}$**
 
-$$ = (1)(3) + (2)(5) + (-3)(0) = 3 + 10 + 0 = 13 $$
+$$
+= (1)(3) + (2)(5) + (-3)(0) = 3 + 10 + 0 = 13
+$$
 
 **c. Perkalian rotasi $\mathbf{R} \times \mathbf{T}$**
 
 Secara manual didapatkan:
-$$ = (1\mathbf{a}_x + 2\mathbf{a}_j - 3\mathbf{a}_k) \times (2\mathbf{a}_x + 1\mathbf{a}_j - 1\mathbf{a}_k) $$
-$$ = 1\mathbf{a}_x - 5\mathbf{a}_j - 3\mathbf{a}_k $$
+
+$$
+= (1\mathbf{a}_x + 2\mathbf{a}_j - 3\mathbf{a}_k) \times (2\mathbf{a}_x + 1\mathbf{a}_j - 1\mathbf{a}_k)
+$$
+
+$$
+= 1\mathbf{a}_x - 5\mathbf{a}_j - 3\mathbf{a}_k
+$$
 
 **d. Perkalian skalar ganda $\mathbf{R} \cdot (\mathbf{S} \times \mathbf{T})$**
 
-$$ \mathbf{S} \times \mathbf{T} = (3\mathbf{a}_x + 5\mathbf{a}_j) \times (2\mathbf{a}_x + 1\mathbf{a}_j - 1\mathbf{a}_k) = -5\mathbf{a}_x + 3\mathbf{a}_j - 7\mathbf{a}_k $$
+$$
+\mathbf{S} \times \mathbf{T} = (3\mathbf{a}_x + 5\mathbf{a}_j) \times (2\mathbf{a}_x + 1\mathbf{a}_j - 1\mathbf{a}_k) = -5\mathbf{a}_x + 3\mathbf{a}_j - 7\mathbf{a}_k
+$$
 
-$$ \mathbf{R} \cdot (\mathbf{S} \times \mathbf{T}) = (1)(-5) + (2)(3) + (-3)(-7) = -5 + 6 + 21 = 22 $$
+$$
+\mathbf{R} \cdot (\mathbf{S} \times \mathbf{T}) = (1)(-5) + (2)(3) + (-3)(-7) = -5 + 6 + 21 = 22
+$$
 
 ---
 
@@ -160,14 +238,27 @@ b. Sudut yang dibentuk oleh vektor $\mathbf{S}$ dan $\mathbf{T}$
 
 **a. Sudut $\mathbf{R}$ dan $\mathbf{S}$ ($\theta_{RS}$)**
 
-$$ \cos(\theta_{RS}) = \frac{\mathbf{R} \cdot \mathbf{S}}{|\mathbf{R}| |\mathbf{S}|} = \frac{13}{\sqrt{14} \times \sqrt{34}} \approx 0.5958 $$
-$$ \theta_{RS} = \arccos(0.5958) \approx 53.42^\circ $$
+$$
+\cos(\theta_{RS}) = \frac{\mathbf{R} \cdot \mathbf{S}}{|\mathbf{R}| |\mathbf{S}|} = \frac{13}{\sqrt{14} \times \sqrt{34}} \approx 0.5958
+$$
+
+$$
+\theta_{RS} = \arccos(0.5958) \approx 53.42^\circ
+$$
 
 **b. Sudut $\mathbf{S}$ dan $\mathbf{T}$ ($\theta_{ST}$)**
 
-$$ \mathbf{S} \cdot \mathbf{T} = (3)(2) + (5)(1) + (0)(-1) = 11 $$
-$$ \cos(\theta_{ST}) = \frac{\mathbf{S} \cdot \mathbf{T}}{|\mathbf{S}| |\mathbf{T}|} = \frac{11}{\sqrt{34} \times \sqrt{6}} \approx 0.7701 $$
-$$ \theta_{ST} = \arccos(0.7701) \approx 39.63^\circ $$
+$$
+\mathbf{S} \cdot \mathbf{T} = (3)(2) + (5)(1) + (0)(-1) = 11
+$$
+
+$$
+\cos(\theta_{ST}) = \frac{\mathbf{S} \cdot \mathbf{T}}{|\mathbf{S}| |\mathbf{T}|} = \frac{11}{\sqrt{34} \times \sqrt{6}} \approx 0.7701
+$$
+
+$$
+\theta_{ST} = \arccos(0.7701) \approx 39.63^\circ
+$$
 
 ---
 
@@ -188,12 +279,22 @@ b. Hitung pula $\frac{d\mathbf{W}}{dt}$ bila $x = st$ dan $y = s-t$ serta $z = 2
 
 Turunan parameter: $\frac{\partial x}{\partial t} = s$, $\frac{\partial y}{\partial t} = -1$, $\frac{\partial z}{\partial t} = 2$
 
-$$ \frac{d\mathbf{W}}{dt} = \left(\frac{\partial \mathbf{W}}{\partial x} \frac{\partial x}{\partial t}\right) + \left(\frac{\partial \mathbf{W}}{\partial y} \frac{\partial y}{\partial t}\right) + \left(\frac{\partial \mathbf{W}}{\partial z} \frac{\partial z}{\partial t}\right) $$
+$$
+\frac{d\mathbf{W}}{dt} = \left(\frac{\partial \mathbf{W}}{\partial x} \frac{\partial x}{\partial t}\right) + \left(\frac{\partial \mathbf{W}}{\partial y} \frac{\partial y}{\partial t}\right) + \left(\frac{\partial \mathbf{W}}{\partial z} \frac{\partial z}{\partial t}\right)
+$$
 
 Substitusikan nilai ke dalam rumus:
-$$ \frac{d\mathbf{W}}{dt} = (2x\mathbf{a}_x + y\mathbf{a}_y + y^2z\mathbf{a}_z)(s) - (2y\mathbf{a}_x + x\mathbf{a}_y + 2xyz\mathbf{a}_z) + (xy^2\mathbf{a}_z)(2) $$
 
-$$ \frac{d\mathbf{W}}{dt} = (2xs - 2y)\mathbf{a}_x + (ys - x)\mathbf{a}_y + (y^2zs - 2xyz + 2xy^2)\mathbf{a}_z $$
+$$
+\frac{d\mathbf{W}}{dt} = (2x\mathbf{a}_x + y\mathbf{a}_y + y^2z\mathbf{a}_z)(s) - (2y\mathbf{a}_x + x\mathbf{a}_y + 2xyz\mathbf{a}_z) + (xy^2\mathbf{a}_z)(2)
+$$
+
+$$
+\frac{d\mathbf{W}}{dt} = (2xs - 2y)\mathbf{a}_x + (ys - x)\mathbf{a}_y + (y^2zs - 2xyz + 2xy^2)\mathbf{a}_z
+$$
 
 Substitusikan $x = st$, $y = s-t$, $z = 2t$ untuk hasil akhir:
-$$ \frac{d\mathbf{W}}{dt} = (2s^2t - 2s + 2t)\mathbf{a}_x + (s^2 - 2st)\mathbf{a}_y + 4st(s - t)(s - 2t)\mathbf{a}_z $$
+
+$$
+\frac{d\mathbf{W}}{dt} = (2s^2t - 2s + 2t)\mathbf{a}_x + (s^2 - 2st)\mathbf{a}_y + 4st(s - t)(s - 2t)\mathbf{a}_z
+$$
