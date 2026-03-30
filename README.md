@@ -5,7 +5,7 @@
 [Notion](https://www.notion.so/Persiapan-UTS-Semester-2-32d85e83a64f80b2976be265dd71238c?source=copy_link)
 
 ### 1. [Praktikum Teknologi Mekanik](./01%20-%20Praktikum%20Teknologi%20Mekanik) (13:15:00-14:45:00)
-- *(Materi belum dirangkum)*
+- Tidak ada UTS Tertulis/Responsi
 
 ### 2. [Elektronika Digital](./02%20-%20Elektronika%20Digital/README.md) (08:00:00-09:40:00)
 - Sistem Bilangan (Number Systems)
@@ -17,7 +17,7 @@
 - Aritmatika Biner (Binary Arithmetic)
 
 ### 3. [Praktikum Instrumentasi dan Pengukuran](./03%20-%20Praktikum%20Instrumentasi%20dan%20Pengukuran) (13:15:00-14:45:00)
-- *(Materi belum dirangkum)*
+- Tidak ada UTS Tertulis/Responsi
 
 ### 4. [Matematika 2](./04%20-%20Matematika%202/README.md) (08:00:00-09:30:00)
 - Bilangan Imajiner dan Kompleks
@@ -35,7 +35,7 @@
 - Rumus-Rumus Inti dan Satuan
 - Contoh Soal dan Pembahasan Singkat
 
-### 7. [Praktikum Elektronika Digital](./07%20-%20Praktikum%20Elektronika%20Digital/README.md) (13:15:00-14:55:00) **(Tidak ada UTS)**
+### 7. [Praktikum Elektronika Digital](./07%20-%20Praktikum%20Elektronika%20Digital/README.md) (13:15:00-14:55:00)
 - Modul 1: Gerbang Logika Dasar (AND, OR, NOT)
 - Modul 2: Gerbang Logika Lanjutan (NAND, NOR, X-OR, X-NOR)
 - Modul 3-4: Rangkaian Paralel Adder (Penjumlah) & Subtractor
@@ -55,5 +55,5 @@
 - Mesin Arus Searah (DC)
 - Transformator (Trafo / Mesin Statis)
 
-### 10. [CAD dan CAM](./10%20-%20CAD%20dan%20CAM) (09:45:00-11:15:00) **(Tugas Besar)**
+### 10. [CAD dan CAM](./10%20-%20CAD%20dan%20CAM) (09:45:00-11:15:00)
 - Tugas Besar
