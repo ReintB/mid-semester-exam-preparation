@@ -15,7 +15,23 @@
 
 ## Tabel Referensi Tambahan
 
-### 1. Tabel Kebenaran XOR (Untuk Kode Gray)
+### 1. Nilai Biner untuk Desimal 0-10
+
+| Desimal | Biner (4-bit) |
+| :---: | :---: |
+| 0 | 0000 |
+| 1 | 0001 |
+| 2 | 0010 |
+| 3 | 0011 |
+| 4 | 0100 |
+| 5 | 0101 |
+| 6 | 0110 |
+| 7 | 0111 |
+| 8 | 1000 |
+| 9 | 1001 |
+| 10 | 1010 |
+
+### 2. Tabel Kebenaran XOR (Untuk Kode Gray)
 Operasi XOR menghasilkan nilai `1` jika kedua input **berbeda**, dan `0` jika kedua input **sama**.
 
 | Input 1 | Input 2 | Hasil (XOR) |
@@ -25,7 +41,7 @@ Operasi XOR menghasilkan nilai `1` jika kedua input **berbeda**, dan `0` jika ke
 | 1 | 0 | **1** |
 | 1 | 1 | **0** |
 
-### 2. Nilai Huruf Heksadesimal
+### 3. Nilai Huruf Heksadesimal
 | Heksadesimal | Nilai Desimal | Biner (4-bit) |
 | :---: | :---: | :---: |
 | **A** | 10 | 1010 |
@@ -56,8 +72,7 @@ Operasi XOR menghasilkan nilai `1` jika kedua input **berbeda**, dan `0` jika ke
 ### (a) Konversi 324 (Desimal)
 
 * **Desimal:** 324
-* **Biner:** 
-  - 324 / 2 = 162 sisa 0
+* **Biner:** - 324 / 2 = 162 sisa 0
   - 162 / 2 = 81 sisa 0
   - 81 / 2 = 40 sisa 1
   - 40 / 2 = 20 sisa 0
