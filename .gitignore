@@ -8,6 +8,5 @@ env/
 venv/
 ENV/
 
-convert_readmes.py
-add_navigation.py
+scripts/
 materi-pdf/
