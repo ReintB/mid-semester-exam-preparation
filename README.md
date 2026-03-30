@@ -5,7 +5,6 @@
 [Notion](https://www.notion.so/Persiapan-UTS-Semester-2-32d85e83a64f80b2976be265dd71238c?source=copy_link)
 
 ### 1. [Praktikum Teknologi Mekanik](./01%20-%20Praktikum%20Teknologi%20Mekanik) (13:15:00-14:45:00)
-- **Subfolder:** 📁 [latsol](./01%20-%20Praktikum%20Teknologi%20Mekanik/latsol) | 📁 [materi](./01%20-%20Praktikum%20Teknologi%20Mekanik/materi)
 - Tidak ada UTS Tertulis/Responsi
 
 ### 2. [Elektronika Digital](./02%20-%20Elektronika%20Digital/README.md) (08:00:00-09:40:00)
@@ -43,6 +42,7 @@
     - [progress-test-units-6-10.md](./05%20-%20Bahasa%20Inggris%20II/latsol/progress-test-units-6-10.md)
     - [progress-test-units-11-15.md](./05%20-%20Bahasa%20Inggris%20II/latsol/progress-test-units-11-15.md)
   - 📁 [materi](./05%20-%20Bahasa%20Inggris%20II/materi)
+    - [toefl-skill-1-25.pdf](./05%20-%20Bahasa%20Inggris%20II/materi/toefl/toefl-skill-1-25.pdf) 
 - Progress Test: Units 1 - 5
 - Progress Test: Units 6 - 10
 - Progress Test: Units 11 - 15
