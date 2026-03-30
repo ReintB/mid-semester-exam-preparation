@@ -9,7 +9,12 @@
 - Tidak ada UTS Tertulis/Responsi
 
 ### 2. [Elektronika Digital](./02%20-%20Elektronika%20Digital/README.md) (08:00:00-09:40:00)
-- **Subfolder:** 📁 [latsol](./02%20-%20Elektronika%20Digital/latsol) | 📁 [materi](./02%20-%20Elektronika%20Digital/materi)
+- **Subfolder:** 
+  - 📁 [latsol](./02%20-%20Elektronika%20Digital/latsol)
+    - [contohSoal.md](./02%20-%20Elektronika%20Digital/latsol/contohSoal.md)
+    - [latsol1.md](./02%20-%20Elektronika%20Digital/latsol/latsol1.md)
+    - [latsol2.md](./02%20-%20Elektronika%20Digital/latsol/latsol2.md)
+  - 📁 [materi](./02%20-%20Elektronika%20Digital/materi)
 - Sistem Bilangan (Number Systems)
 - Konversi Antar Bilangan
 - BCD (Binary-Coded Decimal)
@@ -22,14 +27,22 @@
 - Tidak ada UTS Tertulis/Responsi
 
 ### 4. [Matematika 2](./04%20-%20Matematika%202/README.md) (08:00:00-09:30:00)
-- **Subfolder:** 📁 [latsol](./04%20-%20Matematika%202/latsol) | 📁 [materi](./04%20-%20Matematika%202/materi)
+- **Subfolder:** 
+  - 📁 [latsol](./04%20-%20Matematika%202/latsol)
+    - [pembahasanTugas2dan3.md](./04%20-%20Matematika%202/latsol/pembahasanTugas2dan3.md)
+  - 📁 [materi](./04%20-%20Matematika%202/materi)
 - Bilangan Imajiner dan Kompleks
 - Vektor, Analisis Vektor, dan Turunan
 - Referensi: Tabel Sudut Istimewa Trigonometri
 - Contoh Soal dan Pembahasan
 
 ### 5. [Bahasa Inggris II](./05%20-%20Bahasa%20Inggris%20II) (08:00:00-08:50:00)
-- **Subfolder:** 📁 [latsol](./05%20-%20Bahasa%20Inggris%20II/latsol) | 📁 [materi](./05%20-%20Bahasa%20Inggris%20II/materi)
+- **Subfolder:** 
+  - 📁 [latsol](./05%20-%20Bahasa%20Inggris%20II/latsol)
+    - [progress-test-units-1-5.md](./05%20-%20Bahasa%20Inggris%20II/latsol/progress-test-units-1-5.md)
+    - [progress-test-units-6-10.md](./05%20-%20Bahasa%20Inggris%20II/latsol/progress-test-units-6-10.md)
+    - [progress-test-units-11-15.md](./05%20-%20Bahasa%20Inggris%20II/latsol/progress-test-units-11-15.md)
+  - 📁 [materi](./05%20-%20Bahasa%20Inggris%20II/materi)
 - Progress Test: Units 1 - 5
 - Progress Test: Units 6 - 10
 - Progress Test: Units 11 - 15
@@ -51,7 +64,10 @@
 - Modul 12 & 13: Rangkaian Counter (Pencacah / Penghitung)
 
 ### 8. [Instrumentasi dan Pengukuran](./08%20-%20Instrumentasi%20dan%20Pengukuran/README.md) (08:00:00-09:30:00)
-- **Subfolder:** 📁 [latsol](./08%20-%20Instrumentasi%20dan%20Pengukuran/latsol) | 📁 [materi](./08%20-%20Instrumentasi%20dan%20Pengukuran/materi)
+- **Subfolder:** 
+  - 📁 [latsol](./08%20-%20Instrumentasi%20dan%20Pengukuran/latsol)
+    - [tugasInstrumentasi1.md](./08%20-%20Instrumentasi%20dan%20Pengukuran/latsol/tugasInstrumentasi1.md)
+  - 📁 [materi](./08%20-%20Instrumentasi%20dan%20Pengukuran/materi)
 - Bab 1: Dasar Instrumentasi
 - Bab 2: [Modul Belum Ada]
 - Bab 3: Dasar Sensor dan Transduser
