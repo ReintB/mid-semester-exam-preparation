@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[bahasa]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{booktabs}
+\geometry{a4paper, margin=2cm}
+
+\title{\textbf{Ringkasan Materi Mekanika Fluida} \\ \large Persiapan UTS}
+\author{Reinhart Barus}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Konstanta dan Ketetapan Penting}
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Besaran} & \textbf{Simbol} & \textbf{Nilai Standar} & \textbf{Keterangan} \\ \midrule
+Gravitasi & $g$ & $9.8 \text{ m/s}^2$ & Standar permukaan laut \\
+Massa Jenis Air & $\rho_{\text{air}}$ & $1000 \text{ kg/m}^3$ atau $1 \text{ g/cm}^3$ & Pada suhu $4^\circ\text{C}$ \\
+Massa Jenis Udara & $\rho_{\text{udara}}$ & $1.29 \text{ kg/m}^3$ & Pada $0^\circ\text{C}, 1 \text{ atm}$ \\
+Massa Jenis Raksa & $\rho_{\text{Hg}}$ & $13.6 \times 10^3 \text{ kg/m}^3$ & Digunakan pada manometer \\
+Massa Jenis Darah & $\rho_{\text{darah}}$ & $1050 \text{ kg/m}^3$ & Aplikasi medis \\
+Tekanan Atmosfer & $P_{\text{atm}}$ & $1.013 \times 10^5 \text{ Pa}$ & $1 \text{ atm} = 760 \text{ mmHg} = 760 \text{ torr}$ \\
+Viskositas Darah & $\eta_{\text{darah}}$ & $4.0 \times 10^{-3} \text{ Pa}\cdot\text{s}$ & Viskositas fluida nyata \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Statika Fluida (Fluida Diam)}
+
+\subsection{Tekanan dan Kedalaman}
+\begin{itemize}
+    \item \textbf{Massa Jenis:} $\rho = \frac{m}{V}$
+    \item \textbf{Tekanan Hidrostatis:} $P = \rho g h$ \\
+    (Tekanan berbanding lurus dengan massa jenis, gravitasi, dan kedalaman vertikal).
+    \item \textbf{Tekanan Absolut:} $P_{\text{abs}} = P_{\text{atm}} + P_{\text{ukur}}$ \\
+    ($P_{\text{ukur}}$ atau \textit{gauge pressure} adalah tekanan yang terbaca pada alat ukur).
+\end{itemize}
+
+\subsection{Hukum Pascal dan Archimedes}
+\begin{itemize}
+    \item \textbf{Hukum Pascal:} $\frac{F_1}{A_1} = \frac{F_2}{A_2}$ \\
+    Tekanan yang diberikan pada fluida tertutup diteruskan ke segala arah dengan sama besar.
+    \item \textbf{Gaya Apung (Archimedes):} $F_B = \rho_f V_{\text{tercelup}} g$ \\
+    Gaya ke atas yang dialami benda sama dengan berat fluida yang dipindahkan.
+    \item \textbf{Kondisi Mengapung/Tenggelam:}
+    \begin{itemize}
+        \item Mengapung: $\rho_{\text{benda}} < \rho_{\text{fluida}}$
+        \item Melayang: $\rho_{\text{benda}} = \rho_{\text{fluida}}$
+        \item Tenggelam: $\rho_{\text{benda}} > \rho_{\text{fluida}}$
+    \end{itemize}
+\end{itemize}
+
+\section{Dinamika Fluida (Fluida Bergerak)}
+
+\subsection{Persamaan Kontinuitas}
+\begin{itemize}
+    \item \textbf{Debit ($Q$):} $Q = \frac{V}{t} = A \cdot v$ (Satuan: $\text{m}^3/\text{s}$)
+    \item \textbf{Kontinuitas:} $A_1 v_1 = A_2 v_2$ \\
+    Fluida yang tidak termampatkan memiliki debit yang sama di setiap titik.
+\end{itemize}
+
+\subsection{Persamaan Bernoulli}
+$$P + \frac{1}{2}\rho v^2 + \rho gh = \text{Konstan}$$
+\begin{itemize}
+    \item \textbf{Teorema Torricelli:} $v = \sqrt{2gh}$ (Kecepatan semburan lubang bocor pada tangki).
+    \item \textbf{Gaya Angkat Sayap:} $F_L = \Delta P \cdot A = \frac{1}{2}\rho (v_{\text{atas}}^2 - v_{\text{bawah}}^2) A$
+\end{itemize}
+
+\section{Fluida Nyata (Viskositas)}
+
+\subsection{Persamaan Poiseuille}
+Menghitung debit aliran fluida kental dalam pipa silindris:
+$$Q = \frac{\pi r^4 \Delta P}{8 \eta L}$$
+\textit{Penting: Debit sangat sensitif terhadap perubahan jari-jari pipa ($r^4$).}
+
+\subsection{Bilangan Reynolds ($Re$)}
+Menentukan jenis aliran (Laminar atau Turbulen):
+$$Re = \frac{2 \bar{v} r \rho}{\eta}$$
+\begin{itemize}
+    \item $Re < 2000$: Aliran Laminar (mulus).
+    \item $Re > 2000$: Aliran Turbulen (bergejolak).
+\end{itemize}
+
+\section{Tegangan Permukaan}
+\begin{itemize}
+    \item \textbf{Rumus Dasar:} $\gamma = \frac{F}{L}$ (Satuan: $\text{N/m}$)
+    \item \textbf{Selaput Tipis (Sabun/Kawat):} $F = 2 \gamma \ell$ (Karena memiliki dua sisi permukaan).
+    \item \textbf{Cincin/Platina:} $F = \gamma (4 \pi r)$ (Kontinuitas permukaan dalam dan luar).
+\end{itemize}
+
+\end{document}

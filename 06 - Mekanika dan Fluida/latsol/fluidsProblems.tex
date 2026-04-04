@@ -1,0 +1,918 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[bahasa]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+
+\title{Latihan Soal Mekanika Fluida \\ \large Berdasarkan \textit{Physics: Principles with Applications} (Giancoli, Bab 10)}
+\author{Rangkuman \& Penyelesaian}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Statika Fluida: Densitas dan Tekanan}
+
+\begin{enumerate}
+
+    % Soal 1
+    \item \textbf{Soal:} Perkiraan volume monolit granit yang dikenal sebagai El Capitan di Taman Nasional Yosemite adalah sekitar $10^8 \text{ m}^3$. Berapa perkiraan massanya? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item Volume ($V$) = $10^8 \text{ m}^3$
+        \item Massa jenis granit ($\rho$) = $2.7 \times 10^3 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} Massa ($m$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        m &= \rho V \\
+        m &= (2.7 \times 10^3 \text{ kg/m}^3)(10^8 \text{ m}^3) \\
+        m &= 2.7 \times 10^{11} \text{ kg}
+    \end{align*}
+
+    % Soal 2
+    \item \textbf{Soal:} Berapa perkiraan massa udara di sebuah ruang tamu berukuran $5.6 \text{ m} \times 3.6 \text{ m} \times 2.4 \text{ m}$? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item Dimensi ruangan = $5.6 \text{ m} \times 3.6 \text{ m} \times 2.4 \text{ m}$
+        \item Massa jenis udara ($\rho$) = $1.29 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} Massa ($m$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V &= 5.6 \times 3.6 \times 2.4 = 48.384 \text{ m}^3 \\
+        m &= \rho V \\
+        m &= (1.29 \text{ kg/m}^3)(48.384 \text{ m}^3) \\
+        m &\approx 62.4 \text{ kg}
+    \end{align*}
+
+    % Soal 3
+    \item \textbf{Soal:} Jika Anda mencoba menyelundupkan batangan emas dengan mengisi ransel Anda, yang dimensinya $54 \text{ cm} \times 31 \text{ cm} \times 22 \text{ cm}$, berapakah massanya? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item Dimensi ransel = $0.54 \text{ m} \times 0.31 \text{ m} \times 0.22 \text{ m}$
+        \item Massa jenis emas ($\rho$) = $19.3 \times 10^3 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} Massa ($m$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V &= 0.54 \times 0.31 \times 0.22 = 0.036828 \text{ m}^3 \\
+        m &= \rho V \\
+        m &= (19300 \text{ kg/m}^3)(0.036828 \text{ m}^3) \\
+        m &\approx 710.8 \text{ kg}
+    \end{align*}
+
+    % Soal 4
+    \item \textbf{Soal:} Nyatakan massa Anda dan kemudian perkirakan volume Anda. \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item Massa tubuh asumsi ($m$) = $65 \text{ kg}$
+        \item Massa jenis tubuh ($\rho$) $\approx$ massa jenis air = $1000 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} Volume ($V$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V &= \frac{m}{\rho} \\
+        V &= \frac{65 \text{ kg}}{1000 \text{ kg/m}^3} \\
+        V &= 0.065 \text{ m}^3
+    \end{align*}
+
+    % Soal 5
+    \item \textbf{Soal:} Sebuah botol memiliki massa 35.00 g saat kosong dan 98.44 g saat diisi air. Ketika diisi fluida lain, massanya 89.22 g. Berapakah gravitasi spesifik fluida tersebut? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item Massa botol kosong = $35.00 \text{ g}$
+        \item Massa botol + air = $98.44 \text{ g}$
+        \item Massa botol + fluida = $89.22 \text{ g}$
+    \end{itemize}
+    \textbf{Ditanya:} Gravitasi Spesifik ($SG$) fluida \\
+    \textbf{Jawab:}
+    \begin{align*}
+        m_{\text{air}} &= 98.44 - 35.00 = 63.44 \text{ g} \\
+        m_{\text{fluida}} &= 89.22 - 35.00 = 54.22 \text{ g} \\
+        SG &= \frac{m_{\text{fluida}}}{m_{\text{air}}} \\
+        SG &= \frac{54.22}{63.44} \approx 0.8547
+    \end{align*}
+
+    % Soal 6
+    \item \textbf{Soal:} Jika 4.0 L larutan antibeku ($SG = 0.80$) ditambahkan ke 5.0 L air untuk membuat 9.0 L campuran, berapakah gravitasi spesifik campuran? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item $V_1 = 4.0 \text{ L}$, $\rho_1 = 0.80 \text{ kg/L}$
+        \item $V_2 = 5.0 \text{ L}$, $\rho_2 = 1.0 \text{ kg/L}$
+        \item $V_{\text{campuran}} = 9.0 \text{ L}$
+    \end{itemize}
+    \textbf{Ditanya:} $SG$ campuran \\
+    \textbf{Jawab:}
+    \begin{align*}
+        m_1 &= \rho_1 V_1 = (0.80)(4.0) = 3.2 \text{ kg} \\
+        m_2 &= \rho_2 V_2 = (1.0)(5.0) = 5.0 \text{ kg} \\
+        m_{\text{total}} &= 3.2 + 5.0 = 8.2 \text{ kg} \\
+        \rho_{\text{campuran}} &= \frac{m_{\text{total}}}{V_{\text{campuran}}} = \frac{8.2}{9.0} \approx 0.911 \text{ kg/L}
+    \end{align*}
+    Jadi, $SG$ campuran adalah $0.91$.
+
+    % Soal 7
+    \item \textbf{Soal:} Tinjau model sederhana Bumi yang dibagi tiga wilayah (Inti dalam, luar, mantel). (a) Prediksi densitas rata-rata. (b) Bandingkan dengan densitas aktual jika $R = 6380 \text{ km}$ dan $M = 5.98 \times 10^{24} \text{ kg}$. \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item $r_1=1220 \text{ km}$, $\rho_1=13000 \text{ kg/m}^3$
+        \item $r_2=3480 \text{ km}$, $\rho_2=11100 \text{ kg/m}^3$
+        \item $r_3=6380 \text{ km}$, $\rho_3=4400 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} (a) $\rho_{\text{model}}$, (b) \% perbedaan dengan aktual. \\
+    \textbf{Jawab:}
+    \begin{align*}
+        m_1 &= 13000 \times \frac{4}{3}\pi (1.22 \times 10^6)^3 \approx 0.0989 \times 10^{24} \text{ kg} \\
+        m_2 &= 11100 \times \frac{4}{3}\pi \left((3.48 \times 10^6)^3 - (1.22 \times 10^6)^3\right) \approx 1.875 \times 10^{24} \text{ kg} \\
+        m_3 &= 4400 \times \frac{4}{3}\pi \left((6.38 \times 10^6)^3 - (3.48 \times 10^6)^3\right) \approx 4.010 \times 10^{24} \text{ kg} \\
+        M_{\text{model}} &= 5.984 \times 10^{24} \text{ kg} \\
+        V_{\text{total}} &= \frac{4}{3}\pi (6.38 \times 10^6)^3 \approx 1.088 \times 10^{21} \text{ m}^3 \\
+        \rho_{\text{model}} &= \frac{5.984 \times 10^{24}}{1.088 \times 10^{21}} \approx 5500 \text{ kg/m}^3 \\
+        \rho_{\text{aktual}} &= \frac{5.98 \times 10^{24}}{1.088 \times 10^{21}} \approx 5496 \text{ kg/m}^3 \\
+        \% \text{ Beda} &= \frac{|5500 - 5496|}{5496} \times 100\% \approx 0.07\%
+    \end{align*}
+
+    % Soal 8
+    \item \textbf{Soal:} Perkirakan tekanan yang dibutuhkan untuk menaikkan kolom air hingga ketinggian pohon pinus 46 m. \\
+    \textbf{Diketahui:} $h = 46 \text{ m}$, $\rho = 1000 \text{ kg/m}^3$, $g = 9.8 \text{ m/s}^2$. \\
+    \textbf{Ditanya:} Tekanan ($P$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P &= \rho g h \\
+        P &= (1000)(9.8)(46) \\
+        P &= 450800 \text{ Pa} = 4.5 \times 10^5 \text{ Pa}
+    \end{align*}
+
+    % Soal 9
+    \item \textbf{Soal:} Perkirakan tekanan ke lantai oleh (a) hak sepatu runcing $0.45 \text{ cm}^2$, (b) hak lebar $16 \text{ cm}^2$ dari orang bermassa 56 kg. \\
+    \textbf{Diketahui:} $m = 56 \text{ kg}$, $A_a = 0.45 \times 10^{-4} \text{ m}^2$, $A_b = 16 \times 10^{-4} \text{ m}^2$. \\
+    \textbf{Ditanya:} $P_a$ dan $P_b$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        F &= mg = 56 \times 9.8 = 548.8 \text{ N} \\
+        P_a &= \frac{F}{A_a} = \frac{548.8}{0.45 \times 10^{-4}} \approx 1.22 \times 10^7 \text{ Pa} \\
+        P_b &= \frac{F}{A_b} = \frac{548.8}{16 \times 10^{-4}} \approx 3.43 \times 10^5 \text{ Pa}
+    \end{align*}
+
+    % Soal 10
+    \item \textbf{Soal:} Berapakah perbedaan tekanan darah (dalam mm-Hg) antara kepala dan kaki orang setinggi 1.75 m yang berdiri tegak? \\
+    \textbf{Diketahui:} $h = 1.75 \text{ m}$, $\rho_{\text{darah}} = 1.05 \times 10^3 \text{ kg/m}^3$, $1 \text{ atm} = 1.013 \times 10^5 \text{ Pa} = 760 \text{ mm-Hg}$. \\
+    \textbf{Ditanya:} $\Delta P$ dalam mm-Hg \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Delta P (\text{Pa}) &= \rho g h \\
+        \Delta P &= (1.05 \times 10^3)(9.8)(1.75) = 18007.5 \text{ Pa} \\
+        \Delta P (\text{mm-Hg}) &= 18007.5 \times \left( \frac{760}{1.013 \times 10^5} \right) \approx 135 \text{ mm-Hg}
+    \end{align*}
+
+    % Soal 11
+    \item \textbf{Soal:} (a) Hitung total gaya dari atmosfer yang bekerja pada permukaan atas meja yang berukuran $1.7 \text{ m} \times 2.6 \text{ m}$. (b) Berapakah total gaya yang bekerja ke atas pada bagian bawah meja? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item $P_{\text{atm}} = 1.013 \times 10^5 \text{ Pa}$
+        \item $A = 1.7 \text{ m} \times 2.6 \text{ m} = 4.42 \text{ m}^2$
+    \end{itemize}
+    \textbf{Ditanya:} (a) Gaya ke bawah ($F_{\text{bawah}}$), (b) Gaya ke atas ($F_{\text{atas}}$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(a) } F_{\text{bawah}} &= P_{\text{atm}} A \\
+        F_{\text{bawah}} &= (1.013 \times 10^5 \text{ Pa})(4.42 \text{ m}^2) \approx 4.48 \times 10^5 \text{ N} \\
+        \text{(b) } F_{\text{atas}} &= F_{\text{bawah}} = 4.48 \times 10^5 \text{ N} \quad \text{(karena fluida menekan ke segala arah)}
+    \end{align*}
+
+    % Soal 12
+    \item \textbf{Soal:} Seberapa tinggikah level cairan dalam barometer alkohol pada tekanan atmosfer normal? \\
+    \textbf{Diketahui:} 
+    \begin{itemize}
+        \item $P_{\text{atm}} = 1.013 \times 10^5 \text{ Pa}$
+        \item Massa jenis alkohol ($\rho_{\text{alkohol}}$) = $0.79 \times 10^3 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} Tinggi kolom alkohol ($h$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_{\text{atm}} &= \rho g h \\
+        h &= \frac{P_{\text{atm}}}{\rho g} \\
+        h &= \frac{1.013 \times 10^5}{(0.79 \times 10^3)(9.8)} \approx 13.1 \text{ m}
+    \end{align*}
+
+    % Soal 13
+    \item \textbf{Soal:} Perbedaan tekanan maksimum yang dapat ditangani paru-paru Tarzan untuk bernapas dalam air adalah $-85 \text{ mm-Hg}$. Hitung kedalaman maksimum ia bisa berada. \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item $\Delta P = 85 \text{ mm-Hg} = 85 \times \left(\frac{1.013 \times 10^5}{760}\right) \approx 11330 \text{ Pa}$
+        \item Massa jenis air ($\rho_{\text{air}}$) = $1000 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} Kedalaman maksimum ($h$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Delta P &= \rho g h \\
+        h &= \frac{\Delta P}{\rho g} \\
+        h &= \frac{11330}{(1000)(9.8)} \approx 1.16 \text{ m}
+    \end{align*}
+
+    % Soal 14
+    \item \textbf{Soal:} Tekanan ukur maksimum pada lift hidrolik adalah 17.0 atm. Berapa massa kendaraan terbesar yang dapat diangkat jika diameter saluran keluar adalah 25.5 cm? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item $P = 17.0 \text{ atm} = 17.0 \times 1.013 \times 10^5 \text{ Pa} = 1.722 \times 10^6 \text{ Pa}$
+        \item $d = 25.5 \text{ cm} \implies r = 0.1275 \text{ m}$
+    \end{itemize}
+    \textbf{Ditanya:} Massa maksimum kendaraan ($m$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        A &= \pi r^2 = \pi (0.1275)^2 \approx 0.05107 \text{ m}^2 \\
+        mg &= P A \\
+        m &= \frac{PA}{g} = \frac{(1.722 \times 10^6)(0.05107)}{9.8} \approx 8975 \text{ kg}
+    \end{align*}
+
+    % Soal 15
+    \item \textbf{Soal:} Tekanan ukur keempat ban mobil adalah 240 kPa. Jejak area tiap ban adalah $190 \text{ cm}^2$. Perkirakan massa mobil. \\
+    \textbf{Diketahui:} 
+    \begin{itemize}
+        \item $P = 240 \text{ kPa} = 2.4 \times 10^5 \text{ Pa}$
+        \item Luas satu ban ($A_{\text{satu}}$) = $190 \text{ cm}^2 = 0.019 \text{ m}^2$
+        \item Jumlah ban = 4
+    \end{itemize}
+    \textbf{Ditanya:} Massa mobil ($m$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        A_{\text{total}} &= 4 \times 0.019 \text{ m}^2 = 0.076 \text{ m}^2 \\
+        F &= P A_{\text{total}} \\
+        mg &= P A_{\text{total}} \\
+        m &= \frac{(2.4 \times 10^5)(0.076)}{9.8} \approx 1861 \text{ kg}
+    \end{align*}
+
+    % Soal 16
+    \item \textbf{Soal:} (a) Tentukan total gaya dan tekanan absolut di dasar kolam $28.0 \text{ m} \times 8.5 \text{ m}$ dengan kedalaman 1.8 m. (b) Berapa tekanan pada sisi kolam di dekat dasar? \\
+    \textbf{Diketahui:} 
+    \begin{itemize}
+        \item Luas dasar ($A$) = $28.0 \times 8.5 = 238 \text{ m}^2$
+        \item Kedalaman ($h$) = $1.8 \text{ m}$
+        \item $\rho = 1000 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} (a) $P_{\text{abs}}$ dan $F$ di dasar, (b) $P_{\text{sisi}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(a) } P_{\text{abs}} &= P_{\text{atm}} + \rho g h \\
+        P_{\text{abs}} &= 101300 + (1000)(9.8)(1.8) \\
+        P_{\text{abs}} &= 101300 + 17640 = 118940 \text{ Pa} \approx 1.19 \times 10^5 \text{ Pa} \\
+        F &= P_{\text{abs}} A = (118940)(238) \approx 2.83 \times 10^7 \text{ N} \\
+        \text{(b) } P_{\text{sisi}} &= P_{\text{abs}} = 1.19 \times 10^5 \text{ Pa} \quad \text{(Hukum Pascal)}
+    \end{align*}
+
+    % Soal 17
+    \item \textbf{Soal:} Sebuah rumah di dasar bukit dialiri tangki air sedalam 6.0 m yang terhubung pipa 75 m dengan sudut $61^\circ$. (a) Tentukan tekanan ukur air di rumah. (b) Tinggi air menyembur. \\
+    \textbf{Diketahui:} 
+    \begin{itemize}
+        \item $h_{\text{tangki}} = 6.0 \text{ m}$
+        \item $L = 75 \text{ m}, \quad \theta = 61^\circ$
+        \item $\rho = 1000 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} (a) $P_{\text{ukur}}$, (b) $h_{\text{sembur}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        h_{\text{pipa}} &= L \sin\theta = 75 \sin(61^\circ) \approx 65.6 \text{ m} \\
+        h_{\text{total}} &= h_{\text{tangki}} + h_{\text{pipa}} = 6.0 + 65.6 = 71.6 \text{ m} \\
+        \text{(a) } P_{\text{ukur}} &= \rho g h_{\text{total}} = (1000)(9.8)(71.6) \approx 7.02 \times 10^5 \text{ Pa} \\
+        \text{(b) } h_{\text{sembur}} &= h_{\text{total}} = 71.6 \text{ m}
+    \end{align*}
+
+    % Soal 18
+    \item \textbf{Soal:} Air dan minyak tak bercampur dalam pipa U. Tinggi kolom minyak 27.2 cm, beda tinggi permukaan 8.62 cm. Berapa massa jenis minyak? \\
+    \textbf{Diketahui:} 
+    \begin{itemize}
+        \item $h_{\text{minyak}} = 27.2 \text{ cm}$
+        \item $h_{\text{air}} = 27.2 - 8.62 = 18.58 \text{ cm}$
+    \end{itemize}
+    \textbf{Ditanya:} $\rho_{\text{minyak}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_a &= P_b \\
+        \rho_{\text{minyak}} g h_{\text{minyak}} &= \rho_{\text{air}} g h_{\text{air}} \\
+        \rho_{\text{minyak}} (27.2) &= (1000)(18.58) \\
+        \rho_{\text{minyak}} &= \frac{18580}{27.2} \approx 683 \text{ kg/m}^3
+    \end{align*}
+
+    % Soal 19
+    \item \textbf{Soal:} Seberapa tinggi atmosfer membentang jika memiliki massa jenis seragam sebesar setengah dari massa jenis saat ini di permukaan laut? \\
+    \textbf{Diketahui:} 
+    \begin{itemize}
+        \item $P_{\text{atm}} = 1.013 \times 10^5 \text{ Pa}$
+        \item $\rho_{\text{baru}} = 0.5 \times 1.29 \text{ kg/m}^3 = 0.645 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} Ketinggian rata-rata ($h$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_{\text{atm}} &= \rho_{\text{baru}} g h \\
+        h &= \frac{P_{\text{atm}}}{\rho_{\text{baru}} g} \\
+        h &= \frac{101300}{(0.645)(9.8)} \approx 16026 \text{ m} = 16.0 \text{ km}
+    \end{align*}
+
+    % Soal 20
+    \item \textbf{Soal:} Tentukan tekanan ukur minimum yang dibutuhkan pada pipa air agar air dapat keluar dari keran 44 m di atas pipa tersebut. \\
+    \textbf{Diketahui:} $h = 44 \text{ m}$, $\rho = 1000 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} Tekanan ukur minimum ($P_{\text{ukur}}$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_{\text{ukur}} &= \rho g h \\
+        P_{\text{ukur}} &= (1000)(9.8)(44) \\
+        P_{\text{ukur}} &= 431200 \text{ Pa} \approx 4.31 \times 10^5 \text{ Pa}
+    \end{align*}
+
+    % Soal 21
+    \item \textbf{Soal:} Sebuah alat pres hidrolik memiliki silinder besar ($d = 10.0 \text{ cm}$) dan kecil ($d = 2.0 \text{ cm}$). Sampel pada silinder besar memiliki luas $4.0 \text{ cm}^2$. Berapakah tekanan pada sampel jika gaya 320 N diberikan pada tuas (dengan lengan beban tuas $2\ell$ dan $\ell$)? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item $d_2 = 10.0 \text{ cm} \implies r_2 = 5.0 \text{ cm}$, \quad $d_1 = 2.0 \text{ cm} \implies r_1 = 1.0 \text{ cm}$
+        \item $A_{\text{sampel}} = 4.0 \text{ cm}^2 = 4.0 \times 10^{-4} \text{ m}^2$
+        \item $F_{\text{tuas}} = 320 \text{ N}$
+    \end{itemize}
+    \textbf{Ditanya:} Tekanan pada sampel ($P_{\text{sampel}}$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Sigma \tau &= 0 \implies F_{\text{tuas}} (2\ell) = F_1 (\ell) \\
+        F_1 &= 2 \times 320 = 640 \text{ N} \\
+        \frac{F_1}{A_1} &= \frac{F_2}{A_2} \implies F_2 = F_1 \left( \frac{d_2}{d_1} \right)^2 \\
+        F_2 &= 640 \left( \frac{10.0}{2.0} \right)^2 = 640 \times 25 = 16000 \text{ N} \\
+        P_{\text{sampel}} &= \frac{F_2}{A_{\text{sampel}}} = \frac{16000}{4.0 \times 10^{-4}} = 4.0 \times 10^7 \text{ Pa}
+    \end{align*}
+
+    % Soal 22
+    \item \textbf{Soal:} Sebuah manometer raksa tabung terbuka mengukur tekanan tangki oksigen. $P_{\text{atm}} = 1040 \text{ mbar}$. Berapa $P_{\text{abs}}$ (Pa) jika raksa di tabung terbuka (a) 18.5 cm lebih tinggi, (b) 5.6 cm lebih rendah? \\
+    \textbf{Diketahui:}
+    \begin{itemize}
+        \item $P_{\text{atm}} = 1040 \text{ mbar} = 104000 \text{ Pa}$
+        \item $\rho = 13.6 \times 10^3 \text{ kg/m}^3$
+    \end{itemize}
+    \textbf{Ditanya:} (a) $P_{\text{abs}}$ jika $h = 0.185 \text{ m}$, (b) $P_{\text{abs}}$ jika $h = -0.056 \text{ m}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(a) } P_{\text{abs}} &= P_{\text{atm}} + \rho g h_a \\
+        P_{\text{abs}} &= 104000 + (13.6 \times 10^3)(9.8)(0.185) \\
+        P_{\text{abs}} &= 104000 + 24656.8 \approx 128657 \text{ Pa} \approx 1.29 \times 10^5 \text{ Pa} \\
+        \text{(b) } P_{\text{abs}} &= P_{\text{atm}} - \rho g h_b \\
+        P_{\text{abs}} &= 104000 - (13.6 \times 10^3)(9.8)(0.056) \\
+        P_{\text{abs}} &= 104000 - 7464.96 \approx 96535 \text{ Pa} \approx 9.65 \times 10^4 \text{ Pa}
+    \end{align*}
+
+\section*{Gaya Apung dan Prinsip Archimedes}
+
+    % Soal 23
+    \item \textbf{Soal:} Berapa bagian dari sepotong besi yang akan tercelup ketika mengapung di atas raksa? \\
+    \textbf{Diketahui:} $\rho_{\text{besi}} = 7800 \text{ kg/m}^3$, $\rho_{\text{raksa}} = 13600 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} Fraksi tercelup ($V_{\text{tercelup}} / V_{\text{total}}$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        F_B &= W \\
+        \rho_{\text{raksa}} V_{\text{tercelup}} g &= \rho_{\text{besi}} V_{\text{total}} g \\
+        \frac{V_{\text{tercelup}}}{V_{\text{total}}} &= \frac{\rho_{\text{besi}}}{\rho_{\text{raksa}}} = \frac{7800}{13600} \approx 0.573
+    \end{align*}
+
+    % Soal 24
+    \item \textbf{Soal:} Batu Bulan 9.28 kg memiliki massa semu 6.18 kg dalam air. Berapa massa jenisnya? \\
+    \textbf{Diketahui:} $m = 9.28 \text{ kg}$, $m_{\text{semu}} = 6.18 \text{ kg}$, $\rho_{\text{air}} = 1000 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $\rho_{\text{batu}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        m_{\text{air\_dipindahkan}} &= m - m_{\text{semu}} = 9.28 - 6.18 = 3.10 \text{ kg} \\
+        V_{\text{batu}} &= \frac{m_{\text{air\_dipindahkan}}}{\rho_{\text{air}}} = \frac{3.10}{1000} = 0.0031 \text{ m}^3 \\
+        \rho_{\text{batu}} &= \frac{m}{V_{\text{batu}}} = \frac{9.28}{0.0031} \approx 2993.5 \text{ kg/m}^3
+    \end{align*}
+
+    % Soal 25
+    \item \textbf{Soal:} Derek mengangkat lambung kapal baja 18000 kg. Tentukan tegangan kabel saat (a) sepenuhnya tercelup, (b) keluar dari air. \\
+    \textbf{Diketahui:} $m = 18000 \text{ kg}$, $\rho_{\text{baja}} = 7800 \text{ kg/m}^3$, $\rho_{\text{air}} = 1000 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $T_{\text{air}}$ dan $T_{\text{udara}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V &= \frac{m}{\rho_{\text{baja}}} = \frac{18000}{7800} \approx 2.308 \text{ m}^3 \\
+        \text{(a) } T_{\text{air}} &= W - F_B = mg - \rho_{\text{air}} V g \\
+        T_{\text{air}} &= (18000)(9.8) - (1000)(2.308)(9.8) \\
+        T_{\text{air}} &= 176400 - 22618.4 \approx 153782 \text{ N} \\
+        \text{(b) } T_{\text{udara}} &= W = 176400 \text{ N}
+    \end{align*}
+
+    % Soal 26
+    \item \textbf{Soal:} Balon bola ($r = 7.15 \text{ m}$) diisi helium. Massa struktur 930 kg. Berapa kargo maksimal yang dapat diangkat? \\
+    \textbf{Diketahui:} $r = 7.15 \text{ m}$, $m_{\text{struktur}} = 930 \text{ kg}$, $\rho_{\text{He}} = 0.179 \text{ kg/m}^3$, $\rho_{\text{udara}} = 1.29 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $m_{\text{kargo}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V &= \frac{4}{3} \pi r^3 = \frac{4}{3} \pi (7.15)^3 \approx 1531 \text{ m}^3 \\
+        F_B &= W_{\text{total}} \\
+        \rho_{\text{udara}} V g &= (m_{\text{struktur}} + \rho_{\text{He}} V + m_{\text{kargo}}) g \\
+        m_{\text{kargo}} &= V(\rho_{\text{udara}} - \rho_{\text{He}}) - m_{\text{struktur}} \\
+        m_{\text{kargo}} &= 1531(1.29 - 0.179) - 930 \\
+        m_{\text{kargo}} &= 1700.94 - 930 \approx 771 \text{ kg}
+    \end{align*}
+
+    % Soal 27
+    \item \textbf{Soal:} Apa identitas logam jika sampel bermassa 63.5 g di udara dan 55.4 g di air? \\
+    \textbf{Diketahui:} $m = 63.5 \text{ g}$, $m_{\text{semu}} = 55.4 \text{ g}$, $\rho_{\text{air}} = 1.00 \text{ g/cm}^3$. \\
+    \textbf{Ditanya:} $\rho_{\text{logam}}$ dan identitasnya \\
+    \textbf{Jawab:}
+    \begin{align*}
+        m_{\text{air\_dipindahkan}} &= 63.5 - 55.4 = 8.1 \text{ g} \\
+        V &= \frac{8.1 \text{ g}}{1.00 \text{ g/cm}^3} = 8.1 \text{ cm}^3 \\
+        \rho_{\text{logam}} &= \frac{63.5}{8.1} \approx 7.84 \text{ g/cm}^3 = 7840 \text{ kg/m}^3
+    \end{align*}
+    Berdasarkan tabel, massa jenis ini sesuai dengan Besi (Iron) atau Baja (Steel).
+
+    % Soal 28
+    \item \textbf{Soal:} Hitung massa sebenarnya (dalam vakum) dari aluminium yang massa semunya 4.0000 kg di udara. \\
+    \textbf{Diketahui:} $m_{\text{semu}} = 4.0000 \text{ kg}$, $\rho_{\text{Al}} = 2700 \text{ kg/m}^3$, $\rho_{\text{udara}} = 1.29 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $m_{\text{asli}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        W_{\text{semu}} &= W_{\text{asli}} - F_B \\
+        m_{\text{semu}} &= m_{\text{asli}} - \rho_{\text{udara}} \left( \frac{m_{\text{asli}}}{\rho_{\text{Al}}} \right) \\
+        4.0000 &= m_{\text{asli}} \left( 1 - \frac{1.29}{2700} \right) \\
+        m_{\text{asli}} &= \frac{4.0000}{0.999522} \approx 4.0019 \text{ kg}
+    \end{align*}
+
+    % Soal 29
+    \item \textbf{Soal:} Drum baja 210-L penuh bensin. Berapa volume total baja agar drum mengapung di air tawar? \\
+    \textbf{Diketahui:} $V_{\text{bensin}} = 0.210 \text{ m}^3$, $\rho_{\text{bensin}} = 680 \text{ kg/m}^3$, $\rho_{\text{baja}} = 7800 \text{ kg/m}^3$, $\rho_{\text{air}} = 1000 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $V_{\text{baja}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        F_B &= W_{\text{bensin}} + W_{\text{baja}} \\
+        \rho_{\text{air}} (V_{\text{bensin}} + V_{\text{baja}}) g &= \rho_{\text{bensin}} V_{\text{bensin}} g + \rho_{\text{baja}} V_{\text{baja}} g \\
+        V_{\text{baja}} (\rho_{\text{baja}} - \rho_{\text{air}}) &= V_{\text{bensin}} (\rho_{\text{air}} - \rho_{\text{bensin}}) \\
+        V_{\text{baja}} &= 0.210 \left( \frac{1000 - 680}{7800 - 1000} \right) \\
+        V_{\text{baja}} &= 0.210 \left( \frac{320}{6800} \right) \approx 0.00988 \text{ m}^3
+    \end{align*}
+
+    % Soal 30
+    \item \textbf{Soal:} Penyelam 72.8 kg memindahkan air 69.6 L. (a) Gaya apung di air laut? (b) Tenggelam atau mengapung? \\
+    \textbf{Diketahui:} $m = 72.8 \text{ kg}$, $V = 0.0696 \text{ m}^3$, $\rho_{\text{laut}} = 1025 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} (a) $F_B$, (b) Status \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(a) } F_B &= \rho_{\text{laut}} V g \\
+        F_B &= (1025)(0.0696)(9.8) \approx 699 \text{ N} \\
+        \text{(b) } W &= mg = 72.8 \times 9.8 = 713.44 \text{ N}
+    \end{align*}
+    Karena $W > F_B$ ($713.44 \text{ N} > 699 \text{ N}$), maka penyelam akan tenggelam.
+
+    % Soal 31
+    \item \textbf{Soal:} Gravitasi spesifik es adalah 0.917, air laut 1.025. Berapa persen gunung es di atas permukaan air? \\
+    \textbf{Diketahui:} $\rho_{\text{es}} = 0.917 \text{ kg/L}$, $\rho_{\text{laut}} = 1.025 \text{ kg/L}$. \\
+    \textbf{Ditanya:} Persentase volume di atas air (\% $V_{\text{atas}}$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \frac{V_{\text{bawah}}}{V_{\text{total}}} &= \frac{\rho_{\text{es}}}{\rho_{\text{laut}}} = \frac{0.917}{1.025} \approx 0.8946 = 89.46\% \\
+        \% V_{\text{atas}} &= 100\% - 89.46\% = 10.54\%
+    \end{align*}
+
+    % Soal 32
+    \item \textbf{Soal:} Bola aluminium 3.80 kg memiliki massa semu 2.10 kg di cairan tertentu. (a) Hitung massa jenis cairan. (b) Tentukan rumusnya. \\
+    \textbf{Diketahui:} $m = 3.80 \text{ kg}$, $m_{\text{semu}} = 2.10 \text{ kg}$, $\rho_{\text{Al}} = 2700 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} (a) $\rho_c$, (b) Penurunan rumus \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(b) Penurunan Rumus:} \\
+        F_B &= W - W_{\text{semu}} \\
+        \rho_c V g &= (m - m_{\text{semu}}) g \\
+        \rho_c \left( \frac{m}{\rho_{\text{benda}}} \right) &= m - m_{\text{semu}} \implies \rho_c = \frac{(m - m_{\text{semu}}) \rho_{\text{benda}}}{m} \\
+        \text{(a) Menghitung Nilai:} \\
+        \rho_c &= \frac{(3.80 - 2.10)(2700)}{3.80} \approx 1208 \text{ kg/m}^3
+    \end{align*}
+
+    % Soal 33
+    \item \textbf{Soal:} Anak 32 kg membuat rakit dari botol soda 1.0-L kosong. Berapa jumlah minimum botol agar tetap kering? \\
+    \textbf{Diketahui:} $m_{\text{anak}} = 32 \text{ kg}$, $V_b = 1.0 \text{ L} = 0.001 \text{ m}^3$, $\rho_{\text{air}} = 1000 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} Jumlah botol ($N$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        F_B &= W_{\text{anak}} \\
+        \rho_{\text{air}} (N V_b) g &= m_{\text{anak}} g \\
+        N &= \frac{m_{\text{anak}}}{\rho_{\text{air}} V_b} = \frac{32}{1000 \times 0.001} = 32 \text{ botol}
+    \end{align*}
+
+    % Soal 34
+    \item \textbf{Soal:} Bilik bola bawah laut ($D = 5.20 \text{ m}$, $m = 74400 \text{ kg}$) dilabuhkan ke dasar. Berapa (a) gaya apung, (b) tegangan kabel? \\
+    \textbf{Diketahui:} $r = 2.60 \text{ m}$, $m = 74400 \text{ kg}$, $\rho_{\text{laut}} = 1025 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} (a) $F_B$, (b) $T$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V &= \frac{4}{3} \pi (2.60)^3 \approx 73.62 \text{ m}^3 \\
+        \text{(a) } F_B &= \rho_{\text{laut}} V g = (1025)(73.62)(9.8) \approx 739513 \text{ N} \approx 7.40 \times 10^5 \text{ N} \\
+        \text{(b) } T &= F_B - W = 739513 - (74400 \times 9.8) \\
+        T &= 739513 - 729120 = 10393 \text{ N} \approx 1.04 \times 10^4 \text{ N}
+    \end{align*}
+
+    % Soal 35
+    \item \textbf{Soal:} Kayu 0.48 kg mengapung di air tapi tenggelam di alkohol ($SG = 0.79$) dengan massa semu 0.047 kg. Berapa SG kayu? \\
+    \textbf{Diketahui:} $m_{\text{kayu}} = 0.48 \text{ kg}$, $SG_{\text{alkohol}} = 0.79 \implies \rho_{\text{alk}} = 790 \text{ kg/m}^3$, $m_{\text{semu}} = 0.047 \text{ kg}$. \\
+    \textbf{Ditanya:} $SG_{\text{kayu}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        m_{\text{alk\_dip}} &= 0.48 - 0.047 = 0.433 \text{ kg} \\
+        V_{\text{kayu}} &= \frac{m_{\text{alk\_dip}}}{\rho_{\text{alk}}} = \frac{0.433}{790} \approx 5.48 \times 10^{-4} \text{ m}^3 \\
+        \rho_{\text{kayu}} &= \frac{0.48}{5.48 \times 10^{-4}} \approx 875.9 \text{ kg/m}^3 \\
+        SG_{\text{kayu}} &= \frac{875.9}{1000} \approx 0.88
+    \end{align*}
+
+    % Soal 36
+    \item \textbf{Soal:} Buktikan rumus persen lemak tubuh $= \frac{495}{X} - 450$ untuk model dua komponen. \\
+    \textbf{Diketahui:} $\rho_f = 0.90 \text{ g/cm}^3$, $\rho_{ff} = 1.10 \text{ g/cm}^3$, $SG_{\text{total}} = X \implies \rho_{\text{tubuh}} = X$. \\
+    \textbf{Ditanya:} Buktikan $\% \text{ Lemak} = \frac{495}{X} - 450$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V &= V_f + V_{ff} \\
+        \frac{m}{X} &= \frac{fm}{0.90} + \frac{(1-f)m}{1.10} \\
+        \frac{1}{X} &= \frac{1.10f + 0.90(1-f)}{0.99} = \frac{0.20f + 0.90}{0.99} \\
+        0.20f &= \frac{0.99}{X} - 0.90 \implies f = \frac{4.95}{X} - 4.50 \\
+        \% \text{ Lemak} &= f \times 100 = \frac{495}{X} - 450 \quad \text{\textbf{(Terbukti)}}
+    \end{align*}
+
+    % Soal 37
+    \item \textbf{Soal:} Atlet 70.2 kg, massa semu air 3.4 kg. (a) Total volume tercelup. (b) $SG$ tubuh dengan $V_R = 1.3 \times 10^{-3} \text{ m}^3$. (c) \% Lemak tubuh. \\
+    \textbf{Diketahui:} $m = 70.2 \text{ kg}$, $m_{\text{semu}} = 3.4 \text{ kg}$, $\rho_{\text{air}} = 1000 \text{ kg/m}^3$, $V_R = 0.0013 \text{ m}^3$. \\
+    \textbf{Ditanya:} (a) $V$, (b) $SG$, (c) \% Lemak \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(a) } V &= \frac{70.2 - 3.4}{1000} = 0.0668 \text{ m}^3 \\
+        \text{(b) } V_{\text{tubuh}} &= 0.0668 - 0.0013 = 0.0655 \text{ m}^3 \\
+        \rho_{\text{tubuh}} &= \frac{70.2}{0.0655} \approx 1071.8 \text{ kg/m}^3 \implies SG = 1.072 \\
+        \text{(c) } \% \text{ Lemak} &= \frac{495}{1.072} - 450 \approx 461.75 - 450 = 11.75\%
+    \end{align*}
+
+    % Soal 38
+    \item \textbf{Soal:} Berapa banyak balon helium ($d = 33 \text{ cm}$) untuk mengangkat orang 72 kg? \\
+    \textbf{Diketahui:} $m_p = 72 \text{ kg}$, $r = 16.5 \text{ cm} = 0.165 \text{ m}$, $\rho_{\text{He}} = 0.179 \text{ kg/m}^3$, $\rho_{\text{udara}} = 1.29 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} Jumlah balon ($N$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V_b &= \frac{4}{3} \pi (0.165)^3 \approx 0.0188 \text{ m}^3 \\
+        m_{\text{angkat\_bersih}} &= V_b (\rho_{\text{udara}} - \rho_{\text{He}}) = 0.0188 (1.29 - 0.179) \approx 0.02089 \text{ kg} \\
+        N &= \frac{72}{0.02089} \approx 3446.6 \implies 3447 \text{ balon}
+    \end{align*}
+
+    % Soal 39
+    \item \textbf{Soal:} Tangki scuba memindahkan air laut 15.7 L. $m_{\text{tangki}} = 14.0 \text{ kg}$, $m_{\text{udara}} = 3.00 \text{ kg}$. Tentukan resultan gaya di awal dan akhir penyelaman. \\
+    \textbf{Diketahui:} $V = 15.7 \times 10^{-3} \text{ m}^3$, $\rho_{\text{laut}} = 1025 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $F_{\text{net}}$ awal dan akhir \\
+    \textbf{Jawab:}
+    \begin{align*}
+        F_B &= (1025)(15.7 \times 10^{-3})(9.8) = 157.7 \text{ N (ke atas)} \\
+        \text{Awal (Penuh): } W_{\text{awal}} &= (14.0 + 3.00)(9.8) = 166.6 \text{ N} \\
+        F_{\text{net\_awal}} &= 166.6 - 157.7 = 8.9 \text{ N (ke bawah)} \\
+        \text{Akhir (Kosong): } W_{\text{akhir}} &= (14.0)(9.8) = 137.2 \text{ N} \\
+        F_{\text{net\_akhir}} &= 157.7 - 137.2 = 20.5 \text{ N (ke atas)}
+    \end{align*}
+
+    % Soal 40
+    \item \textbf{Soal:} Balok kayu 3.65 kg ($SG = 0.50$) mengapung. Berapa massa minimum timbal ($SG = 11.3$) agar balok tenggelam? \\
+    \textbf{Diketahui:} $m_k = 3.65 \text{ kg}$, $\rho_k = 500 \text{ kg/m}^3$, $\rho_t = 11300 \text{ kg/m}^3$, $\rho_a = 1000 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} Massa timbal ($m_t$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        W_{\text{total}} &= F_{B,\text{total}} \\
+        (m_k + m_t)g &= (\rho_a V_k + \rho_a V_t)g \\
+        3.65 + m_t &= 1000 \left( \frac{3.65}{500} \right) + 1000 \left( \frac{m_t}{11300} \right) \\
+        3.65 + m_t &= 7.3 + \frac{10}{113}m_t \\
+        m_t \left( 1 - \frac{10}{113} \right) &= 7.3 - 3.65 \\
+        m_t \left( \frac{103}{113} \right) &= 3.65 \implies m_t = 3.65 \times \frac{113}{103} \approx 4.00 \text{ kg}
+    \end{align*}
+
+    \section*{Dinamika Fluida dan Persamaan Bernoulli}
+
+    % Soal 41
+    \item \textbf{Soal:} Saluran udara berjari-jari 12 cm mengganti udara ruangan $8.2 \text{ m} \times 5.0 \text{ m} \times 3.5 \text{ m}$ setiap 12 menit. Seberapa cepat udara mengalir di saluran? \\
+    \textbf{Diketahui:} $r = 0.12 \text{ m}$, $V = 8.2 \times 5.0 \times 3.5 = 143.5 \text{ m}^3$, $t = 12 \text{ menit} = 720 \text{ s}$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        Q &= \frac{V}{t} = \frac{143.5}{720} \approx 0.1993 \text{ m}^3/\text{s} \\
+        v &= \frac{Q}{A} = \frac{0.1993}{\pi (0.12)^2} \approx \frac{0.1993}{0.0452} \approx 4.4 \text{ m/s}
+    \end{align*}
+
+    % Soal 42
+    \item \textbf{Soal:} Hitung kecepatan rata-rata aliran darah di arteri utama ($A \approx 2.0 \text{ cm}^2$) dengan debit $5.0 \text{ L/min}$. \\
+    \textbf{Diketahui:} $A = 2.0 \times 10^{-4} \text{ m}^2$, $Q = 5.0 \text{ L/min} = \frac{5.0 \times 10^{-3}}{60} \approx 8.33 \times 10^{-5} \text{ m}^3/\text{s}$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        v &= \frac{Q}{A} = \frac{8.33 \times 10^{-5}}{2.0 \times 10^{-4}} \approx 0.416 \text{ m/s} \approx 42 \text{ cm/s}
+    \end{align*}
+
+    % Soal 43
+    \item \textbf{Soal:} Seberapa cepat air mengalir dari lubang di bawah tangki sedalam 4.7 m? \\
+    \textbf{Diketahui:} $h = 4.7 \text{ m}$, $g = 9.8 \text{ m/s}^2$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        v &= \sqrt{2gh} = \sqrt{2(9.8)(4.7)} = \sqrt{92.12} \approx 9.6 \text{ m/s}
+    \end{align*}
+
+    % Soal 44
+    \item \textbf{Soal:} Tunjukkan bahwa persamaan Bernoulli tereduksi menjadi variasi tekanan hidrostatis ketika tidak ada aliran ($v_1 = v_2 = 0$). \\
+    \textbf{Diketahui:} Persamaan Bernoulli $P_1 + \frac{1}{2}\rho v_1^2 + \rho g y_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2$. \\
+    \textbf{Ditanya:} Buktikan $\Delta P = \rho g h$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_1 + 0 + \rho g y_1 &= P_2 + 0 + \rho g y_2 \\
+        P_2 - P_1 &= \rho g y_1 - \rho g y_2 \\
+        \Delta P &= \rho g (y_1 - y_2) \\
+        \Delta P &= \rho g h \quad \text{\textbf{(Terbukti)}}
+    \end{align*}
+
+    % Soal 45
+    \item \textbf{Soal:} Berapa debit aliran dari keran berdiameter 1.85 cm jika tinggi tekanannya 12.0 m? \\
+    \textbf{Diketahui:} $d = 1.85 \text{ cm} \implies r = 0.00925 \text{ m}$, $h = 12.0 \text{ m}$. \\
+    \textbf{Ditanya:} $Q$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        v &= \sqrt{2gh} = \sqrt{2(9.8)(12.0)} \approx 15.34 \text{ m/s} \\
+        A &= \pi r^2 = \pi (0.00925)^2 \approx 2.69 \times 10^{-4} \text{ m}^2 \\
+        Q &= A v = (2.69 \times 10^{-4})(15.34) \approx 4.12 \times 10^{-3} \text{ m}^3/\text{s}
+    \end{align*}
+
+    % Soal 46
+    \item \textbf{Soal:} Akuarium ($36 \text{ cm} \times 1.0 \text{ m} \times 0.60 \text{ m}$). Filter memproses air tiap 3.0 jam. Berapa kecepatan di tabung input $d = 3.0 \text{ cm}$? \\
+    \textbf{Diketahui:} $V = 0.36 \times 1.0 \times 0.60 = 0.216 \text{ m}^3$, $t = 10800 \text{ s}$, $r = 0.015 \text{ m}$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        Q &= \frac{V}{t} = \frac{0.216}{10800} = 2.0 \times 10^{-5} \text{ m}^3/\text{s} \\
+        v &= \frac{Q}{\pi r^2} = \frac{2.0 \times 10^{-5}}{\pi (0.015)^2} \approx 0.028 \text{ m/s} = 2.8 \text{ cm/s}
+    \end{align*}
+
+    % Soal 47
+    \item \textbf{Soal:} Berapa tekanan ukur pipa air agar selang dapat menyemprot air setinggi 16 m? \\
+    \textbf{Diketahui:} $h = 16 \text{ m}$, $\rho = 1000 \text{ kg/m}^3$, $v_1 \approx 0$, $v_2 = 0$. \\
+    \textbf{Ditanya:} $P_{\text{gauge}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_1 + \rho g y_1 + \frac{1}{2}\rho v_1^2 &= P_2 + \rho g y_2 + \frac{1}{2}\rho v_2^2 \\
+        P_1 + 0 + 0 &= P_{\text{atm}} + \rho g h + 0 \\
+        P_1 - P_{\text{atm}} &= \rho g h \\
+        P_{\text{gauge}} &= (1000)(9.8)(16) = 156800 \text{ Pa} \approx 1.57 \times 10^5 \text{ Pa}
+    \end{align*}
+
+    % Soal 48
+    \item \textbf{Soal:} Selang 5/8 inci mengisi kolam ($D = 6.1 \text{ m}$, $h = 1.4 \text{ m}$) dengan kecepatan 0.40 m/s. Berapa lama waktunya? \\
+    \textbf{Diketahui:} $r_s = \frac{5}{16} \text{ inci} \approx 0.0079375 \text{ m}$, $v = 0.40 \text{ m/s}$, $R_k = 3.05 \text{ m}$, $h = 1.4 \text{ m}$. \\
+    \textbf{Ditanya:} $t$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V_{\text{kolam}} &= \pi (3.05)^2 (1.4) \approx 40.91 \text{ m}^3 \\
+        Q &= \pi (0.0079375)^2 (0.40) \approx 7.917 \times 10^{-5} \text{ m}^3/\text{s} \\
+        t &= \frac{V_{\text{kolam}}}{Q} = \frac{40.91}{7.917 \times 10^{-5}} \approx 516733 \text{ s} \approx 143.5 \text{ jam}
+    \end{align*}
+
+    % Soal 49
+    \item \textbf{Soal:} Angin 180 km/jam mengangkat atap datar $6.2 \text{ m} \times 12.4 \text{ m}$. Perkirakan berat atap. \\
+    \textbf{Diketahui:} $v_{\text{luar}} = 50 \text{ m/s}$, $v_{\text{dalam}} = 0 \text{ m/s}$, $A = 76.88 \text{ m}^2$, $\rho_{\text{udara}} = 1.29 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $W_{\text{atap}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Delta P &= \frac{1}{2}\rho v_{\text{luar}}^2 = \frac{1}{2}(1.29)(50)^2 = 1612.5 \text{ Pa} \\
+        F_{\text{angkat}} &= \Delta P \times A = (1612.5)(76.88) \approx 123969 \text{ N} \\
+        W_{\text{atap}} &\approx 1.24 \times 10^5 \text{ N}
+    \end{align*}
+
+    % Soal 50
+    \item \textbf{Soal:} Pipa horizontal menyempit dari 6.0 cm ke 4.5 cm. Tekanan ukur $33.5 \text{ kPa}$ dan $22.6 \text{ kPa}$. Berapa debitnya? \\
+    \textbf{Diketahui:} $A_1 = 9 \times 10^{-4} \pi \text{ m}^2$, $A_2 = 5.0625 \times 10^{-4} \pi \text{ m}^2$, $P_1 = 33500 \text{ Pa}$, $P_2 = 22600 \text{ Pa}$. \\
+    \textbf{Ditanya:} $Q$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_1 - P_2 &= \frac{1}{2}\rho \left( v_2^2 - v_1^2 \right) = \frac{1}{2}\rho Q^2 \left( \frac{1}{A_2^2} - \frac{1}{A_1^2} \right) \\
+        10900 &= 500 Q^2 \left( \frac{1}{2.53 \times 10^{-6}} - \frac{1}{7.99 \times 10^{-6}} \right) \\
+        10900 &\approx 500 Q^2 (395155 - 125102) = 500 Q^2 (270053) \\
+        Q^2 &= \frac{10900}{135026500} \approx 8.07 \times 10^{-5} \\
+        Q &= \sqrt{8.07 \times 10^{-5}} \approx 0.0090 \text{ m}^3/\text{s}
+    \end{align*}
+
+    \section*{Dinamika Fluida dan Persamaan Bernoulli}
+
+    % Soal 41
+    \item \textbf{Soal:} Saluran udara berjari-jari 12 cm mengganti udara ruangan $8.2 \text{ m} \times 5.0 \text{ m} \times 3.5 \text{ m}$ setiap 12 menit. Seberapa cepat udara mengalir di saluran? \\
+    \textbf{Diketahui:} $r = 0.12 \text{ m}$, $V = 8.2 \times 5.0 \times 3.5 = 143.5 \text{ m}^3$, $t = 12 \text{ menit} = 720 \text{ s}$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        Q &= \frac{V}{t} = \frac{143.5}{720} \approx 0.1993 \text{ m}^3/\text{s} \\
+        v &= \frac{Q}{A} = \frac{0.1993}{\pi (0.12)^2} \approx \frac{0.1993}{0.0452} \approx 4.4 \text{ m/s}
+    \end{align*}
+
+    % Soal 42
+    \item \textbf{Soal:} Hitung kecepatan rata-rata aliran darah di arteri utama ($A \approx 2.0 \text{ cm}^2$) dengan debit $5.0 \text{ L/min}$. \\
+    \textbf{Diketahui:} $A = 2.0 \times 10^{-4} \text{ m}^2$, $Q = 5.0 \text{ L/min} = \frac{5.0 \times 10^{-3}}{60} \approx 8.33 \times 10^{-5} \text{ m}^3/\text{s}$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        v &= \frac{Q}{A} = \frac{8.33 \times 10^{-5}}{2.0 \times 10^{-4}} \approx 0.416 \text{ m/s} \approx 42 \text{ cm/s}
+    \end{align*}
+
+    % Soal 43
+    \item \textbf{Soal:} Seberapa cepat air mengalir dari lubang di bawah tangki sedalam 4.7 m? \\
+    \textbf{Diketahui:} $h = 4.7 \text{ m}$, $g = 9.8 \text{ m/s}^2$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        v &= \sqrt{2gh} = \sqrt{2(9.8)(4.7)} = \sqrt{92.12} \approx 9.6 \text{ m/s}
+    \end{align*}
+
+    % Soal 44
+    \item \textbf{Soal:} Tunjukkan bahwa persamaan Bernoulli tereduksi menjadi variasi tekanan hidrostatis ketika tidak ada aliran ($v_1 = v_2 = 0$). \\
+    \textbf{Diketahui:} Persamaan Bernoulli $P_1 + \frac{1}{2}\rho v_1^2 + \rho g y_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2$. \\
+    \textbf{Ditanya:} Buktikan $\Delta P = \rho g h$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_1 + 0 + \rho g y_1 &= P_2 + 0 + \rho g y_2 \\
+        P_2 - P_1 &= \rho g y_1 - \rho g y_2 \\
+        \Delta P &= \rho g (y_1 - y_2) \\
+        \Delta P &= \rho g h \quad \text{\textbf{(Terbukti)}}
+    \end{align*}
+
+    % Soal 45
+    \item \textbf{Soal:} Berapa debit aliran dari keran berdiameter 1.85 cm jika tinggi tekanannya 12.0 m? \\
+    \textbf{Diketahui:} $d = 1.85 \text{ cm} \implies r = 0.00925 \text{ m}$, $h = 12.0 \text{ m}$. \\
+    \textbf{Ditanya:} $Q$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        v &= \sqrt{2gh} = \sqrt{2(9.8)(12.0)} \approx 15.34 \text{ m/s} \\
+        A &= \pi r^2 = \pi (0.00925)^2 \approx 2.69 \times 10^{-4} \text{ m}^2 \\
+        Q &= A v = (2.69 \times 10^{-4})(15.34) \approx 4.12 \times 10^{-3} \text{ m}^3/\text{s}
+    \end{align*}
+
+    % Soal 46
+    \item \textbf{Soal:} Akuarium ($36 \text{ cm} \times 1.0 \text{ m} \times 0.60 \text{ m}$). Filter memproses air tiap 3.0 jam. Berapa kecepatan di tabung input $d = 3.0 \text{ cm}$? \\
+    \textbf{Diketahui:} $V = 0.36 \times 1.0 \times 0.60 = 0.216 \text{ m}^3$, $t = 10800 \text{ s}$, $r = 0.015 \text{ m}$. \\
+    \textbf{Ditanya:} $v$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        Q &= \frac{V}{t} = \frac{0.216}{10800} = 2.0 \times 10^{-5} \text{ m}^3/\text{s} \\
+        v &= \frac{Q}{\pi r^2} = \frac{2.0 \times 10^{-5}}{\pi (0.015)^2} \approx 0.028 \text{ m/s} = 2.8 \text{ cm/s}
+    \end{align*}
+
+    % Soal 47
+    \item \textbf{Soal:} Berapa tekanan ukur pipa air agar selang dapat menyemprot air setinggi 16 m? \\
+    \textbf{Diketahui:} $h = 16 \text{ m}$, $\rho = 1000 \text{ kg/m}^3$, $v_1 \approx 0$, $v_2 = 0$. \\
+    \textbf{Ditanya:} $P_{\text{gauge}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_1 + \rho g y_1 + \frac{1}{2}\rho v_1^2 &= P_2 + \rho g y_2 + \frac{1}{2}\rho v_2^2 \\
+        P_1 + 0 + 0 &= P_{\text{atm}} + \rho g h + 0 \\
+        P_1 - P_{\text{atm}} &= \rho g h \\
+        P_{\text{gauge}} &= (1000)(9.8)(16) = 156800 \text{ Pa} \approx 1.57 \times 10^5 \text{ Pa}
+    \end{align*}
+
+    % Soal 48
+    \item \textbf{Soal:} Selang 5/8 inci mengisi kolam ($D = 6.1 \text{ m}$, $h = 1.4 \text{ m}$) dengan kecepatan 0.40 m/s. Berapa lama waktunya? \\
+    \textbf{Diketahui:} $r_s = \frac{5}{16} \text{ inci} \approx 0.0079375 \text{ m}$, $v = 0.40 \text{ m/s}$, $R_k = 3.05 \text{ m}$, $h = 1.4 \text{ m}$. \\
+    \textbf{Ditanya:} $t$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        V_{\text{kolam}} &= \pi (3.05)^2 (1.4) \approx 40.91 \text{ m}^3 \\
+        Q &= \pi (0.0079375)^2 (0.40) \approx 7.917 \times 10^{-5} \text{ m}^3/\text{s} \\
+        t &= \frac{V_{\text{kolam}}}{Q} = \frac{40.91}{7.917 \times 10^{-5}} \approx 516733 \text{ s} \approx 143.5 \text{ jam}
+    \end{align*}
+
+    % Soal 49
+    \item \textbf{Soal:} Angin 180 km/jam mengangkat atap datar $6.2 \text{ m} \times 12.4 \text{ m}$. Perkirakan berat atap. \\
+    \textbf{Diketahui:} $v_{\text{luar}} = 50 \text{ m/s}$, $v_{\text{dalam}} = 0 \text{ m/s}$, $A = 76.88 \text{ m}^2$, $\rho_{\text{udara}} = 1.29 \text{ kg/m}^3$. \\
+    \textbf{Ditanya:} $W_{\text{atap}}$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Delta P &= \frac{1}{2}\rho v_{\text{luar}}^2 = \frac{1}{2}(1.29)(50)^2 = 1612.5 \text{ Pa} \\
+        F_{\text{angkat}} &= \Delta P \times A = (1612.5)(76.88) \approx 123969 \text{ N} \\
+        W_{\text{atap}} &\approx 1.24 \times 10^5 \text{ N}
+    \end{align*}
+
+    % Soal 50
+    \item \textbf{Soal:} Pipa horizontal menyempit dari 6.0 cm ke 4.5 cm. Tekanan ukur $33.5 \text{ kPa}$ dan $22.6 \text{ kPa}$. Berapa debitnya? \\
+    \textbf{Diketahui:} $A_1 = 9 \times 10^{-4} \pi \text{ m}^2$, $A_2 = 5.0625 \times 10^{-4} \pi \text{ m}^2$, $P_1 = 33500 \text{ Pa}$, $P_2 = 22600 \text{ Pa}$. \\
+    \textbf{Ditanya:} $Q$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        P_1 - P_2 &= \frac{1}{2}\rho \left( v_2^2 - v_1^2 \right) = \frac{1}{2}\rho Q^2 \left( \frac{1}{A_2^2} - \frac{1}{A_1^2} \right) \\
+        10900 &= 500 Q^2 \left( \frac{1}{2.53 \times 10^{-6}} - \frac{1}{7.99 \times 10^{-6}} \right) \\
+        10900 &\approx 500 Q^2 (395155 - 125102) = 500 Q^2 (270053) \\
+        Q^2 &= \frac{10900}{135026500} \approx 8.07 \times 10^{-5} \\
+        Q &= \sqrt{8.07 \times 10^{-5}} \approx 0.0090 \text{ m}^3/\text{s}
+    \end{align*}
+
+    % Soal 61
+    \item \textbf{Soal:} Diameter saluran udara $15.5 \text{ m}$ untuk mengganti udara ruangan $8.0 \times 14.0 \times 4.0 \text{ m}^3$ tiap 15 menit dengan $\Delta P = 0.710 \times 10^{-3} \text{ atm}$. \\
+    \textbf{Diketahui:} $L = 15.5 \text{ m}$, $Q = \frac{448}{900} \approx 0.4978 \text{ m}^3/\text{s}$, $\Delta P = 71.92 \text{ Pa}$, $\eta \approx 1.8 \times 10^{-5} \text{ Pa}\cdot\text{s}$. \\
+    \textbf{Ditanya:} Diameter ($d$) \\
+    \textbf{Jawab:}
+    \begin{align*}
+        r^4 &= \frac{8 \eta L Q}{\pi \Delta P} = \frac{8 (1.8 \times 10^{-5}) (15.5) (0.4978)}{\pi (71.92)} \approx 4.918 \times 10^{-6} \text{ m}^4 \\
+        r &= (4.918 \times 10^{-6})^{1/4} \approx 0.0471 \text{ m} \\
+        d &= 2r \approx 0.0942 \text{ m} \approx \textbf{9.4 cm}
+    \end{align*}
+
+    % Soal 62
+    \item \textbf{Soal:} $\Delta P$ pipa 1.6 km, $d = 29 \text{ cm}$ untuk angkut minyak ($\eta = 0.20 \text{ Pa}\cdot\text{s}$) dengan laju $650 \text{ cm}^3/\text{s}$? \\
+    \textbf{Diketahui:} $L = 1600 \text{ m}$, $r = 0.145 \text{ m}$, $Q = 6.5 \times 10^{-4} \text{ m}^3/\text{s}$. \\
+    \textbf{Ditanya:} $\Delta P$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Delta P &= \frac{8 \eta L Q}{\pi r^4} = \frac{8(0.20)(1600)(6.5 \times 10^{-4})}{\pi (0.145)^4} \approx \textbf{1198 Pa}
+    \end{align*}
+
+    % Soal 63
+    \item \textbf{Soal:} (a) Tentukan $Re$ darah di aorta ($r = 0.80 \text{ cm}, v = 35 \text{ cm/s}$). (b) Tentukan $Re$ jika kecepatan berlipat ganda. \\
+    \textbf{Diketahui:} $\rho = 1050 \text{ kg/m}^3, \eta = 4.0 \times 10^{-3} \text{ Pa}\cdot\text{s}$. \\
+    \textbf{Ditanya:} $Re$ dan jenis aliran \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(a) } Re_a &= \frac{2 v r \rho}{\eta} = \frac{2(0.35)(0.008)(1050)}{0.004} = 1470 \quad \text{\textbf{(Laminar)}} \\
+        \text{(b) } Re_b &= 2 \times Re_a = 2940 \quad \text{\textbf{(Turbulen)}}
+    \end{align*}
+
+    % Soal 64
+    \item \textbf{Soal:} Jika aliran darah berkurang 65\%, dengan faktor berapakah jari-jari pembuluh darah menurun? \\
+    \textbf{Diketahui:} $Q_2 = 0.35 Q_1$. \\
+    \textbf{Ditanya:} Rasio $r_2 / r_1$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \frac{Q_2}{Q_1} &= \left( \frac{r_2}{r_1} \right)^4 \implies 0.35 = \left( \frac{r_2}{r_1} \right)^4 \\
+        \frac{r_2}{r_1} &= (0.35)^{1/4} \approx \textbf{0.77}
+    \end{align*}
+
+    % Soal 65
+    \item \textbf{Soal:} Hitung penurunan tekanan per cm di sepanjang aorta ($r = 1.0 \text{ cm}, Q = 5.0 \text{ L/min}$). \\
+    \textbf{Diketahui:} $Q \approx 8.33 \times 10^{-5} \text{ m}^3/\text{s}, \eta = 0.004 \text{ Pa}\cdot\text{s}$. \\
+    \textbf{Ditanya:} $\Delta P / L$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \frac{\Delta P}{L} &= \frac{8 \eta Q}{\pi r^4} = \frac{8(0.004)(8.33 \times 10^{-5})}{\pi (0.01)^4} \approx 84.8 \text{ Pa/m} = \textbf{0.848 Pa/cm}
+    \end{align*}
+
+    % Soal 66
+    \item \textbf{Soal:} Tinggi $h$ botol infus agar debit darah $2.0 \text{ cm}^3/\text{min}$ melalui jarum ($L = 25 \text{ mm}, d = 0.80 \text{ mm}$). $P_{\text{vena}} = 78 \text{ torr}$. \\
+    \textbf{Diketahui:} $Q \approx 3.33 \times 10^{-8} \text{ m}^3/\text{s}, P_{\text{vena}} \approx 10399 \text{ Pa}, \eta = 0.004, \rho = 1050$. \\
+    \textbf{Ditanya:} $h$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Delta P_{\text{jarum}} &= \frac{8 \eta L Q}{\pi r^4} = \frac{8(0.004)(0.025)(3.33 \times 10^{-8})}{\pi (4 \times 10^{-4})^4} \approx 331 \text{ Pa} \\
+        P_{\text{hidrostatis}} &= P_{\text{vena}} + \Delta P_{\text{jarum}} = 10399 + 331 = 10730 \text{ Pa} \\
+        h &= \frac{P}{\rho g} = \frac{10730}{(1050)(9.8)} \approx \textbf{1.04 m}
+    \end{align*}
+
+\section*{Tegangan Permukaan dan Kapilaritas}
+
+    % Soal 67
+    \item \textbf{Soal:} Hitung tegangan permukaan $\gamma$ jika $F = 3.4 \times 10^{-3} \text{ N}$ dan $\ell = 0.070 \text{ m}$ pada bingkai kawat. \\
+    \textbf{Diketahui:} $F = 3.4 \times 10^{-3} \text{ N}, \ell = 0.070 \text{ m}$. \\
+    \textbf{Ditanya:} $\gamma$ \\
+    \textbf{Jawab:}
+    \begin{align*}
+        F &= 2 \gamma \ell \implies \gamma = \frac{F}{2\ell} \\
+        \gamma &= \frac{3.4 \times 10^{-3}}{2(0.070)} \approx \textbf{0.024 N/m}
+    \end{align*}
+
+    % Soal 68
+    \item \textbf{Soal:} Gaya $F$ untuk larutan sabun ($\gamma \approx 0.025 \text{ N/m}$) pada kawat $21.5 \text{ cm}$. \\
+    \textbf{Jawab:}
+    \begin{align*}
+        F &= 2 \gamma \ell = 2(0.025)(0.215) = \textbf{0.01075 N}
+    \end{align*}
+
+    % Soal 69
+    \item \textbf{Soal:} (a) Rumus $\gamma$ untuk cincin platina $r$. (b) Hitung jika $F = 6.20 \times 10^{-3} \text{ N}, r = 2.9 \text{ cm}$. \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \text{(a) } F &= \gamma(4\pi r) \implies \gamma = \frac{F}{4\pi r} \\
+        \text{(b) } \gamma &= \frac{6.20 \times 10^{-3}}{4\pi(0.029)} \approx \textbf{0.017 N/m}
+    \end{align*}
+
+    % Soal 70
+    \item \textbf{Soal:} Serangga $0.016 \text{ g}$, 6 kaki ($r = 3 \times 10^{-5} \text{ m}$). Bisa mengapung di air? \\
+    \textbf{Jawab:}
+    \begin{align*}
+        W &= mg = (1.6 \times 10^{-5})(9.8) = 1.568 \times 10^{-4} \text{ N} \\
+        F_{\text{angkat}} &= 6 \times \gamma(2\pi r) = 6(0.0728)(2\pi \times 3 \times 10^{-5}) \approx 8.23 \times 10^{-5} \text{ N}
+    \end{align*}
+    Karena $W > F_{\text{angkat}}$, serangga \textbf{tenggelam}.
+
+    % Soal 71
+    \item \textbf{Soal:} Diameter jarum baja agar tidak tenggelam di air. \\
+    \textbf{Jawab:}
+    \begin{align*}
+        2 \gamma \ell &= \rho \pi \frac{d^2}{4} \ell g \implies d^2 = \frac{8 \gamma}{\rho \pi g} \\
+        d &= \sqrt{\frac{8(0.0728)}{7800\pi(9.8)}} \approx \textbf{1.56 mm}
+    \end{align*}
+
+    % Soal 72
+    \item \textbf{Soal:} Kesalahan tekanan (Pa) jika manset dipasang di betis (1 m di bawah jantung). \\
+    \textbf{Jawab:}
+    \begin{align*}
+        \Delta P &= \rho g h = (1050)(9.8)(1) = \textbf{10290 Pa}
+    \end{align*}
+
+\end{enumerate}
+
+\end{document}

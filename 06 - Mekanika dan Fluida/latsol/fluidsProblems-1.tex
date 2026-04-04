@@ -1,0 +1,242 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[bahasa]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section{Statika Fluida: Massa Jenis dan Tekanan}
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+
+    % 1-10
+    \item \textbf{Soal:} Perkiraan volume monolit granit El Capitan adalah $10^8 \text{ m}^3$. Berapa massanya? \\
+    \textbf{Jawab:} $m = \rho V = (2.7 \times 10^3)(10^8) = \mathbf{2.7 \times 10^{11} \text{ kg}}$.
+
+    \item \textbf{Soal:} Massa udara di ruang tamu $5.6 \times 3.6 \times 2.4 \text{ m}^3$? \\
+    \textbf{Jawab:} $V = 48.384 \text{ m}^3 \implies m = (1.29)(48.384) \approx \mathbf{62.4 \text{ kg}}$.
+
+    \item \textbf{Soal:} Massa emas dalam ransel $54 \times 31 \times 22 \text{ cm}^3$? \\
+    \textbf{Jawab:} $V = 0.0368 \text{ m}^3 \implies m = (19300)(0.0368) \approx \mathbf{710.8 \text{ kg}}$.
+
+    \item \textbf{Soal:} Perkirakan volume tubuh Anda (massa asumsi 65 kg). \\
+    \textbf{Jawab:} $V = m/\rho \approx 65/1000 = \mathbf{0.065 \text{ m}^3}$.
+
+    \item \textbf{Soal:} Gravitasi spesifik (SG) fluida dalam botol (massa kosong 35g, air 98.44g, fluida 89.22g). \\
+    \textbf{Jawab:} $SG = \frac{89.22-35}{98.44-35} = \frac{54.22}{63.44} \approx \mathbf{0.855}$.
+
+    \item \textbf{Soal:} SG campuran 4L antibeku (SG 0.8) dan 5L air. \\
+    \textbf{Jawab:} $m_{tot} = (0.8 \times 4) + (1 \times 5) = 8.2 \text{ kg} \implies SG_{camp} = 8.2/9 = \mathbf{0.91}$.
+
+    \item \textbf{Soal:} Densitas rata-rata model Bumi 3 lapis. \\
+    \textbf{Jawab:} $\rho_{avg} = \frac{\sum m}{\sum V} \approx \mathbf{5500 \text{ kg/m}^3}$. (Beda 0.07\% dari aktual).
+
+    \item \textbf{Soal:} Tekanan untuk menaikkan air ke pohon 46 m. \\
+    \textbf{Jawab:} $P = \rho gh = (1000)(9.8)(46) = \mathbf{4.5 \times 10^5 \text{ Pa}}$.
+
+    \item \textbf{Soal:} Tekanan hak sepatu (a) $0.45 \text{ cm}^2$, (b) $16 \text{ cm}^2$ (massa 56 kg). \\
+    \textbf{Jawab:} (a) $1.2 \times 10^7 \text{ Pa}$, (b) $\mathbf{3.4 \times 10^5 \text{ Pa}}$.
+
+    \item \textbf{Soal:} Beda tekanan darah kepala-kaki orang 1.75 m (mm-Hg). \\
+    \textbf{Jawab:} $\Delta P = \rho gh \approx 18007 \text{ Pa} \approx \mathbf{135 \text{ mm-Hg}}$.
+
+    % 11-20
+    \item \textbf{Soal:} Gaya atmosfer pada meja $1.7 \times 2.6 \text{ m}^2$. \\
+    \textbf{Jawab:} $F = P A = (101300)(4.42) \approx \mathbf{4.48 \times 10^5 \text{ N}}$.
+
+    \item \textbf{Soal:} Tinggi barometer alkohol ($SG = 0.79$). \\
+    \textbf{Jawab:} $h = P/(\rho g) = 101300/(790 \times 9.8) \approx \mathbf{13.1 \text{ m}}$.
+
+    \item \textbf{Soal:} Kedalaman menyelam Tarzan ($\Delta P_{max} = 85 \text{ mmHg}$). \\
+    \textbf{Jawab:} $h = \Delta P/(\rho g) = 11330/(1000 \times 9.8) \approx \mathbf{1.16 \text{ m}}$.
+
+    \item \textbf{Soal:} Massa mobil maksimal lift hidrolik (17 atm, $d = 25.5 \text{ cm}$). \\
+    \textbf{Jawab:} $m = PA/g = (1.72 \times 10^6 \times 0.051)/9.8 \approx \mathbf{8975 \text{ kg}}$.
+
+    \item \textbf{Soal:} Massa mobil (4 ban, $P = 240 \text{ kPa}$, $A_{ban} = 190 \text{ cm}^2$). \\
+    \textbf{Jawab:} $m = (240000 \times 0.076)/9.8 \approx \mathbf{1861 \text{ kg}}$.
+
+    \item \textbf{Soal:} Gaya dasar kolam ($28 \times 8.5 \text{ m}^2$, kedalaman 1.8 m). \\
+    \textbf{Jawab:} $P_{abs} = 1.19 \times 10^5 \text{ Pa} \implies F \approx \mathbf{2.83 \times 10^7 \text{ N}}$.
+
+    \item \textbf{Soal:} Tekanan ukur rumah dari tangki (beda tinggi total 71.6 m). \\
+    \textbf{Jawab:} $P = (1000)(9.8)(71.6) \approx \mathbf{7.02 \times 10^5 \text{ Pa}}$.
+
+    \item \textbf{Soal:} Pipa U (Minyak 27.2 cm, Air 18.58 cm). Massa jenis minyak? \\
+    \textbf{Jawab:} $\rho_m = (1000 \times 18.58)/27.2 \approx \mathbf{683 \text{ kg/m}^3}$.
+
+    \item \textbf{Soal:} Tinggi atmosfer jika densitas seragam ($0.645 \text{ kg/m}^3$). \\
+    \textbf{Jawab:} $h = 101300/(0.645 \times 9.8) \approx \mathbf{16.0 \text{ km}}$.
+
+    \item \textbf{Soal:} Tekanan ukur minimum untuk keran setinggi 44 m. \\
+    \textbf{Jawab:} $P = (1000)(9.8)(44) \approx \mathbf{4.31 \times 10^5 \text{ Pa}}$.
+
+    % 21-30
+    \item \textbf{Soal:} Tekanan sampel pres hidrolik ($F_{tuas} = 320 \text{ N}$, rasio $d = 5$). \\
+    \textbf{Jawab:} $F_2 = 16000 \text{ N} \implies P_{sampel} = \mathbf{4.0 \times 10^7 \text{ Pa}}$.
+
+    \item \textbf{Soal:} Manometer raksa ($P_{atm} = 1040 \text{ mbar}$). (a) $h = +18.5 \text{ cm}$, (b) $h = -5.6 \text{ cm}$. \\
+    \textbf{Jawab:} (a) $\mathbf{1.29 \times 10^5 \text{ Pa}}$, (b) $\mathbf{9.65 \times 10^4 \text{ Pa}}$.
+
+    \item \textbf{Soal:} Fraksi besi tercelup di raksa. \\
+    \textbf{Jawab:} $Ratio = 7800/13600 \approx \mathbf{0.573}$.
+
+    \item \textbf{Soal:} Densitas batu bulan (9.28 kg asli, 6.18 kg semu). \\
+    \textbf{Jawab:} $V = 3.1/1000 \implies \rho \approx \mathbf{2993 \text{ kg/m}^3}$.
+
+    \item \textbf{Soal:} Tegangan kabel baja 18 ton di (a) air, (b) udara. \\
+    \textbf{Jawab:} (a) $\mathbf{1.54 \times 10^5 \text{ N}}$, (b) $\mathbf{1.76 \times 10^5 \text{ N}}$.
+
+    \item \textbf{Soal:} Kargo balon helium ($r = 7.15 \text{ m}$, massa balon 930 kg). \\
+    \textbf{Jawab:} $m_{kargo} = 1531(1.29-0.179) - 930 \approx \mathbf{771 \text{ kg}}$.
+
+    \item \textbf{Soal:} Logam 63.5g (udara), 55.4g (air). Apa jenisnya? \\
+    \textbf{Jawab:} $\rho = 63.5/8.1 \approx 7.84 \text{ g/cm}^3 \implies$ \textbf{Besi/Baja}.
+
+    \item \textbf{Soal:} Massa asli aluminium jika massa semu udara 4.0000 kg. \\
+    \textbf{Jawab:} $m = 4.0000 / (1 - 1.29/2700) \approx \mathbf{4.0019 \text{ kg}}$.
+
+    \item \textbf{Soal:} Volume baja drum 210L agar mengapung di air. \\
+    \textbf{Jawab:} $V_{baja} = 0.21 \times (320/6800) \approx \mathbf{0.00988 \text{ m}^3}$.
+
+    \item \textbf{Soal:} Penyelam 72.8 kg, volume 69.6 L. Gaya apung laut? \\
+    \textbf{Jawab:} $F_B = (1025)(0.0696)(9.8) \approx 699 \text{ N}$. (Penyelam \textbf{tenggelam}).
+
+    % 31-40
+    \item \textbf{Soal:} Persen gunung es di atas air. \\
+    \textbf{Jawab:} $100\% - (0.917/1.025 \times 100\%) \approx \mathbf{10.54\%}$.
+
+    \item \textbf{Soal:} Massa jenis cairan dari bola Al (3.8 kg asli, 2.1 kg semu). \\
+    \textbf{Jawab:} $\rho_c = (1.7 \times 2700)/3.8 \approx \mathbf{1208 \text{ kg/m}^3}$.
+
+    \item \textbf{Soal:} Jumlah botol 1L untuk anak 32 kg. \\
+    \textbf{Jawab:} $N = 32/(1000 \times 0.001) = \mathbf{32 \text{ botol}}$.
+
+    \item \textbf{Soal:} Bilik bawah laut $D = 5.2 \text{ m}$. Gaya apung? \\
+    \textbf{Jawab:} $V = 73.6 \text{ m}^3 \implies F_B \approx \mathbf{7.40 \times 10^5 \text{ N}}$. $T \approx \mathbf{1.04 \times 10^4 \text{ N}}$.
+
+    \item \textbf{Soal:} SG kayu (0.48 kg asli, 0.047 kg semu alkohol SG 0.79). \\
+    \textbf{Jawab:} $V = 0.433/790 \implies \rho = 0.48/V \implies SG \approx \mathbf{0.88}$.
+
+    \item \textbf{Soal:} Bukti persen lemak $= 495/X - 450$. \\
+    \textbf{Jawab:} Dari $\frac{1}{X} = \frac{f}{0.9} + \frac{1-f}{1.1}$, diperoleh $f = \frac{4.95}{X} - 4.50$.
+
+    \item \textbf{Soal:} \% Lemak atlet 70.2 kg (massa semu air 3.4 kg, $V_R$ udara paru 1.3L). \\
+    \textbf{Jawab:} $SG = 1.072 \implies \% \text{ Lemak} \approx \mathbf{11.75\%}$.
+
+    \item \textbf{Soal:} Jumlah balon helium ($d = 33 \text{ cm}$) angkat orang 72 kg. \\
+    \textbf{Jawab:} $m_{lift} = 0.0209 \text{ kg/balon} \implies N = 72/0.0209 \approx \mathbf{3447 \text{ balon}}$.
+
+    \item \textbf{Soal:} Gaya bersih tangki scuba (15.7L) awal (penuh udara 3kg) dan akhir. \\
+    \textbf{Jawab:} Awal: \textbf{8.9 N kebawah}. Akhir: \textbf{20.5 N keatas}.
+
+    \item \textbf{Soal:} Massa timbal agar balok kayu 3.65 kg tenggelam. \\
+    \textbf{Jawab:} $3.65 + m_t = 7.3 + m_t(1000/11300) \implies m_t \approx \mathbf{4.00 \text{ kg}}$.
+
+    % 41-50
+    \item \textbf{Soal:} Kecepatan udara saluran $r=12\text{cm}$ isi ruang $143.5\text{m}^3$ dalam 12 mnt. \\
+    \textbf{Jawab:} $Q = 0.199 \implies v = Q/A \approx \mathbf{4.4 \text{ m/s}}$.
+
+    \item \textbf{Soal:} Kecepatan darah arteri ($2 \text{ cm}^2$) debit 5 L/mnt. \\
+    \textbf{Jawab:} $v = 8.3 \times 10^{-5} / 2 \times 10^{-4} \approx \mathbf{0.42 \text{ m/s}}$.
+
+    \item \textbf{Soal:} Kecepatan bocor tangki sedalam 4.7 m. \\
+    \textbf{Jawab:} $v = \sqrt{2 \times 9.8 \times 4.7} \approx \mathbf{9.6 \text{ m/s}}$.
+
+    \item \textbf{Soal:} Bukti Bernoulli jadi hidrostatis saat $v=0$. \\
+    \textbf{Jawab:} $P_1 + \rho gy_1 = P_2 + \rho gy_2 \implies \Delta P = \rho g(y_2-y_1) = \mathbf{\rho gh}$.
+
+    \item \textbf{Soal:} Debit keran $d=1.85\text{cm}$, head 12m. \\
+    \textbf{Jawab:} $v=15.3\text{m/s} \implies Q = Av \approx \mathbf{4.12 \times 10^{-3} \text{ m}^3/s}$.
+
+    \item \textbf{Soal:} Kecepatan input filter akuarium $216\text{L}$ tiap 3 jam ($d=3\text{cm}$). \\
+    \textbf{Jawab:} $Q = 2 \times 10^{-5} \text{ m}^3/s \implies v = Q/A \approx \mathbf{2.8 \text{ cm/s}}$.
+
+    \item \textbf{Soal:} Tekanan ukur semprot air setinggi 16m. \\
+    \textbf{Jawab:} $P = \rho gh = 1000 \times 9.8 \times 16 \approx \mathbf{1.57 \times 10^5 \text{ Pa}}$.
+
+    \item \textbf{Soal:} Waktu isi kolam $D=6.1\text{m}, h=1.4\text{m}$ pakai selang $5/8"$ (v=0.4m/s). \\
+    \textbf{Jawab:} $V = 40.9 \text{ m}^3 \implies Q = 7.9 \times 10^{-5} \implies t \approx \mathbf{143.5 \text{ jam}}$.
+
+    \item \textbf{Soal:} Berat atap $6.2 \times 12.4 \text{ m}^2$ terangkat angin 180 km/jam. \\
+    \textbf{Jawab:} $\Delta P = 1612.5 \text{ Pa} \implies W = \Delta P A \approx \mathbf{1.24 \times 10^5 \text{ N}}$.
+
+    \item \textbf{Soal:} Debit pipa horizontal mengecil 6cm ke 4.5cm ($\Delta P = 10.9 \text{ kPa}$). \\
+    \textbf{Jawab:} $Q \approx \mathbf{0.0090 \text{ m}^3/s}$.
+
+    % 51-60
+    \item \textbf{Soal:} Tekanan pusat badai angin 300 km/jam. \\
+    \textbf{Jawab:} $P_{pusat} = 101300 - 0.5(1.29)(83.3)^2 \approx \mathbf{9.68 \times 10^4 \text{ Pa}}$.
+
+    \item \textbf{Soal:} Gaya angkat sayap $88\text{m}^2$ (v atas 280, bawah 150). \\
+    \textbf{Jawab:} $\Delta P = 36055 \text{ Pa} \implies F \approx \mathbf{3.17 \times 10^6 \text{ N}}$.
+
+    \item \textbf{Soal:} Air gedung tinggi 16m. $v_1=0.78, d_1=5\text{cm}, d_2=2.8\text{cm}$. \\
+    \textbf{Jawab:} $v_2 = \mathbf{2.49 \text{ m/s}}, P_2 \approx \mathbf{2.2 \text{ atm}}$.
+
+    \item \textbf{Soal:} Bukti Daya $= Q \Delta P$. \\
+    \textbf{Jawab:} $Power = Fv = (\Delta P A)v = \mathbf{Q \Delta P}$.
+
+    \item \textbf{Soal:} Bukti rumus Torricelli dengan kecepatan permukaan tangki. \\
+    \textbf{Jawab:} Dari Bernoulli dan Kontinuitas: $v_1 = \sqrt{2gh / (1 - A_1^2/A_2^2)}$.
+
+    \item \textbf{Soal:} Venturimeter air $d=3.5 \to 1.0\text{cm}$, $\Delta P = 18 \text{ mmHg}$. \\
+    \textbf{Jawab:} $v_1 = \mathbf{0.179 \text{ m/s}}, v_2 = \mathbf{2.19 \text{ m/s}}$.
+
+    \item \textbf{Soal:} Gaya tahan nosel pemadam 420L/mnt ($d$ selang 7cm, nosel 0.75cm). \\
+    \textbf{Jawab:} $F = \dot{m}(v_2-v_1) \approx \mathbf{1100 \text{ N}}$.
+
+    \item \textbf{Soal:} Viskositas fluida silinder berputar ($d = 10.2 \to 10.6\text{cm}, \tau = 0.024$). \\
+    \textbf{Jawab:} $\eta = Fl/Av \approx \mathbf{0.0804 \text{ Pa}\cdot s}$.
+
+    \item \textbf{Soal:} $\Delta P$ oli SAE 10 ($d=1.8\text{mm}, L=10.2\text{cm}, Q=6.2\text{mL/mnt}$). \\
+    \textbf{Jawab:} $\Delta P = 8\eta LQ/\pi r^4 \approx \mathbf{8.2 \text{ kPa}}$.
+
+    \item \textbf{Soal:} Faktor potongan waktu siram selang $3/8"$ ganti ke $5/8"$. \\
+    \textbf{Jawab:} $t_2/t_1 = (3/5)^4 = \mathbf{0.13}$.
+
+    % 61-72
+    \item \textbf{Soal:} Diameter saluran udara 15.5m isi ruang tiap 15mnt ($\Delta P = 72 \text{ Pa}$). \\
+    \textbf{Jawab:} $r = 0.047 \implies d \approx \mathbf{9.4 \text{ cm}}$.
+
+    \item \textbf{Soal:} $\Delta P$ pipa minyak 1.6 km, $d=29\text{cm}, Q=650\text{cm}^3/s$. \\
+    \textbf{Jawab:} $\Delta P = 8\eta LQ/\pi r^4 \approx \mathbf{1.2 \text{ kPa}}$.
+
+    \item \textbf{Soal:} Bilangan Reynolds darah aorta ($v=35\text{cm/s}, r=0.8\text{cm}$). \\
+    \textbf{Jawab:} $Re = 1470$ (\textbf{Laminar}). Olahraga ($v \times 2$): $Re = 2940$ (\textbf{Turbulen}).
+
+    \item \textbf{Soal:} Faktor jari-jari turun jika aliran darah turun 65\%. \\
+    \textbf{Jawab:} $r_2/r_1 = (0.35)^{1/4} \approx \mathbf{0.77}$.
+
+    \item \textbf{Soal:} Penurunan tekanan per cm aorta. \\
+    \textbf{Jawab:} $\Delta P/L \approx \mathbf{0.848 \text{ Pa/cm}}$.
+
+    \item \textbf{Soal:} Tinggi botol infus agar darah masuk vena ($P_{vena} = 78 \text{ torr}$). \\
+    \textbf{Jawab:} $h = (P_{vena} + \Delta P_{jarum})/\rho g \approx \mathbf{1.04 \text{ m}}$.
+
+    \item \textbf{Soal:} Tegangan permukaan $\gamma$ (gaya kawat $3.4 \text{ mN}, \ell = 7\text{cm}$). \\
+    \textbf{Jawab:} $\gamma = F/2\ell = \mathbf{0.024 \text{ N/m}}$.
+
+    \item \textbf{Soal:} Gaya gerak kawat larutan sabun $\gamma=0.025, \ell=21.5\text{cm}$. \\
+    \textbf{Jawab:} $F = 2\gamma\ell = \mathbf{0.01075 \text{ N}}$.
+
+    \item \textbf{Soal:} $\gamma$ cairan dari cincin platina ($r=2.9\text{cm}, F=6.2\text{mN}$). \\
+    \textbf{Jawab:} $\gamma = F/4\pi r \approx \mathbf{0.017 \text{ N/m}}$.
+
+    \item \textbf{Soal:} Apakah serangga 0.016g (6 kaki $r=30\mu\text{m}$) mengapung? \\
+    \textbf{Jawab:} $W = 1.57 \times 10^{-4} \text{ N} > F_{angkat} \implies$ \textbf{Tenggelam}.
+
+    \item \textbf{Soal:} Diameter jarum baja agar tidak tenggelam di air. \\
+    \textbf{Jawab:} $d = \sqrt{8\gamma / \rho \pi g} \approx \mathbf{1.56 \text{ mm}}$.
+
+    \item \textbf{Soal:} Kesalahan tekanan jika manset dipasang di betis (1m dibawah jantung). \\
+    \textbf{Jawab:} $\Delta P = \rho gh \approx \mathbf{10290 \text{ Pa}}$.
+
+\end{enumerate}
+
+\end{document}
