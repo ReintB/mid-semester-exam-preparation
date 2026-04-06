@@ -1,0 +1,200 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{multicol} % Paket untuk membuat banyak kolom
+\usepackage{enumitem} % Paket untuk mengatur kerapatan list
+
+% Memperkecil margin dan mengatur jarak antar kolom
+\geometry{a4paper, margin=0.6in, columnsep=0.25in} 
+
+% Memangkas spasi kosong berlebih antar baris list
+\setlist{nosep, leftmargin=*} 
+
+\title{Instrumentasi dan Pengukuran}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{multicols}{2}
+
+\section*{Bab 1: Dasar Instrumentasi}
+\label{bab1}
+
+\subsection*{Sistem Akuisisi Data}
+Sistem Akuisisi Data secara umum terdiri dari:
+\begin{enumerate}
+    \item \textbf{Sensor:} Alat pengindera/pengkonversi stimulus fisis.
+    \item \textbf{Pengkondisi Sinyal:} Modifikasi sinyal mentah agar bisa diproses lebih lanjut.
+    \item \textbf{ADC (Analog to Digital Converter):} Pengubah sinyal fisika (analog) menjadi data biner (digital).
+    \item \textbf{Pemroses Sinyal:} Unit mikrokontroler/komputer yang melakukan komputasinya.
+    \item \textbf{Aktuator / Penampil (Display):} Penggerak/penyaji \textit{output} ke lingkungan luar.
+\end{enumerate}
+
+\subsection*{Terminologi dan Definisi Penting}
+\begin{enumerate}
+    \item \textbf{Metrologi:} Ilmu pengetahuan yang berhubungan dan mempelajari tentang pengukuran.
+    \item \textbf{Instrumentasi:} Bidang ilmu meliputi perancangan, pembuatan, serta penggunaan instrumen untuk keperluan deteksi, pengukuran, serta pengolahan data.
+    \item \textbf{Pengukuran:} Rangkaian kegiatan eksperimen guna menentukan nilai kuantitatif sebuah besaran.
+    \item \textbf{Ketelitian (Accuracy):} Kemampuan alat ukur untuk memberikan indikasi / kedekatan dengan harga \textbf{nilai sebenarnya}.
+    \item \textbf{Ketepatan (Precision):} Kedekatan nilai-nilai pengukuran individual yang didistribusikan sekitar nilai rata-ratanya saat diulang.
+    \item \textbf{Sensitivitas (Sensitivity):} Perbandingan antara sinyal keluaran (respon) instrumen terhadap perubahan variabel masukan yang diukur.
+    \item \textbf{Repeatabilitas (Repeatability):} Kemampuan alat ukur untuk menunjukkan hasil yang sama dari proses pengukuran yang dilakukan berulang dan identik.
+    \item \textbf{Kesalahan (Error):} Penyimpangan variabel yang diukur dari nilai sebenarnya.
+    \item \textbf{Resolusi (Resolution):} Perubahan terkecil pada nilai yang diukur dari respon suatu instrumen.
+    \item \textbf{Kalibrasi (Calibration):} Serangkaian kegiatan memverifikasi/mencocokkan kebenaran indikasi ukur sebuah alat dengan membandingkannya ke standar ukur yang tertelusuri secara nasional/internasional.
+    \item \textbf{Koreksi (Correction):} Suatu harga aljabar yang ditambahkan pada hasil ukur untuk mengkompensasi penambahan kesalahan sistematik.
+    \item \textbf{Ketertelusuran (Traceability):} Terkaitnya hasil pengukuran pada standar nasional/internasional melalui peralatan ukur yang kinerjanya diketahui beserta sistem pembuktiannya.
+    \item \textbf{Kehandalan (Reliability):} Kesanggupan alat ukur untuk melaksanakan fungsi yang diisyaratkan untuk suatu periode yang ditetapkan.
+    \item \textbf{Ketidakpastian Pengukuran (Uncertainty):} Perkiraan atau taksiran rentang dari nilai pengukuran di mana nilai sebenarnya dari besaran obyek yang diukur terletak.
+    \item \textbf{Sensor:} Bagian/elemen dari alat ukur untuk mengubah suatu bentuk besaran fisik (sensing element) menjadi suatu \textbf{besaran listrik}.
+    \item \textbf{Transduser:} Bagian dari alat ukur yang mengubah suatu bentuk format energi menjadi \textbf{bentuk energi yang lain} sehingga mudah diolah oleh peralatan berikutnya.
+    \item \textbf{Rentang ukur (Range):} Besar daerah ukur di antara batas ukur bawah dan batas ukur atas.
+    \item \textbf{Jangkauan (Span):} Beda modulus antara dua batas rentang nominal dari alat ukur (Contoh: Bekerja pada rentang -10V sampai 10V, maka Span = 20V).
+\end{enumerate}
+
+\noindent\rule{\columnwidth}{0.4pt}
+
+\section*{Bab 2: Alat Ukur Listrik}
+\label{bab2}
+
+\subsection*{1. Besaran Listrik Dasar}
+\begin{itemize}
+    \item \textbf{Arus Listrik (I):} Aliran muatan listrik dalam suatu penghantar, dihitung dengan satuan Ampere (A). Arus mengalir dikarenakan adanya sumber tegangan (voltage) yang terhubung dalam sistem tertutup, yang juga memiliki hambatan (resistansi).
+    \item \textbf{Tegangan (E/V):} Besarnya gaya pendorong aliran arus (Electromotive Force), bersatuan Volt (V). Tegangan muncul berkat perbedaan potensial antara dua kutub.
+\end{itemize}
+
+\subsection*{2. Galvanometer}
+\begin{itemize}
+    \item Alat ukur dasar atau komponen pengerak utama di dalam berbagai instrumen ukur listrik tipe jarum penunjuk (analog).
+    \item Bekerja berdasarkan prinsip interaksi medan magnet. Arus listrik yang dilewatkan pada sebuah kumparan (coil) di dalam medan magnet permanen akan menghasilkan gaya Lorentz pembentuk momen torsi. 
+\end{itemize}
+
+\subsection*{3. Varian Alat Ukur}
+\begin{itemize}
+    \item \textbf{Amperemeter:} Galvanometer yang dipararelkan dengan tahanan \textit{Shunt} kecil. Harus \textbf{dipasang secara Seri} dengan beban.
+    \item \textbf{Voltmeter:} Galvanometer diserikan dengan tahanan \textit{Multiplier} bernilai besar. Harus \textbf{dipasang secara Paralel}.
+    \item \textbf{Ohmmeter:} Terdapat tambahan sumber baterai lokal di dalam alat untuk menginjeksi listrik ke komponen yang diuji.
+\end{itemize}
+
+\subsection*{4. Multimeter}
+Sering disebut AVO-meter (Ampere-Volt-Ohm), menyatukan fungsi Voltmeter, Amperemeter, dan Ohmmeter dalam 1 wadah.
+
+\noindent\rule{\columnwidth}{0.4pt}
+
+\section*{Bab 3: Sensor \& Transduser}
+\label{bab3}
+
+\subsection*{Definisi Sensor \& Transduser}
+\begin{itemize}
+    \item \textbf{Sensor:} Perangkat yang menerima stimulus dan merespon dengan mengeluarkan sinyal elektronik dengan merubah besaran fisis menjadi besaran listrik.
+    \item \textbf{Transduser:} Perangkat yang merubah besaran fisis menjadi besaran fisis yang lain.
+\end{itemize}
+
+\subsection*{Tipe Konversi \& Sistem}
+\begin{enumerate}
+    \item \textbf{Sensor Langsung (Direct):} Mengubah stimulus langsung menjadi sinyal listrik lewat 1 efek fisika.
+    \item \textbf{Sensor Kompleks:} Melalui lebih dari 1 tahapan konversi transduser.
+\end{enumerate}
+
+\subsection*{Klasifikasi Sensor}
+\textbf{1. Berdasar Kedudukan Acuan:}
+\begin{itemize}
+    \item \textbf{Absolut:} Mendeteksi stimulus mandiri pada skala fisis murni independen.
+    \item \textbf{Relatif:} Mengukur berdasar kasus khusus / referensi banding gradien tertentu.
+\end{itemize}
+
+\textbf{2. Berdasar Ketergantungan Suplai:}
+\begin{itemize}
+    \item \textbf{Aktif:} Membutuhkan injeksi sumber daya luar (sinyal eksitasi).
+    \item \textbf{Pasif:} Secara alami memproduksi energi sinyal listrik tanpa dicatu daya eksternal.
+\end{itemize}
+
+\noindent\rule{\columnwidth}{0.4pt}
+
+\section*{Bab 4: Karakteristik Sensor}
+\label{bab4}
+
+\subsection*{Karakteristik Statis}
+\begin{enumerate}
+    \item \textbf{Fungsi Transfer:} Hubungan matematis ideal sinyal input dengan output.
+    \begin{itemize}
+        \item Linier: $S = a + bs$
+        \item Logaritmik: $S = a + b \ln s$
+        \item Eksponensial: $S = a e^{bs}$
+        \item Pangkat: $S = a_0 + a_1 s^b$
+    \end{itemize}
+    \textit{(S = Sinyal keluaran, s = Sinyal masukan, b = Sensitivitas)}
+    \item \textbf{Span (Range) \& FSO:} Jangkauan dinamis input minimum hingga maksimum. FSO adalah selisih \textit{output} tegangan maksimum dengan minimum.
+    \item \textbf{Inakurasi / Error:} 
+    \[ \text{Error} = \left(\frac{\text{Deviasi max}}{\text{Span Input}}\right) \times 100\% \]
+    \item \textbf{Histeresis:} Ketidakcocokan pembacaan saat grafik gerak naik vs turun.
+    \item \textbf{Ketidaklinearan:} Simpangan kurva keluaran terhadap acuan linier idealnya.
+    \item \textbf{Saturasi:} Batas tertinggi ukur di mana sensor tidak lagi merespons normal.
+    \item \textbf{Pita Mati (Dead Band):} Rentang di mana perubahan masukan belum membangkitkan sinyal \textit{output}.
+    \item \textbf{Resolusi:} Perubahan input paling kecil yang sudah dapat dideteksi.
+\end{enumerate}
+
+\subsection*{Faktor Dinamis}
+\begin{itemize}
+    \item \textbf{Eksitasi:} Sinyal listrik pen-trigger sensor.
+    \item \textbf{Ketahanan:} Stabilitas \textit{Short Term} (noise) dan \textit{Long Term} (umur bahan).
+\end{itemize}
+
+\noindent\rule{\columnwidth}{0.4pt}
+
+\section*{Bab 5: Pengkondisi Sinyal}
+\label{bab5}
+
+\subsection*{1. Rangkaian Pembagi Tegangan}
+\[ V_{out} = V_{in} \times \left( \frac{R_1}{R_1 + R_2} \right) \]
+
+\subsection*{2. Konverter Arus Ke Tegangan}
+\[ V_o = -i \cdot R_F \]
+
+\subsection*{3. Operational Amplifier (Op-Amp)}
+\begin{itemize}
+    \item \textbf{Inverting:}
+    \[ V_{out} = -\left( \frac{R_F}{R_{in}} \right) V_{in} \]
+    \item \textbf{Non-Inverting:}
+    \[ V_{out} = \left( 1 + \frac{R_F}{R_{in}} \right) V_{in} \]
+\end{itemize}
+
+\subsection*{4. Filter Frekuensi (RC Filter)}
+Menyaring frekuensi. Titik \textit{Cut-off Frequency} ($f_c$):
+\[ f_c = \frac{1}{2 \pi R C} \]
+
+\noindent\rule{\columnwidth}{0.4pt}
+
+\section*{Bab 6: Konversi Sinyal}
+\label{bab6}
+
+\subsection*{Format Sinyal}
+\begin{itemize}
+    \item \textbf{Analog:} Sinyal \textit{kontinu}.
+    \item \textbf{Digital:} Sinyal \textit{diskrit}. Dimodulasi dengan \textit{PCM (Pulse Code Modulation)}.
+\end{itemize}
+
+\subsection*{Konverter Perantara}
+\begin{enumerate}
+    \item \textbf{ADC (Analog to Digital):}
+    \[ V_{out(Des)} = \left( \frac{V_{in}}{V_{ref}} \right) \times ADC_{\text{max}} \]
+    \item \textbf{DAC (Digital to Analog):}
+    \[ V_{out} = \left( \frac{\text{In}_{\text{DAC}}}{DAC_{\text{max}}} \right) \times V_{ref} \]
+\end{enumerate}
+
+\subsection*{Resolusi ADC Data}
+\begin{itemize}
+    \item \textbf{Konverter 8-Bit:} $2^8 = 256$ skala (\texttt{0}-\texttt{255}). 
+    Resolusi = $V_{ref} / 255$
+    \item \textbf{Konverter 10-Bit:} $2^{10} = 1024$ skala (\texttt{0}-\texttt{1023}).
+    Resolusi = $V_{ref} / 1023$
+\end{itemize}
+Semakin besar bit-nya, loncatan nilainya semakin kecil (rapat), sehingga pembacaan lebih presisi.
+
+\end{multicols}
+
+\end{document}
