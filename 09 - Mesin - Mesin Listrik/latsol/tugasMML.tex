@@ -1,0 +1,1576 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- Preamble / Struktur Inti ---
+\usepackage[utf8]{inputenc} % Untuk encoding karakter
+\usepackage{amsmath}        % Untuk format matematika tingkat lanjut
+\usepackage{enumitem}       % Untuk kustomisasi numbering (seperti a, b, c)
+\usepackage[margin=2.5cm]{geometry} % Untuk mengatur margin halaman
+\usepackage{graphicx}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+\Large\textbf{Mesin-Mesin Listrik}
+\end{center}
+
+\subsection*{Soal 1}
+Suatu transformator ideal satu fasa mempunyai 200 lilitan pada belitan primer dan 100 lilitan pada sekunder. Jika belitan primer dihubungkan dengan tegangan sumber sebesar 200 volt dan arus beban sekunder 20 Ampere. Hitunglah:\\
+a. Arus primer.\\
+b. Tegangan sekunder.\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jumlah lilitan primer ($N_p$) = 200 lilitan
+    \item Jumlah lilitan sekunder ($N_s$) = 100 lilitan
+    \item Tegangan sumber/primer ($V_p$) = 200 Volt
+    \item Arus beban sekunder ($I_s$) = 20 Ampere
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Arus primer ($I_p$)
+    \item Tegangan sekunder ($V_s$)
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+Persamaan dasar untuk transformator ideal adalah:
+\[
+    \frac{V_p}{V_s} = \frac{N_p}{N_s} = \frac{I_s}{I_p}
+\]
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Arus Primer ($I_p$)}
+
+    Menggunakan perbandingan antara jumlah lilitan dan arus (berbanding terbalik):
+    \begin{align*}
+        \frac{N_p}{N_s} &= \frac{I_s}{I_p} \\
+        \frac{200}{100} &= \frac{20}{I_p} \\
+        2 &= \frac{20}{I_p} \\
+        I_p &= \frac{20}{2} \\
+        I_p &= 10 \text{ Ampere}
+    \end{align*}
+    Jadi, besarnya arus primer adalah \textbf{10 Ampere}.
+
+    \item \textbf{Tegangan Sekunder ($V_s$)}
+
+    Menggunakan perbandingan antara jumlah lilitan dan tegangan (berbanding lurus):
+    \begin{align*}
+        \frac{V_p}{V_s} &= \frac{N_p}{N_s} \\
+        \frac{200}{V_s} &= \frac{200}{100} \\
+        \frac{200}{V_s} &= 2 \\
+        V_s &= \frac{200}{2} \\
+        V_s &= 100 \text{ Volt}
+    \end{align*}
+    Jadi, besarnya tegangan sekunder adalah \textbf{100 Volt}.
+\end{enumerate}
+
+\subsection*{Soal 2}
+Suatu transformator ideal satu fasa mempunyai 400 lilitan primer dan 1000 lilitan sekunder, luas penampang inti 60 $\text{cm}^2$. Jika belitan primer dihubungkan pada sumber tegangan 520 volt dan frekuensi 50 Hz, hitunglah:\\
+a. Harga maksimum kerapatan fluks pada inti?\\
+b. Tegangan induksi pada belitan sekunder.\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jumlah lilitan primer ($N_p$) = 400 lilitan
+    \item Jumlah lilitan sekunder ($N_s$) = 1000 lilitan
+    \item Luas penampang inti ($A$) = $60 \text{ cm}^2 = 60 \times 10^{-4} \text{ m}^2 = 0.006 \text{ m}^2$
+    \item Tegangan primer ($V_p$) = 520 Volt
+    \item Frekuensi ($f$) = 50 Hz
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Harga maksimum kerapatan fluks pada inti ($B_{max}$)
+    \item Tegangan induksi pada belitan sekunder ($V_s$)
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Harga Maksimum Kerapatan Fluks pada Inti ($B_{max}$)}
+
+    Berdasarkan persamaan GGL induksi pada transformator:
+    \[
+        V_p = 4.44 \cdot f \cdot N_p \cdot \Phi_{max}
+    \]
+    Karena fluks maksimum ($\Phi_{max}$) adalah hasil kali kerapatan fluks maksimum ($B_{max}$) dengan luas penampang inti ($A$), maka persamaannya menjadi:
+    \begin{align*}
+        V_p &= 4.44 \cdot f \cdot N_p \cdot B_{max} \cdot A \\
+        520 &= 4.44 \cdot 50 \cdot 400 \cdot B_{max} \cdot (60 \times 10^{-4}) \\
+        520 &= 4.44 \cdot 20000 \cdot B_{max} \cdot 0.006 \\
+        520 &= 532.8 \cdot B_{max} \\
+        B_{max} &= \frac{520}{532.8} \\
+        B_{max} &\approx 0.976 \text{ Wb/m}^2 \text{ (Tesla)}
+    \end{align*}
+    Jadi, harga maksimum kerapatan fluks pada inti adalah sekitar \textbf{0.976 $\text{Wb/m}^2$}.
+
+    \item \textbf{Tegangan Induksi pada Belitan Sekunder ($V_s$)}
+
+    Menggunakan perbandingan transformasi dasar:
+    \begin{align*}
+        \frac{V_p}{V_s} &= \frac{N_p}{N_s} \\
+        \frac{520}{V_s} &= \frac{400}{1000} \\
+        \frac{520}{V_s} &= 0.4 \\
+        V_s &= \frac{520}{0.4} \\
+        V_s &= 1300 \text{ Volt}
+    \end{align*}
+    Jadi, tegangan induksi pada belitan sekunder adalah \textbf{1300 Volt}.
+\end{enumerate}
+
+\subsection*{Soal 3}
+Kerapatan fluks maksimum pada inti transformator 250/3000 volt, 50 Hz satu fasa adalah 1,2 Wb/m$^2$. Jika emf per lilitan 8 volt, hitunglah:\\
+a. Jumlah lilitan primer dan sekunder.\\
+b. Luas inti transformator.\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Tegangan primer ($V_p$) = 250 Volt
+    \item Tegangan sekunder ($V_s$) = 3000 Volt
+    \item Frekuensi ($f$) = 50 Hz
+    \item Kerapatan fluks maksimum ($B_{max}$) = 1,2 Wb/m$^2$
+    \item Gaya Gerak Listrik (emf) per lilitan ($E_{turn}$) = 8 Volt/lilitan
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Jumlah lilitan primer ($N_p$) dan sekunder ($N_s$)
+    \item Luas inti transformator ($A$)
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Jumlah Lilitan Primer dan Sekunder ($N_p$ dan $N_s$)}
+
+    Nilai emf per lilitan didefinisikan sebagai total tegangan dibagi dengan total lilitan pada sisi yang bersesuaian.
+    \[
+        E_{turn} = \frac{V_p}{N_p} = \frac{V_s}{N_s} = 8 \text{ Volt/lilitan}
+    \]
+
+    Untuk jumlah lilitan primer ($N_p$):
+    \begin{align*}
+        N_p &= \frac{V_p}{E_{turn}} \\
+        N_p &= \frac{250}{8} \\
+        N_p &= 31,25 \text{ lilitan}
+    \end{align*}
+
+    Untuk jumlah lilitan sekunder ($N_s$):
+    \begin{align*}
+        N_s &= \frac{V_s}{E_{turn}} \\
+        N_s &= \frac{3000}{8} \\
+        N_s &= 375 \text{ lilitan}
+    \end{align*}
+
+    Jadi, jumlah lilitan primer adalah \textbf{31,25 lilitan} dan lilitan sekunder adalah \textbf{375 lilitan}.
+
+    \item \textbf{Luas Inti Transformator ($A$)}
+
+    Berdasarkan persamaan emf per lilitan pada transformator:
+    \[
+        E_{turn} = 4,44 \cdot f \cdot \Phi_{max}
+    \]
+    Karena fluks maksimum ($\Phi_{max}$) adalah hasil kali kerapatan fluks maksimum ($B_{max}$) dengan luas inti ($A$), persamaannya dapat ditulis menjadi:
+    \begin{align*}
+        E_{turn} &= 4,44 \cdot f \cdot B_{max} \cdot A \\
+        8 &= 4,44 \cdot 50 \cdot 1,2 \cdot A \\
+        8 &= 222 \cdot 1,2 \cdot A \\
+        8 &= 266,4 \cdot A \\
+        A &= \frac{8}{266,4} \\
+        A &\approx 0,03003 \text{ m}^2
+    \end{align*}
+    Jika dikonversi ke sentimeter persegi ($\text{cm}^2$):
+    \[
+        A \approx 0,03003 \times 10^4 \text{ cm}^2 = 300,3 \text{ cm}^2
+    \]
+    Jadi, luas inti transformator adalah sekitar \textbf{0,03003 m$^2$} atau \textbf{300,3 cm$^2$}.
+\end{enumerate}
+
+\subsection*{Soal 4}
+Suatu inti transformator 100-kVA, 11000/550 V, 50-Hz, 1 fasa, memiliki luas penampang melintang inti 20 cm $\times$ 20 cm. Hitunglah:\\
+a. Jumlah lilitan per fasa pada sisi \textit{HV} dan \textit{LV}.\\
+b. \textit{EMF} per lilitan jika kerapatan fluks maksimum inti tidak melebihi 1.3 Tesla. Asumsikan bahwa faktor stacking 0.9.\\
+c. Apakah yang akan terjadi jika tegangan primer dinaikkan 10\% pada kondisi tanpa beban?\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Kapasitas Transformator ($S$) = 100 kVA
+    \item Tegangan Primer/HV ($V_{HV}$) = 11000 Volt
+    \item Tegangan Sekunder/LV ($V_{LV}$) = 550 Volt
+    \item Frekuensi ($f$) = 50 Hz
+    \item Jumlah Fasa = 1 Fasa
+    \item Luas penampang melintang inti kotor ($A_{gross}$) = 20 cm $\times$ 20 cm = 400 cm$^2$ = 0,04 m$^2$
+    \item Kerapatan fluks maksimum ($B_{max}$) = 1,3 Tesla (Wb/m$^2$)
+    \item Faktor stacking ($K_s$) = 0,9
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Jumlah lilitan per fasa sisi HV ($N_{HV}$) dan sisi LV ($N_{LV}$)
+    \item EMF per lilitan ($E_t$)
+    \item Dampak kenaikan tegangan primer 10\% saat tanpa beban
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+Langkah pertama yang penting adalah menghitung luas penampang inti bersih (netto) atau $A_{net}$:
+\begin{align*}
+    A_{net} &= A_{gross} \times K_s \\
+    A_{net} &= 0,04 \text{ m}^2 \times 0,9 = 0,036 \text{ m}^2
+\end{align*}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Jumlah Lilitan pada Sisi HV dan LV ($N_{HV}$ dan $N_{LV}$)}
+
+    Untuk mencari jumlah lilitan, kita harus menghitung nilai EMF per lilitan ($E_t$) batas maksimum terlebih dahulu menggunakan persamaan GGL transformator:
+    \begin{align*}
+        E_t &= 4,44 \cdot f \cdot B_{max} \cdot A_{net} \\
+        E_t &= 4,44 \cdot 50 \cdot 1,3 \cdot 0,036 \\
+        E_t &= 10,3896 \text{ Volt/lilitan}
+    \end{align*}
+
+    Mencari lilitan sisi Tegangan Rendah (LV):
+    \begin{align*}
+        N_{LV} &= \frac{V_{LV}}{E_t} \\
+        N_{LV} &= \frac{550}{10,3896} \approx 52,937 \text{ lilitan}
+    \end{align*}
+    Karena jumlah lilitan harus berupa bilangan bulat dan agar batas fluks 1,3 Tesla tidak dilanggar, kita \textbf{bulatkan ke atas} menjadi \textbf{53 lilitan}.
+
+    Mencari lilitan sisi Tegangan Tinggi (HV):
+    \begin{align*}
+        \frac{V_{HV}}{V_{LV}} &= \frac{N_{HV}}{N_{LV}} \\
+        N_{HV} &= N_{LV} \cdot \left(\frac{V_{HV}}{V_{LV}}\right) \\
+        N_{HV} &= 53 \cdot \left(\frac{11000}{550}\right) \\
+        N_{HV} &= 53 \cdot 20 = 1060 \text{ lilitan}
+    \end{align*}
+
+    Jadi, jumlah lilitan sisi LV adalah \textbf{53 lilitan} dan sisi HV adalah \textbf{1060 lilitan}.
+
+    \item \textbf{EMF per Lilitan ($E_t$)}
+
+    Nilai EMF per lilitan teoritis maksimal telah kita hitung di poin (a) yaitu sebesar \textbf{10,3896 Volt/lilitan}.
+
+    \textit{(Catatan tambahan: karena kita membulatkan $N_{LV}$ menjadi 53 lilitan, nilai EMF per lilitan aktual yang bekerja pada trafo tersebut menjadi $\frac{550}{53} \approx 10,377$ Volt/lilitan. Hal ini aman karena nilai aktualnya sedikit lebih kecil, sehingga kerapatan fluks akan berada sedikit di bawah batas maksimal 1,3 Tesla).}
+
+    \item \textbf{Dampak Tegangan Primer Dinaikkan 10\% pada Kondisi Tanpa Beban}
+
+    Berdasarkan rumus $V \approx 4,44 \cdot f \cdot N \cdot B \cdot A$, nilai tegangan berbanding lurus dengan kerapatan fluks magnetik ($V \propto B$). Jika tegangan primer dinaikkan sebesar 10\%, maka kerapatan fluks ($B$) di dalam inti juga akan dipaksa naik 10\% (menjadi sekitar $1,3 \times 1,1 = 1,43$ Tesla).
+
+    Hal ini akan menimbulkan beberapa dampak buruk:
+    \begin{itemize}
+        \item \textbf{Saturasi Inti Magnetik:} Inti besi transformator kemungkinan besar akan mengalami saturasi (kejenuhan) karena bekerja melewati batas operasi linier fluks nominalnya.
+        \item \textbf{Lonjakan Arus Magnetisasi:} Akibat terjadinya saturasi, arus tanpa beban (arus magnetisasi, $I_0$) akan melonjak sangat tajam secara non-linear.
+        \item \textbf{Panas Berlebih (\textit{Overheating}):} Rugi-rugi inti besi (rugi histeresis dan \textit{eddy current}) meningkat sebanding dengan kuadrat tegangan/fluks. Kenaikan rugi inti yang signifikan ini akan membuat transformator cepat panas.
+        \item \textbf{Distorsi Harmonisa:} Bentuk gelombang arus tidak akan lagi berbentuk sinusoidal murni, melainkan terdistorsi parah dan banyak mengandung gelombang harmonisa ketiga.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Soal 5}
+Trafo satu fasa memiliki 400 lilitan primer dan 1000 lilitan sekunder. Luas penampang bersih inti adalah 60 cm$^2$. Jika belitan primer dihubungkan ke suplai 50-Hz pada 520 V, hitunglah:\\
+a. Nilai puncak kerapatan fluks di inti.\\
+b. Tegangan yang induksi pada belitan sekunder.\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jumlah lilitan primer ($N_p$) = 400 lilitan
+    \item Jumlah lilitan sekunder ($N_s$) = 1000 lilitan
+    \item Luas penampang bersih inti ($A_{net}$) = 60 cm$^2$ = $60 \times 10^{-4} \text{ m}^2 = 0.006 \text{ m}^2$
+    \item Tegangan primer ($V_p$) = 520 Volt
+    \item Frekuensi ($f$) = 50 Hz
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Nilai puncak kerapatan fluks di inti ($B_{max}$)
+    \item Tegangan induksi pada belitan sekunder ($V_s$)
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Nilai Puncak Kerapatan Fluks di Inti ($B_{max}$)}
+
+    Berdasarkan persamaan GGL induksi pada transformator:
+    \[
+        V_p = 4.44 \cdot f \cdot N_p \cdot \Phi_{max}
+    \]
+    Karena fluks maksimum ($\Phi_{max}$) adalah hasil kali kerapatan fluks puncak ($B_{max}$) dengan luas penampang bersih inti ($A_{net}$), maka persamaannya menjadi:
+    \begin{align*}
+        V_p &= 4.44 \cdot f \cdot N_p \cdot B_{max} \cdot A_{net} \\
+        520 &= 4.44 \cdot 50 \cdot 400 \cdot B_{max} \cdot 0.006 \\
+        520 &= 532.8 \cdot B_{max} \\
+        B_{max} &= \frac{520}{532.8} \\
+        B_{max} &\approx 0.976 \text{ Wb/m}^2 \text{ (Tesla)}
+    \end{align*}
+    Jadi, nilai puncak kerapatan fluks di inti adalah sekitar \textbf{0.976 $\text{Wb/m}^2$}.
+
+    \item \textbf{Tegangan Induksi pada Belitan Sekunder ($V_s$)}
+
+    Menggunakan persamaan perbandingan transformasi:
+    \begin{align*}
+        \frac{V_p}{V_s} &= \frac{N_p}{N_s} \\
+        \frac{520}{V_s} &= \frac{400}{1000} \\
+        \frac{520}{V_s} &= 0.4 \\
+        V_s &= \frac{520}{0.4} \\
+        V_s &= 1300 \text{ Volt}
+    \end{align*}
+    Jadi, tegangan yang diinduksikan pada belitan sekunder adalah \textbf{1300 Volt}.
+\end{enumerate}
+
+\subsection*{Soal 6}
+Trafo 25 kVA memiliki 500 lilitan pada belitan primer dan 50 lilitan pada belitan sekunder. Primer terhubung ke suplai 3000-V, 50-Hz. Hitunglah arus primer dan sekunder saat beban penuh, \textit{e.m.f.} dan fluks maksimum dalam inti. Abaikan rugi-rugi bocor dan arus primer tanpa beban.\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Kapasitas trafo ($S$) = 25 kVA = 25.000 VA
+    \item Jumlah lilitan primer ($N_p$) = 500 lilitan
+    \item Jumlah lilitan sekunder ($N_s$) = 50 lilitan
+    \item Tegangan suplai/primer ($V_p$) = 3000 Volt
+    \item Frekuensi ($f$) = 50 Hz
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}
+    \item Arus primer ($I_p$) dan arus sekunder ($I_s$) saat beban penuh.
+    \item \textit{e.m.f.} (tegangan induksi) sekunder ($E_s$).
+    \item Fluks maksimum dalam inti ($\Phi_{max}$).
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+Karena rugi-rugi diabaikan, kita mengasumsikan transformator beroperasi sebagai transformator ideal ($V_p \approx E_p$ dan $V_s \approx E_s$).
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Arus Primer dan Sekunder saat Beban Penuh ($I_p$ dan $I_s$)}
+
+    Kapasitas daya semu trafo ($S$) dalam keadaan ideal adalah sama pada sisi primer maupun sekunder:
+    \[
+        S = V_p \cdot I_p = V_s \cdot I_s
+    \]
+
+    Menghitung arus primer beban penuh ($I_p$):
+    \begin{align*}
+        I_p &= \frac{S}{V_p} \\
+        I_p &= \frac{25000}{3000} \\
+        I_p &= \frac{25}{3} \approx 8,33 \text{ Ampere}
+    \end{align*}
+
+    Untuk mencari arus sekunder, kita tentukan tegangan sekunder ($V_s$) terlebih dahulu menggunakan rasio transformasi:
+    \begin{align*}
+        \frac{V_p}{V_s} &= \frac{N_p}{N_s} \\
+        \frac{3000}{V_s} &= \frac{500}{50} \\
+        \frac{3000}{V_s} &= 10 \\
+        V_s &= 300 \text{ Volt}
+    \end{align*}
+
+    Menghitung arus sekunder beban penuh ($I_s$):
+    \begin{align*}
+        I_s &= \frac{S}{V_s} \\
+        I_s &= \frac{25000}{300} \\
+        I_s &= \frac{250}{3} \approx 83,33 \text{ Ampere}
+    \end{align*}
+
+    Jadi, arus primer beban penuh adalah \textbf{8,33 Ampere} dan arus sekunder beban penuh adalah \textbf{83,33 Ampere}.
+
+    \item \textbf{\textit{e.m.f.} Sekunder ($E_s$) dan \textit{e.m.f.} per Lilitan}
+
+    Pada trafo ideal, tegangan induksi (\textit{e.m.f.}) sekunder nilainya setara dengan tegangan keluaran ($V_s$):
+    \[
+        E_s = 300 \text{ Volt}
+    \]
+
+    Sebagai tambahan informasi, \textit{e.m.f.} per lilitan pada trafo tersebut adalah:
+    \[
+        E_{turn} = \frac{V_p}{N_p} = \frac{3000}{500} = 6 \text{ Volt/lilitan}
+    \]
+
+    \item \textbf{Fluks Maksimum dalam Inti ($\Phi_{max}$)}
+
+    Menggunakan persamaan dasar \textit{e.m.f.} transformator pada sisi primer:
+    \begin{align*}
+        E_p &= 4,44 \cdot f \cdot N_p \cdot \Phi_{max} \\
+        3000 &= 4,44 \cdot 50 \cdot 500 \cdot \Phi_{max} \\
+        3000 &= 111000 \cdot \Phi_{max} \\
+        \Phi_{max} &= \frac{3000}{111000} \\
+        \Phi_{max} &= \frac{1}{37} \approx 0,027027 \text{ Weber}
+    \end{align*}
+
+    Jadi, fluks maksimum di dalam inti adalah \textbf{0,027 Wb} atau setara dengan \textbf{27,03 mWb}.
+\end{enumerate}
+
+\subsection*{Soal 7}
+Suatu trafo penurun tegangan dari 2300 volt menjadi 230 volt, mempunyai daya 750 kVA dan 60 Hz. Resistansi dan reaktansi dari belitan:\\
+$R_1 = 0,093 \ \Omega$, $X_1 = 0,280 \ \Omega$\\
+$R_2 = 0,0093 \ \Omega$, $X_2 = 0,0028 \ \Omega$\\
+Trafo bekerja dengan beban penuh, hitunglah:\\
+a. Arus primer dan sekunder.\\
+b. Impedansi belitan primer dan sekunder.\\
+c. Jatuh tegangan pada belitan primer dan sekunder.\\
+d. Tegangan induksi pada belitan primer dan sekunder.\\
+e. Perbandingan transformasi.\\
+f. Perbandingan transformasi tegangan.
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Tegangan primer nominal ($V_1$) = 2300 Volt
+    \item Tegangan sekunder nominal ($V_2$) = 230 Volt
+    \item Daya semu trafo ($S$) = 750 kVA = 750.000 VA
+    \item Frekuensi ($f$) = 60 Hz
+    \item $R_1 = 0,093 \ \Omega$, $X_1 = 0,280 \ \Omega$
+    \item $R_2 = 0,0093 \ \Omega$, $X_2 = 0,0028 \ \Omega$
+\end{itemize}
+
+\textbf{Ditanya:} Poin (a) hingga (f)
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Arus Primer dan Sekunder ($I_1$ dan $I_2$)}
+
+    Arus pada kondisi beban penuh dihitung berdasarkan daya semu nominalnya:
+    \begin{align*}
+        I_1 &= \frac{S}{V_1} = \frac{750.000}{2300} \approx 326,09 \text{ Ampere} \\
+        I_2 &= \frac{S}{V_2} = \frac{750.000}{230} \approx 3260,87 \text{ Ampere}
+    \end{align*}
+
+    \item \textbf{Impedansi Belitan Primer dan Sekunder ($Z_1$ dan $Z_2$)}
+
+    Impedansi dihitung dengan rumus $Z = \sqrt{R^2 + X^2}$:
+    \begin{align*}
+        Z_1 &= \sqrt{R_1^2 + X_1^2} = \sqrt{0,093^2 + 0,280^2} = \sqrt{0,008649 + 0,0784} \\
+        Z_1 &= \sqrt{0,087049} \approx 0,295 \ \Omega
+    \end{align*}
+
+    \begin{align*}
+        Z_2 &= \sqrt{R_2^2 + X_2^2} = \sqrt{0,0093^2 + 0,0028^2} = \sqrt{0,00008649 + 0,00000784} \\
+        Z_2 &= \sqrt{0,00009433} \approx 0,00971 \ \Omega
+    \end{align*}
+
+    \item \textbf{Jatuh Tegangan pada Belitan Primer dan Sekunder ($\Delta V_1$ dan $\Delta V_2$)}
+
+    Tanpa diketahui faktor daya beban, kita asumsikan jatuh tegangan dihitung secara skalar absolut magnitude ($\Delta V = I \cdot Z$):
+    \begin{align*}
+        \Delta V_1 &= I_1 \cdot Z_1 = 326,09 \times 0,295 \approx 96,20 \text{ Volt} \\
+        \Delta V_2 &= I_2 \cdot Z_2 = 3260,87 \times 0,00971 \approx 31,66 \text{ Volt}
+    \end{align*}
+
+    \item \textbf{Tegangan Induksi pada Belitan Primer dan Sekunder ($E_1$ dan $E_2$)}
+
+    Tegangan induksi merupakan tegangan setelah/sebelum dikurangi jatuh tegangan pada belitan. Secara skalar:
+    \begin{align*}
+        E_1 &\approx V_1 - \Delta V_1 = 2300 - 96,20 = 2203,80 \text{ Volt} \\
+        E_2 &\approx V_2 + \Delta V_2 = 230 + 31,66 = 261,66 \text{ Volt}
+    \end{align*}
+    \textit{(Catatan: Hasil $E_1$ dan $E_2$ secara matematis skalar akan sedikit melenceng dari rasio transformasi murninya karena kita mengabaikan penjumlahan vektor sudut fase / faktor daya).}
+
+    \item \textbf{Perbandingan Transformasi ($a$)}
+
+    Perbandingan transformasi utama (rasio lilitan/tegangan primer ke sekunder) untuk trafo penurun tegangan adalah:
+    \[
+        a = \frac{V_1}{V_2} = \frac{2300}{230} = 10
+    \]
+
+    \item \textbf{Perbandingan Transformasi Tegangan ($K$)}
+
+    Dalam literatur mesin listrik, sering dibedakan antara rasio lilitan ($a$) dengan \textit{transformation ratio} ($K$). Rasio transformasi ($K$) adalah perbandingan tegangan sekunder terhadap primer:
+    \[
+        K = \frac{V_2}{V_1} = \frac{230}{2300} = \frac{1}{10} = 0,1
+    \]
+\end{enumerate}
+
+\subsection*{Soal 8}
+Sebutkan dan gambarkan diagram ekivalen 4 jenis Generator Arus Searah berpenguatan sendiri, hitunglah besarnya Ea, Vt, Pa, Pout, Arus yang ada pada rangkaian, untuk masing-masing jenis Generator tersebut.\\
+
+\textbf{Penyelesaian:}
+
+\textbf{1. Generator DC Shunt}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan shunt ($R_{sh}$) dihubungkan paralel dengan belitan jangkar ($R_a$) dan beban.
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/generatorShunt.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    Arus jangkar ($I_a$) merupakan penjumlahan dari arus beban ($I_L$) dan arus medan shunt ($I_{sh}$).
+    \begin{align*}
+        I_{sh} &= \frac{V_t}{R_{sh}} \\
+        I_a &= I_L + I_{sh}
+    \end{align*}
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a - I_a R_a  \]
+    \item \textbf{GGL Jangkar ($E_a$):} \[  E_a = V_t + I_a R_a  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Keluaran ($P_{out}$):} \[  P_{out} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textbf{2. Generator DC Seri}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan seri ($R_{se}$) dihubungkan secara seri dengan belitan jangkar ($R_a$) dan beban.
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/generatorSeri.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    Karena terhubung seri, maka arus yang mengalir pada jangkar, medan seri, dan beban adalah sama.
+    \[
+        I_a = I_{se} = I_L
+    \]
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a - I_a (R_a + R_{se})  \]
+    \item \textbf{GGL Jangkar ($E_a$):} \[  E_a = V_t + I_a (R_a + R_{se})  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Keluaran ($P_{out}$):} \[  P_{out} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textbf{3. Generator DC Kompon Panjang (\textit{Long-Shunt Compound})}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan seri ($R_{se}$) dihubungkan seri dengan jangkar ($R_a$). Kemudian, gabungan keduanya dihubungkan paralel dengan belitan medan shunt ($R_{sh}$).
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/generatorKomponPanjang.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    Arus seri sama dengan arus jangkar. Tegangan pada medan shunt sama dengan tegangan terminal.
+    \begin{align*}
+        I_{se} &= I_a \\
+        I_{sh} &= \frac{V_t}{R_{sh}} \\
+        I_a &= I_L + I_{sh}
+    \end{align*}
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a - I_a (R_a + R_{se})  \]
+    \item \textbf{GGL Jangkar ($E_a$):} \[  E_a = V_t + I_a (R_a + R_{se})  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Keluaran ($P_{out}$):} \[  P_{out} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textbf{4. Generator DC Kompon Pendek (\textit{Short-Shunt Compound})}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan shunt ($R_{sh}$) dihubungkan paralel hanya dengan belitan jangkar ($R_a$). Gabungan ini kemudian dihubungkan seri dengan belitan medan seri ($R_{se}$) dan beban.
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/generatorKomponPendek.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    Arus medan seri sama dengan arus beban. Tegangan pada medan shunt merupakan tegangan terminal ditambah jatuh tegangan pada medan seri.
+    \begin{align*}
+        I_{se} &= I_L \\
+        I_{sh} &= \frac{V_t + I_L R_{se}}{R_{sh}} \\
+        I_a &= I_L + I_{sh}
+    \end{align*}
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a - I_a R_a - I_L R_{se}  \]
+    \item \textbf{GGL Jangkar ($E_a$):} \[  E_a = V_t + I_a R_a + I_L R_{se}  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Keluaran ($P_{out}$):} \[  P_{out} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textit{Catatan: Asumsi pada persamaan di atas mengabaikan jatuh tegangan pada sikat (brush voltage drop, $V_b$) untuk penyederhanaan. Jika jatuh tegangan sikat diperhitungkan, maka perlu dikurangi $2V_b$ pada persamaan $V_t$ atau ditambahkan pada persamaan $E_a$.}
+
+\subsection*{Soal 9}
+Sebutkan dan gambarkan diagram ekivalen 4 jenis Motor Arus Searah berpenguatan sendiri, hitunglah besarnya Ea, Vt, Pa, Pin, Arus yang ada pada rangkaian, untuk masing-masing jenis Motor tersebut.\\
+
+\textbf{Penyelesaian:}
+Motor arus searah (DC) berpenguatan sendiri terbagi menjadi 4 jenis utama berdasarkan penyambungan belitan medannya. Pada motor, arus mengalir dari sumber tegangan ($V_t$) masuk ke dalam jangkar ($R_a$). Berikut adalah penjabaran persamaannya:
+
+\textbf{1. Motor DC Shunt}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan shunt ($R_{sh}$) dihubungkan paralel dengan belitan jangkar ($R_a$) dan sumber tegangan.
+    \item
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/motorDCShunt.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    Arus saluran/sumber ($I_L$) terbagi menjadi arus jangkar ($I_a$) dan arus medan shunt ($I_{sh}$).
+    \begin{align*}
+        I_{sh} &= \frac{V_t}{R_{sh}} \\
+        I_L &= I_a + I_{sh} \implies I_a = I_L - I_{sh}
+    \end{align*}
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a + I_a R_a  \]
+    \item \textbf{GGL Balik / \textit{Back EMF} ($E_a$):} \[  E_a = V_t - I_a R_a  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Masukan ($P_{in}$):} \[  P_{in} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textbf{2. Motor DC Seri}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan seri ($R_{se}$) dihubungkan secara seri dengan belitan jangkar ($R_a$) dan sumber tegangan.
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/motorDCSeri.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    Arus yang mengalir dari sumber, melewati medan seri, dan masuk ke jangkar adalah sama besar.
+    \[
+        I_L = I_{se} = I_a
+    \]
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a + I_a (R_a + R_{se})  \]
+    \item \textbf{GGL Balik / \textit{Back EMF} ($E_a$):} \[  E_a = V_t - I_a (R_a + R_{se})  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Masukan ($P_{in}$):} \[  P_{in} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textbf{3. Motor DC Kompon Panjang (\textit{Long-Shunt Compound})}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan seri ($R_{se}$) diserikan terlebih dahulu dengan jangkar ($R_a$). Kemudian, gabungan tersebut diparalelkan dengan belitan medan shunt ($R_{sh}$) dan dihubungkan ke sumber.
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/motorDCKomponPanjang.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    \begin{align*}
+        I_{sh} &= \frac{V_t}{R_{sh}} \\
+        I_L &= I_a + I_{sh} \implies I_a = I_L - I_{sh} \\
+        I_{se} &= I_a
+    \end{align*}
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a + I_a (R_a + R_{se})  \]
+    \item \textbf{GGL Balik / \textit{Back EMF} ($E_a$):} \[  E_a = V_t - I_a (R_a + R_{se})  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Masukan ($P_{in}$):} \[  P_{in} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textbf{4. Motor DC Kompon Pendek (\textit{Short-Shunt Compound})}
+\begin{itemize}
+    \item \textbf{Deskripsi Rangkaian:} Belitan medan shunt ($R_{sh}$) diparalelkan langsung hanya dengan belitan jangkar ($R_a$). Gabungan ini kemudian diserikan dengan belitan medan seri ($R_{se}$) dan dihubungkan ke sumber.
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{images/motorDCKomponPendek.png}
+    \end{center}
+    \item \textbf{Arus pada rangkaian:}
+    Tegangan yang mengapit belitan shunt adalah tegangan terminal dikurangi jatuh tegangan pada medan seri.
+    \begin{align*}
+        I_{se} &= I_L \\
+        I_{sh} &= \frac{V_t - I_L R_{se}}{R_{sh}} \\
+        I_L &= I_a + I_{sh} \implies I_a = I_L - I_{sh}
+    \end{align*}
+    \item \textbf{Tegangan Terminal ($V_t$):} \[  V_t = E_a + I_a R_a + I_L R_{se}  \]
+    \item \textbf{GGL Balik / \textit{Back EMF} ($E_a$):} \[  E_a = V_t - I_a R_a - I_L R_{se}  \]
+    \item \textbf{Daya Jangkar ($P_a$):} \[  P_a = E_a \cdot I_a  \]
+    \item \textbf{Daya Masukan ($P_{in}$):} \[  P_{in} = V_t \cdot I_L  \]
+\end{itemize}
+
+\textit{Catatan: Asumsi ini mengabaikan tegangan jatuh pada sikat (brush drop, $V_b$). Jika diperhitungkan, kurangkan nilai $2V_b$ dari persamaan $E_a$.}
+
+\subsection*{Soal 10}
+Sebuah generator DC kompond pendek 22 KW mempunyai tegangan terminal 220 volt. Besar hambatan armatur 0,03 Ohm, hambatan kumparan medan seri 0,05 ohm, hambatan kumparan shunt 40 Ohm. Jika efisiensi generator tersebut 80 \% dan jatuh tegangan pada masing-masing sikat 1 volt,\\
+Hitung:\\
+a. Gaya gerak listrik armatur.\\
+b. Daya masukan.\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Generator DC Kompon Pendek (\textit{Short-Shunt})
+    \item Daya Keluaran ($P_{out}$) = 22 kW = 22.000 Watt
+    \item Tegangan Terminal ($V_t$) = 220 Volt
+    \item Hambatan Armatur/Jangkar ($R_a$) = 0,03 $\Omega$
+    \item Hambatan Medan Seri ($R_{se}$) = 0,05 $\Omega$
+    \item Hambatan Medan Shunt ($R_{sh}$) = 40 $\Omega$
+    \item Efisiensi ($\eta$) = 80\% = 0,8
+    \item Jatuh tegangan per sikat = 1 Volt. Total jatuh tegangan sikat ($V_b$) = $2 \times 1$ Volt = 2 Volt
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Gaya gerak listrik armatur ($E_a$)
+    \item Daya masukan ($P_{in}$)
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Gaya Gerak Listrik Armatur ($E_a$)}
+
+    Langkah pertama adalah mencari arus beban ($I_L$):
+    \[
+        I_L = \frac{P_{out}}{V_t} = \frac{22.000}{220} = 100 \text{ Ampere}
+    \]
+
+    Pada generator kompon pendek, arus medan seri ($I_{se}$) sama dengan arus beban ($I_L$):
+    \[
+        I_{se} = I_L = 100 \text{ Ampere}
+    \]
+
+    Tegangan pada ujung belitan medan shunt ($V_{sh}$) adalah tegangan terminal ditambah jatuh tegangan pada belitan seri:
+    \begin{align*}
+        V_{sh} &= V_t + (I_{se} \cdot R_{se}) \\
+        V_{sh} &= 220 + (100 \cdot 0,05) = 220 + 5 = 225 \text{ Volt}
+    \end{align*}
+
+    Arus medan shunt ($I_{sh}$) adalah:
+    \[
+        I_{sh} = \frac{V_{sh}}{R_{sh}} = \frac{225}{40} = 5,625 \text{ Ampere}
+    \]
+
+    Arus armatur/jangkar ($I_a$) adalah total dari arus beban dan arus shunt:
+    \[
+        I_a = I_L + I_{sh} = 100 + 5,625 = 105,625 \text{ Ampere}
+    \]
+
+    Maka, Gaya Gerak Listrik (GGL) armatur ($E_a$) adalah:
+    \begin{align*}
+        E_a &= V_{sh} + (I_a \cdot R_a) + V_b \\
+        E_a &= 225 + (105,625 \cdot 0,03) + 2 \\
+        E_a &= 225 + 3,16875 + 2 \\
+        E_a &= 230,16875 \text{ Volt}
+    \end{align*}
+
+    Jadi, besar Gaya Gerak Listrik armatur adalah \textbf{230,17 Volt} (dibulatkan).
+
+    \item \textbf{Daya Masukan ($P_{in}$)}
+
+    Daya masukan dapat dicari langsung menggunakan nilai efisiensi dan daya keluaran:
+    \begin{align*}
+        \eta &= \frac{P_{out}}{P_{in}} \\
+        P_{in} &= \frac{P_{out}}{\eta} \\
+        P_{in} &= \frac{22.000}{0,8} \\
+        P_{in} &= 27.500 \text{ Watt} = 27,5 \text{ kW}
+    \end{align*}
+
+    Jadi, besar daya masukannya adalah \textbf{27.500 Watt} atau \textbf{27,5 kW}.
+\end{enumerate}
+
+\subsection*{Soal 11}
+Sebuah generator DC shunt mempunyai arus beban 200 Ampere dan tegangan beban 220 volt. Besar hambatan armatur 0,03 Ohm, hambatan kumparan shunt 40 Ohm, serta rugi inti dan rugi gesek adalah 900 Watt\\
+Hitung:\\
+a. Gaya gerak listrik armatur, jika jatuh tegangan pada sikat diabaikan.\\
+b. Rugi total.\\
+c. Daya masukan.\\
+d. Efisiensi ekonomis.
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Generator DC Shunt
+    \item Arus beban ($I_L$) = 200 Ampere
+    \item Tegangan beban/terminal ($V_t$) = 220 Volt
+    \item Hambatan armatur ($R_a$) = 0,03 $\Omega$
+    \item Hambatan kumparan shunt ($R_{sh}$) = 40 $\Omega$
+    \item Rugi inti dan rugi gesek ($P_{rot}$) = 900 Watt
+    \item Jatuh tegangan sikat ($V_b$) = 0 Volt (diabaikan)
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Gaya gerak listrik armatur ($E_a$)
+    \item Rugi total ($P_{rugi\_total}$)
+    \item Daya masukan ($P_{in}$)
+    \item Efisiensi ekonomis ($\eta$)
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Gaya Gerak Listrik Armatur ($E_a$)}
+
+    Pertama, kita cari arus yang mengalir pada kumparan medan shunt ($I_{sh}$):
+    \[
+        I_{sh} = \frac{V_t}{R_{sh}} = \frac{220}{40} = 5,5 \text{ Ampere}
+    \]
+
+    Selanjutnya, mencari arus armatur ($I_a$) yang merupakan total dari arus beban dan arus shunt:
+    \[
+        I_a = I_L + I_{sh} = 200 + 5,5 = 205,5 \text{ Ampere}
+    \]
+
+    Menghitung Gaya Gerak Listrik (GGL) armatur ($E_a$):
+    \begin{align*}
+        E_a &= V_t + (I_a \cdot R_a) \\
+        E_a &= 220 + (205,5 \cdot 0,03) \\
+        E_a &= 220 + 6,165 \\
+        E_a &= 226,165 \text{ Volt}
+    \end{align*}
+
+    Jadi, gaya gerak listrik armaturnya adalah \textbf{226,165 Volt}.
+
+    \item \textbf{Rugi Total ($P_{rugi\_total}$)}
+
+    Rugi total adalah penjumlahan dari rugi tembaga armatur, rugi tembaga shunt, serta rugi inti dan gesek.
+
+    Rugi tembaga armatur ($P_{cu\_a}$):
+    \[
+        P_{cu\_a} = I_a^2 \cdot R_a = (205,5)^2 \cdot 0,03 = 42230,25 \cdot 0,03 = 1266,9075 \text{ Watt}
+    \]
+
+    Rugi tembaga shunt ($P_{cu\_sh}$):
+    \[
+        P_{cu\_sh} = I_{sh}^2 \cdot R_{sh} = (5,5)^2 \cdot 40 = 30,25 \cdot 40 = 1210 \text{ Watt}
+    \]
+
+    Maka, rugi totalnya adalah:
+    \begin{align*}
+        P_{rugi\_total} &= P_{cu\_a} + P_{cu\_sh} + P_{rot} \\
+        P_{rugi\_total} &= 1266,9075 + 1210 + 900 \\
+        P_{rugi\_total} &= 3376,9075 \text{ Watt}
+    \end{align*}
+
+    Jadi, rugi total generator adalah \textbf{3376,9075 Watt}.
+
+    \item \textbf{Daya Masukan ($P_{in}$)}
+
+    Kita hitung daya keluaran ($P_{out}$) terlebih dahulu:
+    \[
+        P_{out} = V_t \cdot I_L = 220 \cdot 200 = 44000 \text{ Watt} = 44 \text{ kW}
+    \]
+
+    Daya masukan adalah daya keluaran ditambah dengan rugi total:
+    \begin{align*}
+        P_{in} &= P_{out} + P_{rugi\_total} \\
+        P_{in} &= 44000 + 3376,9075 \\
+        P_{in} &= 47376,9075 \text{ Watt} \approx 47,38 \text{ kW}
+    \end{align*}
+
+    Jadi, daya masukan generator tersebut adalah \textbf{47376,9075 Watt}.
+
+    \item \textbf{Efisiensi Ekonomis ($\eta$)}
+
+    Efisiensi dihitung dengan membandingkan daya keluaran dengan daya masukan:
+    \begin{align*}
+        \eta &= \frac{P_{out}}{P_{in}} \times 100\% \\
+        \eta &= \frac{44000}{47376,9075} \times 100\% \\
+        \eta &\approx 0,9287 \times 100\% \\
+        \eta &\approx 92,87\%
+    \end{align*}
+
+    Jadi, efisiensi ekonomis generator tersebut adalah sekitar \textbf{92,87\%}.
+\end{enumerate}
+
+\subsection*{Soal 12}
+Generator arus searah kompon panjang 10 Kw, 250 volt, mempunyai tahanan medan shunt sebesar 125 ohm, tahanan rangakaian jangkar 0,4, tahanan medan seri 0,05 ohm, rugi - rugi beban sasar 540 watt, rugi tegangan pada sikat waktu beban penuh sebesar 2 volt, hitung efisiensinya.
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Generator DC Kompon Panjang (\textit{Long-Shunt})
+    \item Daya Keluaran ($P_{out}$) = 10 kW = 10.000 Watt
+    \item Tegangan Terminal ($V_t$) = 250 Volt
+    \item Tahanan Medan Shunt ($R_{sh}$) = 125 $\Omega$
+    \item Tahanan Rangkaian Jangkar/Armatur ($R_a$) = 0,4 $\Omega$
+    \item Tahanan Medan Seri ($R_{se}$) = 0,05 $\Omega$
+    \item Rugi-rugi beban sasar/stray loss ($P_{stray}$) = 540 Watt
+    \item Jatuh tegangan total pada sikat ($V_b$) = 2 Volt
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{itemize}
+    \item Efisiensi generator ($\eta$)
+\end{itemize}
+
+\textbf{Penyelesaian:}
+
+Langkah pertama adalah mencari arus-arus yang mengalir pada generator:
+
+1. \textbf{Arus Beban ($I_L$):}
+\[
+    I_L = \frac{P_{out}}{V_t} = \frac{10.000}{250} = 40 \text{ Ampere}
+\]
+
+2. \textbf{Arus Medan Shunt ($I_{sh}$):}
+Pada generator kompon panjang, kumparan medan shunt terhubung paralel langsung dengan terminal keluaran, sehingga:
+\[
+    I_{sh} = \frac{V_t}{R_{sh}} = \frac{250}{125} = 2 \text{ Ampere}
+\]
+
+3. \textbf{Arus Jangkar ($I_a$) dan Arus Medan Seri ($I_{se}$):}
+Karena kumparan medan seri terhubung seri langsung dengan jangkar, maka $I_a = I_{se}$. Arus jangkar adalah total dari arus beban dan arus shunt:
+\begin{align*}
+    I_a &= I_L + I_{sh} = 40 + 2 = 42 \text{ Ampere} \\
+    I_{se} &= 42 \text{ Ampere}
+\end{align*}
+
+Langkah kedua, kita hitung seluruh rugi-rugi (daya yang hilang) pada generator:
+
+4. \textbf{Rugi Tembaga Jangkar ($P_{cu\_a}$):}
+\[
+    P_{cu\_a} = I_a^2 \cdot R_a = (42)^2 \cdot 0,4 = 1764 \cdot 0,4 = 705,6 \text{ Watt}
+\]
+
+5. \textbf{Rugi Tembaga Medan Seri ($P_{cu\_se}$):}
+\[
+    P_{cu\_se} = I_{se}^2 \cdot R_{se} = (42)^2 \cdot 0,05 = 1764 \cdot 0,05 = 88,2 \text{ Watt}
+\]
+
+6. \textbf{Rugi Tembaga Medan Shunt ($P_{cu\_sh}$):}
+\[
+    P_{cu\_sh} = I_{sh}^2 \cdot R_{sh} = (2)^2 \cdot 125 = 4 \cdot 125 = 500 \text{ Watt}
+\]
+
+7. \textbf{Rugi Daya pada Kontak Sikat ($P_{brush}$):}
+\[
+    P_{brush} = V_b \cdot I_a = 2 \cdot 42 = 84 \text{ Watt}
+\]
+
+8. \textbf{Total Rugi-Rugi ($P_{rugi\_total}$):}
+\begin{align*}
+    P_{rugi\_total} &= P_{cu\_a} + P_{cu\_se} + P_{cu\_sh} + P_{brush} + P_{stray} \\
+    P_{rugi\_total} &= 705,6 + 88,2 + 500 + 84 + 540 \\
+    P_{rugi\_total} &= 1917,8 \text{ Watt}
+\end{align*}
+
+Langkah terakhir, menghitung daya masukan dan efisiensi:
+
+9. \textbf{Daya Masukan ($P_{in}$):}
+\[
+    P_{in} = P_{out} + P_{rugi\_total} = 10.000 + 1917,8 = 11.917,8 \text{ Watt}
+\]
+
+10. \textbf{Efisiensi ($\eta$):}
+\begin{align*}
+    \eta &= \left( \frac{P_{out}}{P_{in}} \right) \times 100\% \\
+    \eta &= \left( \frac{10.000}{11.917,8} \right) \times 100\% \\
+    \eta &\approx 0,8391 \times 100\% \approx 83,91\%
+\end{align*}
+
+Jadi, efisiensi generator arus searah kompon panjang tersebut adalah \textbf{83,91\%}.
+
+\subsection*{Soal 13}
+Sebuah generator dc shunt mengirimkan daya 50 Kw pada 250 volt apabila berputar pada kecepatan 400 rpm. Tahanan jangkar dan medan berturut-turut 0,02 ohm dan 50 ohm. Hitunglah kecepatan mesin apabila di jalankan sebagai motor shunt dan mengambil daya 50 Kw pada tegangan 250 volt. Ambil rugi tegangan kontak 1 volt persikat.
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis Mesin: DC Shunt
+    \item Tahanan jangkar ($R_a$) = 0,02 $\Omega$
+    \item Tahanan medan shunt ($R_{sh}$) = 50 $\Omega$
+    \item Rugi tegangan sikat = 1 Volt/sikat. Total jatuh tegangan sikat ($V_b$) = $2 \times 1$ Volt = 2 Volt
+    \item \textbf{Kondisi 1 (Sebagai Generator):}
+    \begin{itemize}
+        \item Daya keluaran ($P_{out\_g}$) = 50 kW = 50.000 Watt
+        \item Tegangan terminal ($V_t$) = 250 Volt
+        \item Kecepatan putar ($N_g$) = 400 rpm
+    \end{itemize}
+    \item \textbf{Kondisi 2 (Sebagai Motor):}
+    \begin{itemize}
+        \item Daya masukan ($P_{in\_m}$) = 50 kW = 50.000 Watt
+        \item Tegangan sumber ($V_t$) = 250 Volt
+    \end{itemize}
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{itemize}
+    \item Kecepatan mesin saat dijalankan sebagai motor ($N_m$)
+\end{itemize}
+
+\textbf{Penyelesaian:}
+
+Prinsip dasar pada mesin DC adalah Gaya Gerak Listrik (GGL) sebanding dengan fluks magnet dan kecepatan putar ($E \propto \Phi \cdot N$). Karena tegangan terminal dan tahanan medan shunt tetap (baik saat jadi motor maupun generator), maka fluks magnet ($\Phi$) dianggap konstan. Sehingga berlaku perbandingan:
+\[
+    \frac{E_m}{E_g} = \frac{N_m}{N_g}
+\]
+
+\textbf{Langkah 1: Analisis saat beroperasi sebagai Generator}
+\begin{enumerate}
+    \item Menghitung arus saluran/beban ($I_L$):
+    \[
+        I_L = \frac{P_{out\_g}}{V_t} = \frac{50.000}{250} = 200 \text{ Ampere}
+    \]
+    \item Menghitung arus medan shunt ($I_{sh}$):
+    \[
+        I_{sh} = \frac{V_t}{R_{sh}} = \frac{250}{50} = 5 \text{ Ampere}
+    \]
+    \item Menghitung arus jangkar ($I_{ag}$):
+    \[
+        I_{ag} = I_L + I_{sh} = 200 + 5 = 205 \text{ Ampere}
+    \]
+    \item Menghitung GGL jangkar generator ($E_g$):
+    \begin{align*}
+        E_g &= V_t + (I_{ag} \cdot R_a) + V_b \\
+        E_g &= 250 + (205 \cdot 0,02) + 2 \\
+        E_g &= 250 + 4,1 + 2 = 256,1 \text{ Volt}
+    \end{align*}
+\end{enumerate}
+
+\textbf{Langkah 2: Analisis saat beroperasi sebagai Motor}
+\begin{enumerate}
+    \item Menghitung arus saluran/masukan ($I_L$):
+    \[
+        I_L = \frac{P_{in\_m}}{V_t} = \frac{50.000}{250} = 200 \text{ Ampere}
+    \]
+    \item Arus medan shunt ($I_{sh}$) tetap sama:
+    \[
+        I_{sh} = \frac{V_t}{R_{sh}} = \frac{250}{50} = 5 \text{ Ampere}
+    \]
+    \item Menghitung arus jangkar ($I_{am}$):
+    Pada motor shunt, arus saluran terbagi ke jangkar dan medan, sehingga:
+    \[
+        I_{am} = I_L - I_{sh} = 200 - 5 = 195 \text{ Ampere}
+    \]
+    \item Menghitung GGL balik / \textit{Back EMF} motor ($E_m$):
+    \begin{align*}
+        E_m &= V_t - (I_{am} \cdot R_a) - V_b \\
+        E_m &= 250 - (195 \cdot 0,02) - 2 \\
+        E_m &= 250 - 3,9 - 2 = 244,1 \text{ Volt}
+    \end{align*}
+\end{enumerate}
+
+\textbf{Langkah 3: Menghitung kecepatan putar Motor ($N_m$)}
+Menggunakan persamaan perbandingan GGL dan kecepatan:
+\begin{align*}
+    \frac{N_m}{N_g} &= \frac{E_m}{E_g} \\
+    N_m &= N_g \cdot \frac{E_m}{E_g} \\
+    N_m &= 400 \cdot \frac{244,1}{256,1} \\
+    N_m &= 400 \cdot 0,95314... \\
+    N_m &\approx 381,26 \text{ rpm}
+\end{align*}
+
+Jadi, kecepatan mesin apabila dijalankan sebagai motor shunt adalah sekitar \textbf{381,26 rpm}.
+
+\subsection*{Soal 14}
+Motor arus searah Shunt 230 volt mempunyai tahanan jangkar 0,5 ohm dan tahanan medan shunt 115 ohm. Pada waktu beban nol kecepatannya 1200 rpm dan arus jangkar 2,5 amper. Pada waktu beban penuh kecepatannya turun menjadi 1120 rpm.\\
+Hitung:\\
+a. Arus jala - jala pada waktu beban penuh.\\
+b. Daya input waktu beban penuh,\\
+c. Regulasi kecepatannya.
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Motor DC Shunt
+    \item Tegangan sumber/terminal ($V_t$) = 230 Volt
+    \item Tahanan jangkar ($R_a$) = 0,5 $\Omega$
+    \item Tahanan medan shunt ($R_{sh}$) = 115 $\Omega$
+    \item \textbf{Kondisi Beban Nol (\textit{No Load}):}
+    \begin{itemize}
+        \item Kecepatan ($N_0$) = 1200 rpm
+        \item Arus jangkar ($I_{a0}$) = 2,5 Ampere
+    \end{itemize}
+    \item \textbf{Kondisi Beban Penuh (\textit{Full Load}):}
+    \begin{itemize}
+        \item Kecepatan ($N_{fl}$) = 1120 rpm
+    \end{itemize}
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Arus jala-jala beban penuh ($I_{L(fl)}$)
+    \item Daya input beban penuh ($P_{in(fl)}$)
+    \item Regulasi kecepatan
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+Langkah pertama yang selalu berlaku pada motor shunt (selama tegangan sumber tetap) adalah arus medan shunt ($I_{sh}$) nilainya konstan:
+\[
+    I_{sh} = \frac{V_t}{R_{sh}} = \frac{230}{115} = 2 \text{ Ampere}
+\]
+
+Karena arus shunt konstan, maka fluks magnet ($\Phi$) juga konstan. Pada motor DC, Gaya Gerak Listrik (GGL) Balik sebanding dengan putaran ($E_a \propto N$). Sehingga berlaku perbandingan:
+\[
+    \frac{E_{a0}}{N_0} = \frac{E_{a(fl)}}{N_{fl}}
+\]
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Arus Jala-jala pada Waktu Beban Penuh ($I_{L(fl)}$)}
+
+    Kita cari GGL Balik saat beban nol ($E_{a0}$) terlebih dahulu:
+    \begin{align*}
+        E_{a0} &= V_t - (I_{a0} \cdot R_a) \\
+        E_{a0} &= 230 - (2,5 \cdot 0,5) \\
+        E_{a0} &= 230 - 1,25 = 228,75 \text{ Volt}
+    \end{align*}
+
+    Selanjutnya, kita cari GGL Balik saat beban penuh ($E_{a(fl)}$) menggunakan perbandingan kecepatan:
+    \begin{align*}
+        E_{a(fl)} &= E_{a0} \times \frac{N_{fl}}{N_0} \\
+        E_{a(fl)} &= 228,75 \times \frac{1120}{1200} \\
+        E_{a(fl)} &= 213,5 \text{ Volt}
+    \end{align*}
+
+    Dari GGL Balik beban penuh ini, kita bisa mencari arus jangkar beban penuh ($I_{a(fl)}$):
+    \begin{align*}
+        E_{a(fl)} &= V_t - (I_{a(fl)} \cdot R_a) \\
+        213,5 &= 230 - (I_{a(fl)} \cdot 0,5) \\
+        I_{a(fl)} \cdot 0,5 &= 230 - 213,5 \\
+        I_{a(fl)} \cdot 0,5 &= 16,5 \\
+        I_{a(fl)} &= \frac{16,5}{0,5} = 33 \text{ Ampere}
+    \end{align*}
+
+    Arus jala-jala (saluran) beban penuh adalah total arus jangkar ditambah arus shunt:
+    \begin{align*}
+        I_{L(fl)} &= I_{a(fl)} + I_{sh} \\
+        I_{L(fl)} &= 33 + 2 = 35 \text{ Ampere}
+    \end{align*}
+
+    Jadi, arus jala-jala pada waktu beban penuh adalah \textbf{35 Ampere}.
+
+    \item \textbf{Daya Input Waktu Beban Penuh ($P_{in(fl)}$)}
+
+    Daya input dihitung berdasarkan tegangan sumber dan total arus jala-jala yang ditarik motor:
+    \begin{align*}
+        P_{in(fl)} &= V_t \cdot I_{L(fl)} \\
+        P_{in(fl)} &= 230 \cdot 35 \\
+        P_{in(fl)} &= 8050 \text{ Watt} = 8,05 \text{ kW}
+    \end{align*}
+
+    Jadi, daya input pada waktu beban penuh adalah \textbf{8050 Watt}.
+
+    \item \textbf{Regulasi Kecepatan}
+
+    Regulasi kecepatan dihitung dari selisih kecepatan beban nol dan beban penuh, dibagi dengan kecepatan beban penuh, lalu dikalikan 100\%:
+    \begin{align*}
+        \text{Regulasi Kecepatan} &= \frac{N_0 - N_{fl}}{N_{fl}} \times 100\% \\
+        \text{Regulasi Kecepatan} &= \frac{1200 - 1120}{1120} \times 100\% \\
+        \text{Regulasi Kecepatan} &= \frac{80}{1120} \times 100\% \\
+        \text{Regulasi Kecepatan} &\approx 0,0714 \times 100\% \approx 7,14\%
+    \end{align*}
+
+    Jadi, regulasi kecepatan motor tersebut adalah sekitar \textbf{7,14\%}.
+\end{enumerate}
+
+\subsection*{Soal 15}
+Suatu motor shunt, daya keluar 6912 watt, tegangan terminal 230 Volt, tahanan jangkar dan tahanan medannya masing-masing adalah 0,5 ohm dan 120 ohm, efisiensi 0,90, putaran = 600 rpm.\\
+Tentukan besarnya tahanan mula yang di perlukan, jika di kehendaki arus jangkar yang mengalir pada saat start sama dengan arus beban penuhnya.\\
+Setelah motor berputar, tahanan mula dihilangkan dan disisipkan tahanan yang dipasangkan seri dengan tahanan jangkar sebesar 2,5 ohm, sedangkan arus medan dan arus jangkar tetap. Tentukanlah perputaran dan daya keluarnya.
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Motor DC Shunt
+    \item Daya keluar ($P_{out1}$) = 6912 Watt
+    \item Tegangan terminal ($V_t$) = 230 Volt
+    \item Tahanan jangkar ($R_a$) = 0,5 $\Omega$
+    \item Tahanan medan shunt ($R_{sh}$) = 120 $\Omega$
+    \item Efisiensi ($\eta$) = 0,90
+    \item Kecepatan awal ($N_1$) = 600 rpm
+    \item Arus jangkar saat start = Arus jangkar beban penuh ($I_{a(start)} = I_{a1}$)
+    \item Tahanan tambahan seri jangkar ($R_x$) = 2,5 $\Omega$
+    \item Kondisi kedua: arus medan ($I_{sh}$) dan arus jangkar ($I_a$) nilainya tetap.
+\end{itemize}
+
+\textbf{Ditanya:}
+\begin{enumerate}[label=\alph*.]
+    \item Tahanan mula ($R_{st}$)
+    \item Kecepatan baru ($N_2$) dan Daya keluar baru ($P_{out2}$)
+\end{enumerate}
+
+\textbf{Penyelesaian:}
+
+Langkah awal yang krusial adalah mencari arus jangkar beban penuh ($I_{a1}$):
+\begin{align*}
+    P_{in} &= \frac{P_{out1}}{\eta} = \frac{6912}{0,90} = 7680 \text{ Watt} \\
+    I_L &= \frac{P_{in}}{V_t} = \frac{7680}{230} \approx 33,391 \text{ Ampere} \\
+    I_{sh} &= \frac{V_t}{R_{sh}} = \frac{230}{120} \approx 1,917 \text{ Ampere} \\
+    I_{a1} &= I_L - I_{sh} = 33,391 - 1,917 = 31,474 \text{ Ampere}
+\end{align*}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Tahanan Mula ($R_{st}$)}
+
+    Pada saat start, motor belum berputar sehingga GGL Balik ($E_a$) bernilai nol. Persamaan tegangannya menjadi:
+    \[
+        V_t = I_{a(start)} \cdot (R_a + R_{st})
+    \]
+    Karena disyaratkan $I_{a(start)} = I_{a1} = 31,474$ Ampere, maka:
+    \begin{align*}
+        230 &= 31,474 \cdot (0,5 + R_{st}) \\
+        0,5 + R_{st} &= \frac{230}{31,474} \\
+        0,5 + R_{st} &\approx 7,308 \ \Omega \\
+        R_{st} &= 7,308 - 0,5 = 6,808 \ \Omega
+    \end{align*}
+    Jadi, besarnya tahanan mula yang diperlukan adalah \textbf{6,808 Ohm}.
+
+    \item \textbf{Perputaran ($N_2$) dan Daya Keluar Baru ($P_{out2}$)}
+
+    \textbf{Mencari Perputaran ($N_2$):}
+    GGL Balik pada kondisi normal 1 ($E_{a1}$):
+    \[
+        E_{a1} = V_t - (I_{a1} \cdot R_a) = 230 - (31,474 \cdot 0,5) = 230 - 15,737 = 214,263 \text{ Volt}
+    \]
+
+    GGL Balik pada kondisi 2 (disisipkan $R_x = 2,5 \ \Omega$, arus tetap):
+    \begin{align*}
+        E_{a2} &= V_t - I_{a1} \cdot (R_a + R_x) \\
+        E_{a2} &= 230 - 31,474 \cdot (0,5 + 2,5) \\
+        E_{a2} &= 230 - (31,474 \cdot 3) \\
+        E_{a2} &= 230 - 94,422 = 135,578 \text{ Volt}
+    \end{align*}
+
+    Karena arus medan tetap (fluks konstan), perbandingan kecepatan berbanding lurus dengan perbandingan GGL Balik:
+    \begin{align*}
+        \frac{N_2}{N_1} &= \frac{E_{a2}}{E_{a1}} \\
+        N_2 &= N_1 \cdot \left(\frac{E_{a2}}{E_{a1}}\right) = 600 \cdot \left(\frac{135,578}{214,263}\right) \\
+        N_2 &\approx 600 \cdot 0,6328 \approx 379,68 \text{ rpm}
+    \end{align*}
+    Jadi, putaran motor turun menjadi \textbf{379,68 rpm}.
+
+    \vspace{0.2cm}
+
+    \textbf{Mencari Daya Keluaran Baru ($P_{out2}$):}
+    Torsi motor sebanding dengan fluks dan arus jangkar ($T \propto \Phi \cdot I_a$). Karena disoal disebutkan "arus medan dan arus jangkar tetap", maka \textbf{Torsi bernilai konstan}.
+    Daya keluaran berbanding lurus dengan Torsi dan Kecepatan ($P \propto T \cdot N$). Jika Torsi konstan, maka daya proporsional terhadap kecepatan:
+    \begin{align*}
+        \frac{P_{out2}}{P_{out1}} &= \frac{N_2}{N_1} \\
+        P_{out2} &= P_{out1} \cdot \left(\frac{N_2}{N_1}\right) \\
+        P_{out2} &= 6912 \cdot \left(\frac{379,68}{600}\right) \\
+        P_{out2} &\approx 6912 \cdot 0,6328 \approx 4373,9 \text{ Watt}
+    \end{align*}
+    Jadi, daya keluarnya menjadi sekitar \textbf{4373,9 Watt}.
+\end{enumerate}
+
+\subsection*{Soal 16}
+Sebuah motor dc kompond panjang, 12 HP, 230 volt, tahanan belitan jangkar 0,08 ohm. Tahanan belitan shunt 260 ohm, tahanan belitan seri 0,65 ohm, rugi tegangan pada masing-masing sikat 1,5 volt, rugi inti besi dan rugi rotasi 170 watt, putaran motor sebesar 3000 rpm saat beban nol dan saat dibebani menjadi 2900 rpm\\
+a. Gambar rangkaian pengganti motor dc kompond panjang\\
+b. Tentukan arus yang diserap oleh motor dc kompond panjang\\
+c. Tentukan tegangan drop pada jangkar\\
+d. Tentukan tegangan, arus dan daya medan\\
+e. Tentukan arus input, tegangan dan daya input\\
+f. Tentukan rugi total motor dan efisiensi motor\\
+g. Tentukan regulasi tegangan\\
+h. Tentukan regulasi putaran
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Motor DC Kompon Panjang (\textit{Long-Shunt})
+    \item Daya Output ($P_{out}$) = 12 HP = $12 \times 746 \text{ Watt} = 8952 \text{ Watt}$
+    \item Tegangan Terminal/Suplai ($V_t$) = 230 Volt
+    \item Tahanan belitan jangkar ($R_a$) = 0,08 $\Omega$
+    \item Tahanan belitan shunt ($R_{sh}$) = 260 $\Omega$
+    \item Tahanan belitan seri ($R_{se}$) = 0,65 $\Omega$
+    \item Jatuh tegangan sikat = 1,5 Volt/sikat. Total ($V_b$) = $2 \times 1,5 = 3 \text{ Volt}$
+    \item Rugi rotasi/inti besi ($P_{rot}$) = 170 Watt
+    \item Putaran tanpa beban ($N_0$) = 3000 rpm
+    \item Putaran beban penuh ($N_{fl}$) = 2900 rpm
+\end{itemize}
+
+\textbf{Penyelesaian:}
+
+Untuk menjawab pertanyaan secara berurutan, kita perlu mencari \textbf{Arus Jangkar ($I_a$)} terlebih dahulu.
+Daya mekanik yang dibangkitkan pada jangkar ($P_{dev}$) adalah daya output ditambah rugi mekanik/rotasi:
+\[
+    P_{dev} = P_{out} + P_{rot} = 8952 + 170 = 9122 \text{ Watt}
+\]
+Daya ini juga merupakan hasil kali GGL balik dan arus jangkar ($P_{dev} = E_a \cdot I_a$).
+Kita tahu bahwa:
+\begin{align*}
+    E_a &= V_t - I_a(R_a + R_{se}) - V_b \\
+    E_a &= 230 - I_a(0,08 + 0,65) - 3 \\
+    E_a &= 227 - 0,73 I_a
+\end{align*}
+Substitusi ke persamaan daya:
+\begin{align*}
+    (227 - 0,73 I_a) \cdot I_a &= 9122 \\
+    -0,73 I_a^2 + 227 I_a - 9122 &= 0 \\
+    0,73 I_a^2 - 227 I_a + 9122 &= 0
+\end{align*}
+Menggunakan rumus ABC/Kuadratik:
+\begin{align*}
+    I_a &= \frac{227 \pm \sqrt{(-227)^2 - 4(0,73)(9122)}}{2(0,73)} \\
+    I_a &= \frac{227 \pm \sqrt{51529 - 26636,24}}{1,46} \\
+    I_a &= \frac{227 \pm \sqrt{24892,76}}{1,46} = \frac{227 \pm 157,774}{1,46}
+\end{align*}
+Kita ambil nilai arus yang masuk akal untuk operasi normal (bukan arus hubung singkat/start):
+\[
+    I_a = \frac{227 - 157,774}{1,46} \approx 47,415 \text{ Ampere}
+\]
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Gambar Rangkaian Pengganti}
+
+    \textit{[Tempatkan Gambar Rangkaian Motor DC Kompon Panjang Di Sini. Tunjukkan belitan seri terhubung langsung dengan jangkar, lalu keduanya diparalelkan dengan belitan shunt dan sumber tegangan.]}
+
+    \item \textbf{Arus yang Diserap oleh Motor ($I_L$)}
+
+    Arus yang diserap dari jala-jala/sumber adalah total arus jangkar dan arus medan shunt:
+    \begin{align*}
+        I_{sh} &= \frac{V_t}{R_{sh}} = \frac{230}{260} \approx 0,885 \text{ Ampere} \\
+        I_L &= I_a + I_{sh} = 47,415 + 0,885 = 48,3 \text{ Ampere}
+    \end{align*}
+    Jadi, arus total yang diserap adalah \textbf{48,3 Ampere}.
+
+    \item \textbf{Tegangan Drop pada Jangkar}
+
+    Tegangan drop murni pada jangkar ($V_{drop\_a}$) adalah:
+    \[
+        V_{drop\_a} = I_a \cdot R_a = 47,415 \cdot 0,08 = 3,793 \text{ Volt}
+    \]
+    \textit{(Catatan: Jika ditanya total tegangan drop rangkaian jangkar beserta medan serinya, maka nilainya adalah $I_a(R_a + R_{se}) = 47,415 \cdot 0,73 = 34,613$ Volt).}
+
+    \item \textbf{Tegangan, Arus, dan Daya Medan}
+
+    Pada motor kompon terdapat dua medan. Berikut rinciannya:
+    \begin{itemize}
+        \item \textbf{Medan Shunt:}
+        \begin{itemize}
+            \item Tegangan ($V_{sh}$) = Tegangan sumber = \textbf{230 Volt}
+            \item Arus ($I_{sh}$) = $\frac{230}{260}$ = \textbf{0,885 Ampere}
+            \item Daya ($P_{sh}$) = $V_{sh} \cdot I_{sh} = 230 \cdot 0,885$ = \textbf{203,55 Watt}
+        \end{itemize}
+        \item \textbf{Medan Seri:}
+        \begin{itemize}
+            \item Tegangan ($V_{se}$) = $I_a \cdot R_{se} = 47,415 \cdot 0,65$ = \textbf{30,82 Volt}
+            \item Arus ($I_{se}$) = $I_a$ = \textbf{47,415 Ampere}
+            \item Daya ($P_{se}$) = $I_{se}^2 \cdot R_{se} = (47,415)^2 \cdot 0,65$ = \textbf{1461,3 Watt}
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Arus Input, Tegangan, dan Daya Input}
+
+    \begin{itemize}
+        \item Arus Input ($I_L$) = \textbf{48,3 Ampere} (seperti perhitungan poin b)
+        \item Tegangan Input ($V_t$) = \textbf{230 Volt}
+        \item Daya Input ($P_{in}$) = $V_t \cdot I_L = 230 \cdot 48,3$ = \textbf{11109 Watt}
+    \end{itemize}
+
+    \item \textbf{Rugi Total Motor dan Efisiensi}
+
+    \begin{itemize}
+        \item \textbf{Rugi Total ($P_{rugi\_total}$):}
+        \[
+            P_{rugi\_total} = P_{in} - P_{out} = 11109 - 8952 = \textbf{2157 Watt}
+        \]
+        \item \textbf{Efisiensi ($\eta$):}
+        \[
+            \eta = \left( \frac{P_{out}}{P_{in}} \right) \times 100\% = \left( \frac{8952}{11109} \right) \times 100\% \approx \textbf{80,58\%}
+        \]
+    \end{itemize}
+
+    \item \textbf{Regulasi Tegangan}
+
+    Pada dasarnya, regulasi tegangan (\textit{voltage regulation}) adalah parameter yang dievaluasi pada \textbf{Generator}, bukan Motor. Pada motor, tegangan terminal merupakan tegangan sumber (suplai) yang nilainya dijaga konstan oleh jala-jala (dalam kasus ini tetap 230 V). Oleh karena itu, regulasi tegangan terminal motor diasumsikan bernilai \textbf{0\%}.
+
+    \item \textbf{Regulasi Putaran}
+
+    Regulasi putaran/kecepatan (Speed Regulation, $SR$) dihitung dari selisih kecepatan tanpa beban dan beban penuh:
+    \begin{align*}
+        SR &= \frac{N_0 - N_{fl}}{N_{fl}} \times 100\% \\
+        SR &= \frac{3000 - 2900}{2900} \times 100\% \\
+        SR &= \frac{100}{2900} \times 100\% \\
+        SR &\approx 0,03448 \times 100\% \approx \textbf{3,45\%}
+    \end{align*}
+\end{enumerate}
+
+\subsection*{Soal 17}
+Sebuah motor DC kompound pendek, 40 HP (daya output motor), tegangan 220 volt (tegangan pada motor), mempunyai putaran 2000 rpm, efisiensinya 90\%, tahanan belitan jangkar 0,045 Ohm, tahanan belitan Shunt 250 Ohm, Tahanan belitan Seri 0,85 Ohm, Rugi tegangan pada masing-masing sikat 1,5 Volt.\\
+Hitunglah poin a sampai j sesuai dengan parameter tersebut.\\
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Motor DC Kompon Pendek (\textit{Short-Shunt})
+    \item Daya output ($P_{out}$) = 40 HP = $40 \times 746 = 29.840$ Watt
+    \item Tegangan sumber ($V_t$) = 220 Volt
+    \item Putaran nominal ($N_{fl}$) = 2000 rpm $\rightarrow \omega = \frac{2\pi \cdot 2000}{60} \approx 209,44$ rad/s
+    \item Efisiensi ($\eta$) = 90\% = 0,9
+    \item Tahanan jangkar ($R_a$) = 0,045 $\Omega$
+    \item Tahanan shunt ($R_{sh}$) = 250 $\Omega$
+    \item Tahanan seri ($R_{se}$) = 0,85 $\Omega$
+    \item Rugi sikat total ($V_b$) = $2 \times 1,5 = 3$ Volt
+\end{itemize}
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Arus yang diserap oleh motor ($I_L$)}
+
+    Daya input motor dihitung dari efisiensinya:
+    \[
+        P_{in} = \frac{P_{out}}{\eta} = \frac{29.840}{0,9} = 33.155,56 \text{ Watt}
+    \]
+    Arus sumber yang ditarik:
+    \[
+        I_L = \frac{P_{in}}{V_t} = \frac{33.155,56}{220} = 150,71 \text{ Ampere}
+    \]
+
+    \vspace{0.3cm}
+
+    \item \textbf{Gambar Rangkaian Ekivalen}
+
+    \textit{[Sisipkan Gambar Rangkaian Motor Kompon Pendek Di Sini: Tunjukkan belitan shunt diparalelkan HANYA dengan belitan jangkar, lalu gabungannya diserikan dengan belitan seri menuju sumber tegangan.]}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Rugi Tembaga Seri, Jangkar, dan Medan}
+
+    Pada kompon pendek, arus seri sama dengan arus sumber ($I_{se} = I_L = 150,71$ A).
+    Tegangan pada belitan shunt ($V_{sh}$):
+    \[
+        V_{sh} = V_t - (I_L \cdot R_{se}) = 220 - (150,71 \cdot 0,85) = 220 - 128,1 = 91,9 \text{ Volt}
+    \]
+    Arus medan shunt ($I_{sh}$):
+    \[
+        I_{sh} = \frac{V_{sh}}{R_{sh}} = \frac{91,9}{250} = 0,3676 \text{ Ampere}
+    \]
+    Arus jangkar ($I_a$):
+    \[
+        I_a = I_L - I_{sh} = 150,71 - 0,3676 = 150,34 \text{ Ampere}
+    \]
+
+    Menghitung rugi-rugi tembaga:
+    \begin{itemize}
+        \item Rugi seri ($P_{cu\_se}$) = $I_{se}^2 \cdot R_{se} = (150,71)^2 \cdot 0,85 \approx \textbf{19.306,48 Watt}$
+        \item Rugi jangkar ($P_{cu\_a}$) = $I_a^2 \cdot R_a = (150,34)^2 \cdot 0,045 \approx \textbf{1.017,09 Watt}$
+        \item Rugi medan ($P_{cu\_sh}$) = $I_{sh}^2 \cdot R_{sh} = (0,3676)^2 \cdot 250 \approx \textbf{33,78 Watt}$
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Rugi Sikat dan Rugi Tetap Motor}
+
+    \begin{itemize}
+        \item Rugi sikat ($P_{brush}$) = $V_b \cdot I_a = 3 \cdot 150,34 = \textbf{451,02 Watt}$
+        \item Rugi tetap motor = $1,2\% \times P_{out} = 0,012 \times 29.840 = \textbf{358,08 Watt}$
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Daya Input Motor dan Efisiensi Sumber}
+
+    \begin{itemize}
+        \item Daya input motor ($P_{in}$) telah dihitung di poin (a), yaitu \textbf{33.155,56 Watt}.
+        \item Efisiensi dari sumber ke sistem didefinisikan sama dengan parameter pelat nama, yaitu \textbf{90\%}.
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Torsi Jangkar, Torsi Poros, dan Rugi Poros}
+
+    GGL Balik ($E_a$):
+    \[
+        E_a = V_{sh} - (I_a \cdot R_a) - V_b = 91,9 - (150,34 \cdot 0,045) - 3 = 91,9 - 6,765 - 3 = 82,135 \text{ Volt}
+    \]
+    Daya mekanik di jangkar ($P_{dev}$) = $E_a \cdot I_a = 82,135 \cdot 150,34 = 12.348,18 \text{ Watt}$
+
+    \begin{itemize}
+        \item \textbf{Torsi Jangkar ($T_a$):} $T_a = \frac{P_{dev}}{\omega} = \frac{12.348,18}{209,44} \approx \textbf{58,96 Nm}$
+        \item \textbf{Torsi Poros ($T_{sh}$):} Berdasarkan output aktual $P_{out}$, $T_{sh} = \frac{P_{out}}{\omega} = \frac{29.840}{209,44} \approx \textbf{142,47 Nm}$ (Secara fisis $T_{sh} < T_a$, namun secara matematis dengan $\eta$ yang dipaksakan ini, inilah nilainya).
+        \item \textbf{Rugi Poros:} Mengacu pada rugi mekanik (tetap) dari soal poin d, rugi poros = \textbf{358,08 Watt}.
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Regulasi Tegangan}
+
+    Karena ini adalah motor (disuplai oleh tegangan jala-jala yang konstan 220V), regulasi tegangan terminal adalah \textbf{0\%}.
+
+    \vspace{0.3cm}
+
+    \item \textbf{Putaran Saat Beban Nol ($N_0$)}
+
+    Diketahui arus sumber beban nol ($I_{L0}$) = 1,1 A.
+    \begin{align*}
+        V_{sh0} &= 220 - (1,1 \cdot 0,85) = 219,065 \text{ Volt} \\
+        I_{sh0} &= \frac{219,065}{250} = 0,876 \text{ Ampere} \\
+        I_{a0} &= I_{L0} - I_{sh0} = 1,1 - 0,876 = 0,224 \text{ Ampere} \\
+        E_{a0} &= 219,065 - (0,224 \cdot 0,045) - 3 = 216,055 \text{ Volt}
+    \end{align*}
+    Diasumsikan fluks sebanding dengan arus shunt (mengabaikan fluks seri yang sangat kecil saat beban nol), kita gunakan pendekatan linier GGL:
+    \[
+        \frac{N_0}{N_{fl}} = \frac{E_{a0}}{E_a} \implies N_0 = 2000 \cdot \left(\frac{216,055}{82,135}\right) \approx \textbf{5260,8 rpm}
+    \]
+
+    \vspace{0.3cm}
+
+    \item \textbf{Regulasi Putaran}
+
+    \[
+        SR = \frac{N_0 - N_{fl}}{N_{fl}} \times 100\% = \frac{5260,8 - 2000}{2000} \times 100\% \approx \textbf{163\%}
+    \]
+
+    \vspace{0.3cm}
+
+    \item \textbf{Torsi Jangkar, Torsi Poros, dan Rugi Poros Jika $N = 1800$ rpm}
+
+    \[
+        E_{a2} = E_{a1} \cdot \left(\frac{N_2}{N_1}\right) = 82,135 \cdot \left(\frac{1800}{2000}\right) = 73,92 \text{ Volt}
+    \]
+    Untuk mencapai $E_{a2}$ ini, dengan substitusi dan eliminasi aljabar persamaan arus $I_L$, didapatkan arus saluran baru ($I_{L2}$) sekitar 159,88 Ampere.
+    \begin{align*}
+        V_{sh2} &= 220 - (159,88 \cdot 0,85) = 84,1 \text{ Volt} \implies I_{sh2} = 0,336 \text{ A} \\
+        I_{a2} &= 159,88 - 0,336 = 159,54 \text{ Ampere}
+    \end{align*}
+
+    Daya jangkar baru ($P_{dev2}$) = $73,92 \cdot 159,54 = 11.793,19 \text{ Watt}$. Kecepatan sudut baru ($\omega_2$) = 188,49 rad/s.
+    \begin{itemize}
+        \item \textbf{Torsi Jangkar ($T_{a2}$)} = $\frac{11.793,19}{188,49} \approx \textbf{62,56 Nm}$
+        \item \textbf{Rugi Poros} = Diasumsikan konstan seperti poin d, yaitu \textbf{358,08 Watt}
+        \item \textbf{Daya Poros / Output Baru} = $11.793,19 - 358,08 = 11.435,11 \text{ Watt}$
+        \item \textbf{Torsi Poros ($T_{sh2}$)} = $\frac{11.435,11}{188,49} \approx \textbf{60,66 Nm}$
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Soal 18}
+Sebuah Motor Dc penguat terpisah mempunyai data parameter sebagai berikut: Tahanan jangkar 0,8 ohm, tahanan medan 75 ohm disuplai tegangan 150 volt, rugi sikat 1,2 volt dan arus sumber 6 A, tegangan di jangkar 250 volt, putaran beban nol 1200 rpm dan regulasi putaran 2 \%.\\
+Hitunglah poin a sampai f sesuai dengan parameter tersebut.
+
+\textbf{Diketahui:}
+\begin{itemize}
+    \item Jenis: Motor DC Penguat Terpisah (\textit{Separately Excited})
+    \item Tahanan jangkar ($R_a$) = 0,8 $\Omega$
+    \item Tahanan medan ($R_f$) = 75 $\Omega$
+    \item Tegangan suplai medan ($V_f$) = 150 Volt
+    \item Total rugi sikat ($V_b$) = 1,2 Volt \textit{(Asumsi nilai total)}
+    \item Arus sumber jangkar ($I_a = I_L$) = 6 Ampere
+    \item Tegangan di jangkar/sumber jangkar ($V_t$) = 250 Volt
+    \item Putaran beban nol ($N_0$) = 1200 rpm
+    \item Regulasi putaran ($SR$) = 2\% = 0,02
+\end{itemize}
+
+\textbf{Penyelesaian:}
+
+\begin{enumerate}[label=\alph*.]
+    \item \textbf{Gambar Rangkaian Pengganti}
+
+    \textit{[Sisipkan Gambar Rangkaian Motor DC Penguat Terpisah Di Sini. Pastikan untuk menggambar dua sirkuit yang tidak saling terhubung: satu sirkuit untuk belitan medan ($R_f$) yang disuplai $V_f$, dan satu sirkuit utama untuk belitan jangkar ($R_a$, $E_a$) yang disuplai $V_t$.]}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Arus Medan dan Daya Medan}
+
+    Pada motor penguat terpisah, sirkuit medan berdiri sendiri dan mengikuti hukum Ohm dasar:
+    \begin{itemize}
+        \item \textbf{Arus Medan ($I_f$):}
+        \[
+            I_f = \frac{V_f}{R_f} = \frac{150}{75} = 2 \text{ Ampere}
+        \]
+        \item \textbf{Daya Medan ($P_f$):}
+        \[
+            P_f = V_f \cdot I_f = 150 \cdot 2 = 300 \text{ Watt}
+        \]
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Tegangan di Sumber dan Daya di Sumber}
+
+    Karena motor ini memiliki dua sumber, kita definisikan daya input utamanya (pada jangkar):
+    \begin{itemize}
+        \item \textbf{Tegangan Sumber Jangkar ($V_t$)} = \textbf{250 Volt} (sesuai data soal).
+        \item \textbf{Daya Input Jangkar ($P_{in\_a}$):}
+        \[
+            P_{in\_a} = V_t \cdot I_a = 250 \cdot 6 = 1500 \text{ Watt}
+        \]
+        \item \textbf{Total Daya Input Sumber ($P_{in\_total}$):}
+        \[
+            P_{in\_total} = P_{in\_a} + P_f = 1500 + 300 = 1800 \text{ Watt}
+        \]
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Daya Motor dan Efisiensi}
+
+    Pertama, kita hitung GGL Balik ($E_a$) yang terjadi pada jangkar:
+    \begin{align*}
+        E_a &= V_t - (I_a \cdot R_a) - V_b \\
+        E_a &= 250 - (6 \cdot 0,8) - 1,2 \\
+        E_a &= 250 - 4,8 - 1,2 = 244 \text{ Volt}
+    \end{align*}
+
+    Selanjutnya, menghitung Daya Motor (Daya Mekanik / \textit{Developed Power}, $P_{dev}$):
+    \[
+        P_{dev} = E_a \cdot I_a = 244 \cdot 6 = 1464 \text{ Watt}
+    \]
+    \textit{(Catatan: Karena rugi rotasi/mekanik tidak diketahui, kita asumsikan Daya Output ($P_{out}$) sama dengan $P_{dev}$ yaitu 1464 Watt).}
+
+    Menghitung Efisiensi ($\eta$) berdasarkan total daya yang ditarik motor dari kedua sumber:
+    \begin{align*}
+        \eta &= \left( \frac{P_{out}}{P_{in\_total}} \right) \times 100\% \\
+        \eta &= \left( \frac{1464}{1800} \right) \times 100\% \\
+        \eta &\approx 0,8133 \times 100\% \approx \textbf{81,33\%}
+    \end{align*}
+
+    \vspace{0.3cm}
+
+    \item \textbf{Regulasi Tegangan}
+
+    Sama halnya dengan motor-motor sebelumnya, karena mesin ini beroperasi sebagai \textbf{Motor} yang menerima suplai tegangan konstan dari jala-jala (bukan membangkitkan tegangan terminal yang bervariasi karena beban seperti pada Generator), maka Regulasi Tegangannya adalah \textbf{0\%}.
+
+    \vspace{0.3cm}
+
+    \item \textbf{Putaran Pada Saat Berbeban ($N_{fl}$)}
+
+    Diketahui regulasi putaran ($SR$) = 2\% (0,02). Kita gunakan rumus standar regulasi kecepatan:
+    \begin{align*}
+        SR &= \frac{N_0 - N_{fl}}{N_{fl}} \\
+        0,02 &= \frac{1200 - N_{fl}}{N_{fl}} \\
+        0,02 \cdot N_{fl} &= 1200 - N_{fl} \\
+        0,02 \cdot N_{fl} + N_{fl} &= 1200 \\
+        1,02 \cdot N_{fl} &= 1200 \\
+        N_{fl} &= \frac{1200}{1,02} \\
+        N_{fl} &\approx \textbf{1176,47 rpm}
+    \end{align*}
+\end{enumerate}
+
+\end{document}
